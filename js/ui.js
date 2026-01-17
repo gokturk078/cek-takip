@@ -56,6 +56,15 @@ const UI = {
 
             // Filters
             quickFilters: document.querySelectorAll('.quick-filter'),
+            filterBank: document.getElementById('filter-bank'),
+            filterCurrency: document.getElementById('filter-currency'),
+            filterMinAmount: document.getElementById('filter-min-amount'),
+            filterMaxAmount: document.getElementById('filter-max-amount'),
+            clearFiltersBtn: document.getElementById('clear-filters-btn'),
+
+            // Check form custom bank
+            checkBanka: document.getElementById('check-banka'),
+            checkBankaCustom: document.getElementById('check-banka-custom'),
 
             // Pagination
             pagination: document.getElementById('pagination'),
@@ -78,6 +87,23 @@ const UI = {
         this.elements.quickFilters?.forEach(btn => {
             btn.addEventListener('click', () => this.handleFilterClick(btn));
         });
+
+        // Advanced filters
+        if (this.elements.filterBank) {
+            this.elements.filterBank.addEventListener('change', () => this.handleAdvancedFilterChange());
+        }
+        if (this.elements.filterCurrency) {
+            this.elements.filterCurrency.addEventListener('change', () => this.handleAdvancedFilterChange());
+        }
+        if (this.elements.filterMinAmount) {
+            this.elements.filterMinAmount.addEventListener('input', Utils.debounce(() => this.handleAdvancedFilterChange(), 500));
+        }
+        if (this.elements.filterMaxAmount) {
+            this.elements.filterMaxAmount.addEventListener('input', Utils.debounce(() => this.handleAdvancedFilterChange(), 500));
+        }
+        if (this.elements.clearFiltersBtn) {
+            this.elements.clearFiltersBtn.addEventListener('click', () => this.clearFilters());
+        }
 
         // Modal close buttons
         document.querySelectorAll('.modal-close, [data-dismiss="modal"]').forEach(btn => {
@@ -107,6 +133,7 @@ const UI = {
      * Render all dashboard components
      */
     render() {
+        this.updateBankSelects();
         this.renderStats();
         this.renderTable();
         this.renderUpcoming();
@@ -114,9 +141,79 @@ const UI = {
     },
 
     /**
+     * Update bank select dropdowns (filter and form)
+     */
+    updateBankSelects() {
+        const banks = Data.getBanks();
+
+        // 1. Update Filter Dropdown
+        if (this.elements.filterBank) {
+            const currentVal = this.elements.filterBank.value;
+            let html = '<option value="">Tümü</option>';
+            banks.forEach(bank => {
+                html += `<option value="${bank}">${Utils.escapeHtml(bank)}</option>`;
+            });
+            this.elements.filterBank.innerHTML = html;
+            this.elements.filterBank.value = currentVal; // Restore selection if exists
+        }
+
+        // 2. Update Form Dropdown
+        if (this.elements.checkBanka) {
+            const currentVal = this.elements.checkBanka.value;
+            // Standard banks are hardcoded in the function usually, but let's use Data.getBanks if we want dynamic
+            // But for the form, we want specific structure (Standard ... Others) or just alphabetic
+            // Let's keep the structure simple: All available banks + "Custom" option
+
+            let html = '<option value="">Seçin</option>';
+
+            // Add all known banks
+            banks.forEach(bank => {
+                html += `<option value="${bank}">${Utils.escapeHtml(bank)}</option>`;
+            });
+
+            // Add custom option separator
+            html += '<option disabled>──────────</option>';
+            html += '<option value="__custom__">➕ Diğer (Yeni Ekle)</option>';
+
+            this.elements.checkBanka.innerHTML = html;
+
+            // Try to restore value, if not custom
+            if (currentVal && currentVal !== '__custom__') {
+                // Check if the value still exists in options
+                let exists = false;
+                for (let i = 0; i < this.elements.checkBanka.options.length; i++) {
+                    if (this.elements.checkBanka.options[i].value === currentVal) {
+                        exists = true;
+                        break;
+                    }
+                }
+                if (exists) this.elements.checkBanka.value = currentVal;
+            }
+        }
+    },
+
+    /**
+     * Handle bank select change in form
+     */
+    handleBankChange(select) {
+        if (!this.elements.checkBankaCustom) return;
+
+        if (select.value === '__custom__') {
+            this.elements.checkBankaCustom.style.display = 'block';
+            this.elements.checkBankaCustom.required = true;
+            this.elements.checkBankaCustom.focus();
+        } else {
+            this.elements.checkBankaCustom.style.display = 'none';
+            this.elements.checkBankaCustom.required = false;
+            this.elements.checkBankaCustom.value = '';
+        }
+    },
+
+    /**
      * Render statistics cards
      */
     renderStats() {
+        // ... (existing code)
         const stats = Data.getStats();
 
         if (this.elements.statTotal) {
@@ -140,6 +237,7 @@ const UI = {
      * Render summary totals
      */
     renderSummary() {
+        // ... (existing code)
         const stats = Data.getStats();
 
         if (this.elements.summaryUSD) {
@@ -157,6 +255,7 @@ const UI = {
      * Render checks table
      */
     renderTable() {
+        // ... (existing code)
         if (!this.elements.tableBody) return;
 
         // Get filtered and sorted data
@@ -198,6 +297,7 @@ const UI = {
      * Render single table row
      */
     renderTableRow(check) {
+        // ... (existing code)
         const amount = Utils.getCheckAmount(check);
         const daysUntil = Utils.daysUntil(check.vade_tarihi);
         const statusClass = Utils.getStatusClass(check.odeme_durumu);
@@ -247,6 +347,7 @@ const UI = {
      * Render pagination
      */
     renderPagination(totalItems, totalPages) {
+        // ... (existing code)
         if (!this.elements.pagination) return;
 
         const start = (this.currentPage - 1) * this.pageSize + 1;
@@ -299,6 +400,7 @@ const UI = {
      * Handle pagination click
      */
     handlePaginationClick(page, totalPages) {
+        // ... (existing code)
         if (page === 'prev') {
             this.currentPage = Math.max(1, this.currentPage - 1);
         } else if (page === 'next') {
@@ -313,6 +415,7 @@ const UI = {
      * Render upcoming checks
      */
     renderUpcoming() {
+        // ... (existing code)
         if (!this.elements.upcomingList) return;
 
         const upcoming = Data.getUpcoming(14); // Next 14 days
@@ -388,13 +491,59 @@ const UI = {
             filters.status = this.currentFilter;
         }
 
+        // Advanced filters
+        if (this.elements.filterBank && this.elements.filterBank.value) {
+            filters.bank = this.elements.filterBank.value;
+        }
+        if (this.elements.filterCurrency && this.elements.filterCurrency.value) {
+            filters.currency = this.elements.filterCurrency.value;
+        }
+        if (this.elements.filterMinAmount && this.elements.filterMinAmount.value) {
+            filters.minAmount = parseFloat(this.elements.filterMinAmount.value);
+        }
+        if (this.elements.filterMaxAmount && this.elements.filterMaxAmount.value) {
+            filters.maxAmount = parseFloat(this.elements.filterMaxAmount.value);
+        }
+
         return Data.search(this.searchQuery, filters);
+    },
+
+    /**
+     * Handle advanced filter change
+     */
+    handleAdvancedFilterChange() {
+        this.currentPage = 1;
+        this.renderTable();
+    },
+
+    /**
+     * Clear all filters
+     */
+    clearFilters() {
+        // Clear inputs
+        if (this.elements.filterBank) this.elements.filterBank.value = '';
+        if (this.elements.filterCurrency) this.elements.filterCurrency.value = '';
+        if (this.elements.filterMinAmount) this.elements.filterMinAmount.value = '';
+        if (this.elements.filterMaxAmount) this.elements.filterMaxAmount.value = '';
+        if (this.elements.searchInput) this.elements.searchInput.value = '';
+
+        // Reset state
+        this.currentFilter = 'all';
+        this.searchQuery = '';
+        this.elements.quickFilters.forEach(f => {
+            f.classList.remove('active');
+            if (f.dataset.filter === 'all') f.classList.add('active');
+        });
+
+        this.currentPage = 1;
+        this.renderTable();
     },
 
     /**
      * Handle search input
      */
     handleSearch(query) {
+        // ... (existing code)
         this.searchQuery = query;
         this.currentPage = 1;
         this.renderTable();
@@ -404,6 +553,7 @@ const UI = {
      * Handle filter click
      */
     handleFilterClick(btn) {
+        // ... (existing code)
         this.elements.quickFilters.forEach(f => f.classList.remove('active'));
         btn.classList.add('active');
 
@@ -416,6 +566,7 @@ const UI = {
      * Bind row action buttons
      */
     bindRowActions() {
+        // ... (existing code)
         document.querySelectorAll('.action-btn[data-action="edit"]').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 e.stopPropagation();
@@ -443,6 +594,11 @@ const UI = {
         this.elements.checkForm.reset();
         document.getElementById('check-id').value = '';
 
+        // Handle bank custom view reset
+        const bankSelect = document.getElementById('check-banka');
+        if (bankSelect) bankSelect.value = '';
+        this.handleBankChange(bankSelect);
+
         this.elements.checkModal.classList.add('active');
     },
 
@@ -459,13 +615,44 @@ const UI = {
         document.getElementById('check-id').value = check.id;
         document.getElementById('check-firma').value = check.firma_adi || '';
         document.getElementById('check-no').value = check.cek_no || '';
-        document.getElementById('check-banka').value = check.banka || '';
         document.getElementById('check-tanzim').value = check.cek_tanzim_tarihi || '';
         document.getElementById('check-vade').value = check.vade_tarihi || '';
         document.getElementById('check-dolar').value = check.dolar || '';
         document.getElementById('check-euro').value = check.euro || '';
         document.getElementById('check-tl').value = check.tl || '';
         document.getElementById('check-durum').value = check.odeme_durumu || 'BEKLEMEDE';
+
+        // Handle bank selection logic for edit
+        const bankSelect = document.getElementById('check-banka');
+        const bankCustomInput = document.getElementById('check-banka-custom');
+        let bankFound = false;
+
+        if (check.banka) {
+            // Check if bank exists in dropdown
+            for (let i = 0; i < bankSelect.options.length; i++) {
+                if (bankSelect.options[i].value === check.banka) {
+                    bankSelect.value = check.banka;
+                    bankFound = true;
+                    break;
+                }
+            }
+
+            // If not found, it might be a custom bank not yet in the list (rare, since we update list on render)
+            // But if it is, we can select "custom" and fill the input
+            if (!bankFound) {
+                // Or we could dynamically add it. 
+                // Let's rely on updateBankSelects which runs in render().
+                // If render() is called after init(), standard banks list is fresh.
+                // So if check.banka is not in options, it's weird.
+                // Let's assume it *is* found because updateBankSelects includes checks' banks.
+                // Fallback:
+                bankSelect.value = check.banka;
+            }
+        } else {
+            bankSelect.value = '';
+        }
+
+        this.handleBankChange(bankSelect);
 
         this.elements.checkModal.classList.add('active');
     },
@@ -474,6 +661,7 @@ const UI = {
      * Open delete confirmation modal
      */
     openDeleteModal(id) {
+        // ... (existing code)
         if (!this.elements.deleteModal) return;
 
         const check = Data.getById(id);
@@ -515,10 +703,23 @@ const UI = {
     async handleFormSubmit() {
         const id = document.getElementById('check-id').value;
 
+        // Handle bank selection
+        let banka = document.getElementById('check-banka').value;
+        if (banka === '__custom__') {
+            const customBank = document.getElementById('check-banka-custom').value.trim();
+            if (customBank) {
+                // Add custom bank to saved list
+                banka = Data.addCustomBank(customBank);
+            } else {
+                this.showToast('danger', 'Hata', 'Lütfen banka adı giriniz.');
+                return;
+            }
+        }
+
         const checkData = {
             firma_adi: document.getElementById('check-firma').value.trim(),
             cek_no: document.getElementById('check-no').value.trim(),
-            banka: document.getElementById('check-banka').value,
+            banka: banka,
             cek_tanzim_tarihi: document.getElementById('check-tanzim').value || null,
             vade_tarihi: document.getElementById('check-vade').value,
             dolar: parseFloat(document.getElementById('check-dolar').value) || null,
@@ -579,6 +780,7 @@ const UI = {
      * Close all modals
      */
     closeAllModals() {
+        // ... (existing code)
         document.querySelectorAll('.modal-backdrop').forEach(modal => {
             modal.classList.remove('active');
         });
@@ -606,6 +808,43 @@ const UI = {
         var githubTokenInput = document.getElementById('github-token');
         if (githubTokenInput) {
             githubTokenInput.value = settings.github_token || '';
+        }
+
+        // Populate Saved Banks
+        const bankListEl = document.getElementById('saved-banks-list');
+        if (bankListEl) {
+            const customBanks = Data.customBanks || [];
+            if (customBanks.length === 0) {
+                bankListEl.innerHTML = '<div style="padding: 12px; text-align: center; color: var(--text-muted); font-size: 13px;">Kayıtlı özel banka yok</div>';
+            } else {
+                let html = '<ul class="bank-list" style="list-style: none; padding: 0; margin: 0;">';
+                customBanks.forEach(bank => {
+                    html += `
+                     <li style="display: flex; justify-content: space-between; align-items: center; padding: 10px 12px; border-bottom: 1px solid var(--border-primary);">
+                        <span style="font-size: 13px; color: var(--text-primary); font-weight: 500;">${Utils.escapeHtml(bank)}</span>
+                        <button class="btn btn-sm btn-danger delete-bank-btn" data-bank="${Utils.escapeHtml(bank)}" 
+                            style="padding: 4px 10px; font-size: 11px; height: auto; min-width: auto; background: rgba(220, 53, 69, 0.1); color: #ef4444; border: 1px solid rgba(220, 53, 69, 0.2); cursor: pointer;">
+                            Sil
+                        </button>
+                     </li>`;
+                });
+                html += '</ul>';
+                bankListEl.innerHTML = html;
+
+                // Bind delete events
+                bankListEl.querySelectorAll('.delete-bank-btn').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        const bankName = e.target.dataset.bank;
+                        if (confirm(bankName + ' bankasını listeden silmek istiyor musunuz?')) {
+                            if (Data.removeCustomBank(bankName)) {
+                                this.openSettingsModal(); // Refresh list
+                                this.updateBankSelects(); // Refresh main dropdowns
+                                this.showToast('success', 'Silindi', 'Banka listeden silindi.');
+                            }
+                        }
+                    });
+                });
+            }
         }
 
         this.elements.settingsModal.classList.add('active');
@@ -644,6 +883,7 @@ const UI = {
      * Show toast notification
      */
     showToast(type, title, message) {
+        // ... (existing code)
         const container = this.elements.toastContainer || document.getElementById('toast-container');
         if (!container) return;
 

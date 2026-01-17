@@ -12,9 +12,71 @@ const Data = {
     /**
      * Initialize data module
      */
+    customBanks: [],
+
+    /**
+     * Initialize data module
+     */
     async init() {
+        this.loadCustomBanks();
         await this.loadData();
         return this.checks;
+    },
+
+    /**
+     * Load custom banks from storage
+     */
+    loadCustomBanks() {
+        const banks = Utils.storage.get('custom_banks', []);
+        this.customBanks = banks;
+    },
+
+    /**
+     * Add custom bank
+     */
+    addCustomBank(bankName) {
+        if (!bankName) return;
+        bankName = bankName.trim().toUpperCase();
+
+        // Check if exists in custom banks or standard banks
+        if (this.customBanks.includes(bankName)) return;
+
+        this.customBanks.customBanks = this.customBanks || [];
+        this.customBanks.push(bankName);
+        this.customBanks.sort();
+
+        Utils.storage.set('custom_banks', this.customBanks);
+        return bankName;
+    },
+
+    /**
+     * Remove custom bank
+     */
+    removeCustomBank(bankName) {
+        if (!bankName) return;
+
+        const index = this.customBanks.indexOf(bankName);
+        if (index > -1) {
+            this.customBanks.splice(index, 1);
+            Utils.storage.set('custom_banks', this.customBanks);
+            return true;
+        }
+        return false;
+    },
+
+    /**
+     * Get all unique banks (standard + custom + from data)
+     */
+    getBanks() {
+        const standardBanks = ['GARANTİ BANKASI', 'NEARESTBANK', 'NEAR EAST BANK'];
+        const banks = new Set([...standardBanks, ...this.customBanks]);
+
+        // Add banks from existing checks
+        this.checks.forEach(check => {
+            if (check.banka) banks.add(check.banka.trim().toUpperCase());
+        });
+
+        return Array.from(banks).sort();
     },
 
     /**
@@ -370,6 +432,31 @@ const Data = {
         if (filters.bank) {
             var bankFilter = filters.bank;
             results = results.filter(function (c) { return c.banka === bankFilter; });
+        }
+
+        // Amount range filter
+        if (filters.minAmount || filters.maxAmount) {
+            results = results.filter(function (c) {
+                // Determine amount based on currency filter or check all
+                let amounts = [];
+                if (c.dolar) amounts.push(c.dolar);
+                if (c.euro) amounts.push(c.euro);
+                if (c.tl) amounts.push(c.tl);
+
+                // If specific currency selected, only check that amount
+                if (filters.currency === 'USD') amounts = c.dolar ? [c.dolar] : [];
+                if (filters.currency === 'EUR') amounts = c.euro ? [c.euro] : [];
+                if (filters.currency === 'TL') amounts = c.tl ? [c.tl] : [];
+
+                if (amounts.length === 0) return false;
+
+                const maxVal = Math.max(...amounts);
+
+                if (filters.minAmount && maxVal < filters.minAmount) return false;
+                if (filters.maxAmount && maxVal > filters.maxAmount) return false;
+
+                return true;
+            });
         }
 
         return results;
