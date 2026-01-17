@@ -73,21 +73,6 @@
                     </svg>
                     <span class="nav-item-text">Yeni Çek Ekle</span>
                 </a>
-                <a class="nav-item" id="export-btn">
-                    <svg class="nav-item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
-                    <span class="nav-item-text">JSON İndir</span>
-                </a>
-                <a class="nav-item" id="import-btn">
-                    <svg class="nav-item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
-                    </svg>
-                    <span class="nav-item-text">JSON İçe Aktar</span>
-                </a>
-                <input type="file" id="import-file" accept=".json" style="display: none;">
             </div>
 
             <div class="nav-section">
@@ -263,21 +248,39 @@
         </div>
 
         <!-- Toolbar -->
-        <div class="toolbar" style="margin-top: var(--space-8);">
+        <div class="toolbar">
             <div class="toolbar-left">
                 <div class="search-box">
-                    <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="search-icon" width="20" height="20" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
-                    <input type="text" id="search-input" placeholder="Firma veya çek no ara...">
+                    <input type="text" id="search-input" placeholder="Çek ara (Firma, Çek No, Banka)...">
                 </div>
                 <div class="quick-filters">
                     <button class="quick-filter active" data-filter="all">Tümü</button>
-                    <button class="quick-filter" data-filter="BEKLEMEDE">Bekleyen</button>
-                    <button class="quick-filter" data-filter="ÖDENDİ">Ödendi</button>
+                    <button class="quick-filter" data-filter="BEKLEMEDE">Bekleyenler</button>
+                    <button class="quick-filter" data-filter="ÖDENDİ">Ödenenler</button>
                     <button class="quick-filter" data-filter="İPTAL EDİLDİ">İptal</button>
                 </div>
+            </div>
+            <div class="toolbar-actions">
+                <button id="export-excel-btn" class="btn btn-secondary" title="Excel Olarak İndir">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    Excel İndir
+                </button>
+                <button id="import-btn" class="btn btn-secondary" title="JSON İçe Aktar">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                    </svg>
+                    JSON İçe Aktar
+                </button>
+                <input type="file" id="import-file" accept=".json" style="display: none;">
             </div>
         </div>
 
@@ -570,6 +573,7 @@
     </div>
 
     <!-- Scripts -->
+    <script src="https://cdn.sheetjs.com/xlsx-0.19.3/package/dist/xlsx.full.min.js"></script>
     <script src="js/config.js"></script>
     <script src="js/auth.js"></script>
     <script src="js/github.js"></script>

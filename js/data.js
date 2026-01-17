@@ -500,25 +500,56 @@ const Data = {
     },
 
     /**
-     * Export data as JSON
+     * Export data as Excel
      */
-    exportJSON: function () {
-        var data = {
-            checks: this.checks,
-            exportedAt: new Date().toISOString(),
-            totalChecks: this.checks.length
-        };
+    exportExcel: function () {
+        if (!this.checks || this.checks.length === 0) {
+            alert("İndirilecek veri bulunamadı.");
+            return false;
+        }
 
-        var blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-        var url = URL.createObjectURL(blob);
+        // Prepare data for Excel
+        var excelData = this.checks.map(function (check) {
+            return {
+                "ID": check.id,
+                "Firma Adı": check.firma_adi || "",
+                "Çek No": check.cek_no || "",
+                "Banka": check.banka || "",
+                "Tutar (USD)": check.dolar ? Number(check.dolar) : 0,
+                "Tutar (EUR)": check.euro ? Number(check.euro) : 0,
+                "Tutar (TL)": check.tl ? Number(check.tl) : 0,
+                "Tanzim Tarihi": check.cek_tanzim_tarihi || "",
+                "Vade Tarihi": check.vade_tarihi || "",
+                "Ödeme Durumu": check.odeme_durumu || "BEKLEMEDE",
+                "Oluşturulma Tarihi": check.createdAt || ""
+            };
+        });
 
-        var a = document.createElement('a');
-        a.href = url;
-        a.download = 'cek-takip-' + new Date().toISOString().split('T')[0] + '.json';
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
+        // Create workbook and worksheet
+        var wb = XLSX.utils.book_new();
+        var ws = XLSX.utils.json_to_sheet(excelData);
+
+        // Adjust column widths
+        var wscols = [
+            { wch: 5 },  // ID
+            { wch: 25 }, // Firma
+            { wch: 15 }, // Çek No
+            { wch: 20 }, // Banka
+            { wch: 15 }, // USD
+            { wch: 15 }, // EUR
+            { wch: 15 }, // TL
+            { wch: 15 }, // Tanzim
+            { wch: 15 }, // Vade
+            { wch: 15 }, // Durum
+            { wch: 20 }  // CreatedAt
+        ];
+        ws['!cols'] = wscols;
+
+        XLSX.utils.book_append_sheet(wb, ws, "Çek Listesi");
+
+        // Download
+        var fileName = 'cek-takip-' + new Date().toISOString().split('T')[0] + '.xlsx';
+        XLSX.writeFile(wb, fileName);
 
         return true;
     },

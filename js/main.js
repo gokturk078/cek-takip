@@ -142,12 +142,13 @@ const App = {
             });
         }
 
-        // Export button
-        var exportBtn = document.getElementById('export-btn');
+        // Export button (Excel)
+        var exportBtn = document.getElementById('export-excel-btn');
         if (exportBtn) {
             exportBtn.addEventListener('click', function () {
-                Data.exportJSON();
-                UI.showToast('success', 'Indirildi', 'JSON dosyasi indirildi.');
+                if (Data.exportExcel()) {
+                    UI.showToast('success', 'İndirildi', 'Excel dosyası başarıyla indirildi.');
+                }
             });
         }
 
