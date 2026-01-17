@@ -465,6 +465,24 @@
                     <p class="form-hint">Bildirimlerin gönderileceği email adresi</p>
                 </div>
 
+                <hr style="border: none; border-top: 1px solid var(--border-primary); margin: 24px 0;">
+
+                <div class="alert-banner alert-banner-info" style="margin-bottom: 20px;">
+                    <svg class="alert-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span class="alert-text">Verilerin kalıcı olması için GitHub Personal Access Token
+                        gereklidir.</span>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">GitHub Token</label>
+                    <input type="password" class="form-input" id="github-token" placeholder="ghp_xxxxxxxxxxxxxx">
+                    <p class="form-hint">GitHub Settings > Developer settings > Personal access tokens > Tokens
+                        (classic)</p>
+                </div>
+
                 <div class="notification-options">
                     <div class="notification-option">
                         <span class="notification-option-label">Vade uyarısı (1 gün kala)</span>
@@ -490,6 +508,7 @@
     <!-- Scripts -->
     <script src="js/config.js"></script>
     <script src="js/auth.js"></script>
+    <script src="js/github.js"></script>
     <script src="js/data.js"></script>
     <script src="js/ui.js"></script>
     <script src="js/charts.js"></script>

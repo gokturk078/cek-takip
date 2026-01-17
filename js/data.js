@@ -1,12 +1,13 @@
 /**
  * Data Module - Check Tracking System
- * Handles all data operations: CRUD, import/export, sync
+ * Handles all data operations with GitHub persistence
  */
 
 const Data = {
     checks: [],
     isLoaded: false,
     hasChanges: false,
+    isSaving: false,
 
     /**
      * Initialize data module
@@ -17,75 +18,118 @@ const Data = {
     },
 
     /**
-     * Load data from localStorage or JSON file
+     * Load data from GitHub
      */
     async loadData() {
-        // First try localStorage
-        const localData = Utils.storage.get(CONFIG.DATA_KEY);
-
-        if (localData && localData.checks && localData.checks.length > 0) {
-            this.checks = localData.checks;
-            this.isLoaded = true;
-            console.log('Loaded from localStorage:', this.checks.length, 'checks');
-            return;
-        }
-
-        // Otherwise load from JSON file
         try {
-            const response = await fetch(CONFIG.DATA_URL);
-            if (!response.ok) throw new Error('Failed to fetch data: ' + response.status);
+            // Try to load from GitHub first
+            var githubData = await GitHub.fetchData();
 
-            const data = await response.json();
+            if (githubData && githubData.checks) {
+                this.checks = githubData.checks;
+                this.isLoaded = true;
+                console.log('Loaded from GitHub:', this.checks.length, 'checks');
+                return;
+            }
+
+            // Fallback to local JSON file
+            console.log('Falling back to local JSON file...');
+            var response = await fetch(CONFIG.DATA_URL);
+            if (!response.ok) throw new Error('Failed to fetch local data');
+
+            var data = await response.json();
             this.checks = data.checks || [];
-            this.saveToLocal();
             this.isLoaded = true;
-            console.log('Loaded from JSON file:', this.checks.length, 'checks');
+            console.log('Loaded from local file:', this.checks.length, 'checks');
+
         } catch (error) {
             console.error('Error loading data:', error);
-            // Initialize with empty array instead of failing
             this.checks = [];
             this.isLoaded = true;
         }
     },
 
     /**
-     * Save data to localStorage
+     * Save data to GitHub
      */
-    saveToLocal() {
-        const data = {
-            checks: this.checks,
-            lastUpdated: new Date().toISOString()
-        };
-        Utils.storage.set(CONFIG.DATA_KEY, data);
-        this.hasChanges = true;
+    async saveToGitHub() {
+        if (this.isSaving) {
+            console.log('Already saving, skipping...');
+            return { success: false, error: 'Zaten kaydediliyor' };
+        }
+
+        this.isSaving = true;
+
+        try {
+            var data = {
+                checks: this.checks,
+                lastUpdated: new Date().toISOString(),
+                totalChecks: this.checks.length
+            };
+
+            var result = await GitHub.saveData(data);
+
+            if (result.success) {
+                this.hasChanges = false;
+                console.log('Data saved to GitHub successfully');
+            }
+
+            return result;
+
+        } catch (error) {
+            console.error('Error saving to GitHub:', error);
+            return { success: false, error: error.message };
+
+        } finally {
+            this.isSaving = false;
+        }
     },
 
     /**
      * Get all checks
      */
-    getAll() {
-        return [...this.checks];
+    getAll: function () {
+        return this.checks.slice();
     },
 
     /**
      * Get check by ID
      */
-    getById(id) {
-        return this.checks.find(check => check.id === id);
+    getById: function (id) {
+        return this.checks.find(function (check) {
+            return check.id === id;
+        });
     },
 
     /**
      * Add new check
      */
-    add(checkData) {
-        const newCheck = {
+    async add(checkData) {
+        var newCheck = {
             id: this.getNextId(),
-            ...checkData,
+            firma_adi: checkData.firma_adi,
+            cek_no: checkData.cek_no,
+            banka: checkData.banka,
+            cek_tanzim_tarihi: checkData.cek_tanzim_tarihi,
+            vade_tarihi: checkData.vade_tarihi,
+            dolar: checkData.dolar,
+            euro: checkData.euro,
+            tl: checkData.tl,
+            odeme_durumu: checkData.odeme_durumu || 'BEKLEMEDE',
             createdAt: new Date().toISOString()
         };
 
         this.checks.push(newCheck);
-        this.saveToLocal();
+        this.hasChanges = true;
+
+        // Save to GitHub
+        var result = await this.saveToGitHub();
+
+        if (!result.success) {
+            // Rollback on failure
+            this.checks.pop();
+            throw new Error(result.error || 'Kaydetme hatasi');
+        }
 
         return newCheck;
     },
@@ -93,191 +137,239 @@ const Data = {
     /**
      * Update existing check
      */
-    update(id, checkData) {
-        const index = this.checks.findIndex(check => check.id === id);
+    async update(id, checkData) {
+        var index = -1;
+        for (var i = 0; i < this.checks.length; i++) {
+            if (this.checks[i].id === id) {
+                index = i;
+                break;
+            }
+        }
+
         if (index === -1) return null;
 
-        this.checks[index] = {
-            ...this.checks[index],
-            ...checkData,
-            updatedAt: new Date().toISOString()
-        };
+        var oldCheck = Object.assign({}, this.checks[index]);
 
-        this.saveToLocal();
+        this.checks[index] = Object.assign({}, this.checks[index], checkData, {
+            updatedAt: new Date().toISOString()
+        });
+
+        this.hasChanges = true;
+
+        // Save to GitHub
+        var result = await this.saveToGitHub();
+
+        if (!result.success) {
+            // Rollback on failure
+            this.checks[index] = oldCheck;
+            throw new Error(result.error || 'Guncelleme hatasi');
+        }
+
         return this.checks[index];
     },
 
     /**
      * Delete check
      */
-    delete(id) {
-        const index = this.checks.findIndex(check => check.id === id);
+    async delete(id) {
+        var index = -1;
+        for (var i = 0; i < this.checks.length; i++) {
+            if (this.checks[i].id === id) {
+                index = i;
+                break;
+            }
+        }
+
         if (index === -1) return false;
 
-        this.checks.splice(index, 1);
-        this.saveToLocal();
+        var deletedCheck = this.checks.splice(index, 1)[0];
+        this.hasChanges = true;
+
+        // Save to GitHub
+        var result = await this.saveToGitHub();
+
+        if (!result.success) {
+            // Rollback on failure
+            this.checks.splice(index, 0, deletedCheck);
+            throw new Error(result.error || 'Silme hatasi');
+        }
+
         return true;
     },
 
     /**
      * Get next available ID
      */
-    getNextId() {
+    getNextId: function () {
         if (this.checks.length === 0) return 1;
-        const maxId = Math.max(...this.checks.map(c => c.id || 0));
+        var maxId = 0;
+        for (var i = 0; i < this.checks.length; i++) {
+            if (this.checks[i].id && this.checks[i].id > maxId) {
+                maxId = this.checks[i].id;
+            }
+        }
         return maxId + 1;
     },
 
     /**
      * Get statistics
      */
-    getStats() {
-        const total = this.checks.length;
-        const paid = this.checks.filter(c => c.odeme_durumu === 'ÖDENDİ').length;
-        const cancelled = this.checks.filter(c => c.odeme_durumu === 'İPTAL EDİLDİ').length;
-        const pending = total - paid - cancelled;
+    getStats: function () {
+        var total = this.checks.length;
+        var paid = 0, cancelled = 0;
+        var totalUSD = 0, totalEUR = 0, totalTL = 0;
+        var pendingUSD = 0, pendingEUR = 0, pendingTL = 0;
+        var todayStr = new Date().toISOString().split('T')[0];
+        var todayChecks = 0, weekChecks = 0;
 
-        // Calculate totals by currency
-        let totalUSD = 0, totalEUR = 0, totalTL = 0;
-        let pendingUSD = 0, pendingEUR = 0, pendingTL = 0;
+        for (var i = 0; i < this.checks.length; i++) {
+            var c = this.checks[i];
 
-        this.checks.forEach(check => {
-            if (check.dolar) totalUSD += check.dolar;
-            if (check.euro) totalEUR += check.euro;
-            if (check.tl) totalTL += check.tl;
+            if (c.odeme_durumu === 'ÖDENDİ') paid++;
+            if (c.odeme_durumu === 'İPTAL EDİLDİ') cancelled++;
 
-            if (check.odeme_durumu !== 'ÖDENDİ' && check.odeme_durumu !== 'İPTAL EDİLDİ') {
-                if (check.dolar) pendingUSD += check.dolar;
-                if (check.euro) pendingEUR += check.euro;
-                if (check.tl) pendingTL += check.tl;
+            if (c.dolar) totalUSD += c.dolar;
+            if (c.euro) totalEUR += c.euro;
+            if (c.tl) totalTL += c.tl;
+
+            var isPending = c.odeme_durumu !== 'ÖDENDİ' && c.odeme_durumu !== 'İPTAL EDİLDİ';
+
+            if (isPending) {
+                if (c.dolar) pendingUSD += c.dolar;
+                if (c.euro) pendingEUR += c.euro;
+                if (c.tl) pendingTL += c.tl;
+
+                if (c.vade_tarihi === todayStr) todayChecks++;
+                if (Utils.isDateInRange(c.vade_tarihi, 7)) weekChecks++;
             }
-        });
-
-        // Today's checks
-        const today = new Date().toISOString().split('T')[0];
-        const todayChecks = this.checks.filter(c =>
-            c.vade_tarihi === today &&
-            c.odeme_durumu !== 'ÖDENDİ' &&
-            c.odeme_durumu !== 'İPTAL EDİLDİ'
-        ).length;
-
-        // This week's checks
-        const weekChecks = this.checks.filter(c =>
-            Utils.isDateInRange(c.vade_tarihi, 7) &&
-            c.odeme_durumu !== 'ÖDENDİ' &&
-            c.odeme_durumu !== 'İPTAL EDİLDİ'
-        ).length;
+        }
 
         return {
-            total,
-            paid,
-            pending,
-            cancelled,
-            todayChecks,
-            weekChecks,
-            totalUSD,
-            totalEUR,
-            totalTL,
-            pendingUSD,
-            pendingEUR,
-            pendingTL
+            total: total,
+            paid: paid,
+            pending: total - paid - cancelled,
+            cancelled: cancelled,
+            todayChecks: todayChecks,
+            weekChecks: weekChecks,
+            totalUSD: totalUSD,
+            totalEUR: totalEUR,
+            totalTL: totalTL,
+            pendingUSD: pendingUSD,
+            pendingEUR: pendingEUR,
+            pendingTL: pendingTL
         };
     },
 
     /**
      * Get upcoming checks (within specified days)
      */
-    getUpcoming(days = 7) {
-        const today = new Date();
+    getUpcoming: function (days) {
+        days = days || 7;
+        var today = new Date();
         today.setHours(0, 0, 0, 0);
 
-        return this.checks
-            .filter(check => {
-                if (check.odeme_durumu === 'ÖDENDİ' || check.odeme_durumu === 'İPTAL EDİLDİ') {
-                    return false;
-                }
+        var upcoming = [];
 
-                if (!check.vade_tarihi) return false;
+        for (var i = 0; i < this.checks.length; i++) {
+            var check = this.checks[i];
 
-                const dueDate = new Date(check.vade_tarihi);
-                dueDate.setHours(0, 0, 0, 0);
+            if (check.odeme_durumu === 'ÖDENDİ' || check.odeme_durumu === 'İPTAL EDİLDİ') {
+                continue;
+            }
 
-                const diffDays = Math.ceil((dueDate - today) / (1000 * 60 * 60 * 24));
-                return diffDays >= 0 && diffDays <= days;
-            })
-            .sort((a, b) => new Date(a.vade_tarihi) - new Date(b.vade_tarihi));
+            if (!check.vade_tarihi) continue;
+
+            var dueDate = new Date(check.vade_tarihi);
+            dueDate.setHours(0, 0, 0, 0);
+
+            var diffDays = Math.ceil((dueDate - today) / (1000 * 60 * 60 * 24));
+            if (diffDays >= 0 && diffDays <= days) {
+                upcoming.push(check);
+            }
+        }
+
+        upcoming.sort(function (a, b) {
+            return new Date(a.vade_tarihi) - new Date(b.vade_tarihi);
+        });
+
+        return upcoming;
     },
 
     /**
      * Get overdue checks
      */
-    getOverdue() {
-        const today = new Date();
+    getOverdue: function () {
+        var today = new Date();
         today.setHours(0, 0, 0, 0);
 
-        return this.checks.filter(check => {
+        var overdue = [];
+
+        for (var i = 0; i < this.checks.length; i++) {
+            var check = this.checks[i];
+
             if (check.odeme_durumu === 'ÖDENDİ' || check.odeme_durumu === 'İPTAL EDİLDİ') {
-                return false;
+                continue;
             }
 
-            if (!check.vade_tarihi) return false;
+            if (!check.vade_tarihi) continue;
 
-            const dueDate = new Date(check.vade_tarihi);
+            var dueDate = new Date(check.vade_tarihi);
             dueDate.setHours(0, 0, 0, 0);
 
-            return dueDate < today;
-        });
+            if (dueDate < today) {
+                overdue.push(check);
+            }
+        }
+
+        return overdue;
     },
 
     /**
      * Search and filter checks
      */
-    search(query, filters = {}) {
-        let results = [...this.checks];
+    search: function (query, filters) {
+        filters = filters || {};
+        var results = this.checks.slice();
 
         // Text search
         if (query) {
-            const q = query.toLowerCase().trim();
-            results = results.filter(check =>
-                (check.firma_adi && check.firma_adi.toLowerCase().includes(q)) ||
-                (check.cek_no && check.cek_no.toLowerCase().includes(q)) ||
-                (check.banka && check.banka.toLowerCase().includes(q))
-            );
+            var q = query.toLowerCase().trim();
+            results = results.filter(function (check) {
+                return (check.firma_adi && check.firma_adi.toLowerCase().indexOf(q) !== -1) ||
+                    (check.cek_no && check.cek_no.toLowerCase().indexOf(q) !== -1) ||
+                    (check.banka && check.banka.toLowerCase().indexOf(q) !== -1);
+            });
         }
 
         // Status filter
         if (filters.status) {
             if (filters.status === 'BEKLEMEDE') {
-                results = results.filter(c =>
-                    c.odeme_durumu !== 'ÖDENDİ' && c.odeme_durumu !== 'İPTAL EDİLDİ'
-                );
+                results = results.filter(function (c) {
+                    return c.odeme_durumu !== 'ÖDENDİ' && c.odeme_durumu !== 'İPTAL EDİLDİ';
+                });
             } else {
-                results = results.filter(c => c.odeme_durumu === filters.status);
+                var statusFilter = filters.status;
+                results = results.filter(function (c) {
+                    return c.odeme_durumu === statusFilter;
+                });
             }
         }
 
         // Currency filter
         if (filters.currency) {
             if (filters.currency === 'USD') {
-                results = results.filter(c => c.dolar && c.dolar > 0);
+                results = results.filter(function (c) { return c.dolar && c.dolar > 0; });
             } else if (filters.currency === 'EUR') {
-                results = results.filter(c => c.euro && c.euro > 0);
+                results = results.filter(function (c) { return c.euro && c.euro > 0; });
             } else if (filters.currency === 'TL') {
-                results = results.filter(c => c.tl && c.tl > 0);
+                results = results.filter(function (c) { return c.tl && c.tl > 0; });
             }
         }
 
         // Bank filter
         if (filters.bank) {
-            results = results.filter(c => c.banka === filters.bank);
-        }
-
-        // Date range filter
-        if (filters.dateFrom) {
-            results = results.filter(c => c.vade_tarihi >= filters.dateFrom);
-        }
-        if (filters.dateTo) {
-            results = results.filter(c => c.vade_tarihi <= filters.dateTo);
+            var bankFilter = filters.bank;
+            results = results.filter(function (c) { return c.banka === bankFilter; });
         }
 
         return results;
@@ -286,23 +378,24 @@ const Data = {
     /**
      * Sort checks
      */
-    sort(checks, column, direction = 'asc') {
-        return [...checks].sort((a, b) => {
-            let valA = a[column];
-            let valB = b[column];
+    sort: function (checks, column, direction) {
+        direction = direction || 'asc';
 
-            // Handle null values
+        return checks.slice().sort(function (a, b) {
+            var valA = a[column];
+            var valB = b[column];
+
             if (valA === null || valA === undefined) valA = '';
             if (valB === null || valB === undefined) valB = '';
 
             // Handle date columns
-            if (column.includes('tarihi')) {
+            if (column.indexOf('tarihi') !== -1) {
                 valA = valA ? new Date(valA).getTime() : 0;
                 valB = valB ? new Date(valB).getTime() : 0;
             }
 
             // Handle numeric columns
-            if (['dolar', 'euro', 'tl', 'id'].includes(column)) {
+            if (column === 'dolar' || column === 'euro' || column === 'tl' || column === 'id') {
                 valA = Number(valA) || 0;
                 valB = Number(valB) || 0;
             }
@@ -322,19 +415,19 @@ const Data = {
     /**
      * Export data as JSON
      */
-    exportJSON() {
-        const data = {
+    exportJSON: function () {
+        var data = {
             checks: this.checks,
             exportedAt: new Date().toISOString(),
             totalChecks: this.checks.length
         };
 
-        const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-        const url = URL.createObjectURL(blob);
+        var blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+        var url = URL.createObjectURL(blob);
 
-        const a = document.createElement('a');
+        var a = document.createElement('a');
         a.href = url;
-        a.download = `cek-takip-${new Date().toISOString().split('T')[0]}.json`;
+        a.download = 'cek-takip-' + new Date().toISOString().split('T')[0] + '.json';
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
@@ -346,73 +439,63 @@ const Data = {
     /**
      * Import data from JSON file
      */
-    async importJSON(file) {
-        return new Promise((resolve, reject) => {
-            const reader = new FileReader();
+    importJSON: function (file) {
+        var self = this;
+        return new Promise(function (resolve, reject) {
+            var reader = new FileReader();
 
-            reader.onload = (e) => {
+            reader.onload = async function (e) {
                 try {
-                    const data = JSON.parse(e.target.result);
+                    var data = JSON.parse(e.target.result);
 
                     if (!data.checks || !Array.isArray(data.checks)) {
-                        reject(new Error('Geçersiz dosya formatı'));
+                        reject(new Error('Gecersiz dosya formati'));
                         return;
                     }
 
-                    this.checks = data.checks;
-                    this.saveToLocal();
-                    resolve({ count: this.checks.length });
+                    self.checks = data.checks;
+
+                    // Save to GitHub
+                    var result = await self.saveToGitHub();
+
+                    if (result.success) {
+                        resolve({ count: self.checks.length });
+                    } else {
+                        reject(new Error(result.error || 'GitHub kayit hatasi'));
+                    }
+
                 } catch (error) {
-                    reject(new Error('JSON dosyası okunamadı'));
+                    reject(new Error('JSON dosyasi okunamadi'));
                 }
             };
 
-            reader.onerror = () => reject(new Error('Dosya okunamadı'));
+            reader.onerror = function () {
+                reject(new Error('Dosya okunamadi'));
+            };
+
             reader.readAsText(file);
         });
     },
 
     /**
-     * Reset to original data from JSON file
-     */
-    async resetToOriginal() {
-        Utils.storage.remove(CONFIG.DATA_KEY);
-        await this.loadData();
-        return this.checks;
-    },
-
-    /**
-     * Get unique companies
-     */
-    getCompanies() {
-        const companies = new Set(this.checks.map(c => c.firma_adi).filter(Boolean));
-        return Array.from(companies).sort();
-    },
-
-    /**
-     * Get checks by company
-     */
-    getByCompany(companyName) {
-        return this.checks.filter(c => c.firma_adi === companyName);
-    },
-
-    /**
      * Get checks that need notification
      */
-    getChecksForNotification() {
-        const result = {
+    getChecksForNotification: function () {
+        var result = {
             today: [],
             in3Days: [],
             in7Days: []
         };
 
-        this.checks.forEach(check => {
+        for (var i = 0; i < this.checks.length; i++) {
+            var check = this.checks[i];
+
             if (check.odeme_durumu === 'ÖDENDİ' || check.odeme_durumu === 'İPTAL EDİLDİ') {
-                return;
+                continue;
             }
 
-            const days = Utils.daysUntil(check.vade_tarihi);
-            if (days === null) return;
+            var days = Utils.daysUntil(check.vade_tarihi);
+            if (days === null) continue;
 
             if (days === 0 || days === 1) {
                 result.today.push(check);
@@ -421,7 +504,7 @@ const Data = {
             } else if (days === 7) {
                 result.in7Days.push(check);
             }
-        });
+        }
 
         return result;
     }

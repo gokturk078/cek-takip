@@ -479,17 +479,31 @@ const UI = {
         const check = Data.getById(id);
         if (!check) return;
 
+        const self = this;
+
         document.getElementById('delete-check-info').innerHTML = `
       <strong>${Utils.escapeHtml(check.firma_adi)}</strong><br>
       Çek No: ${Utils.escapeHtml(check.cek_no) || '-'}<br>
       Vade: ${Utils.formatDate(check.vade_tarihi)}
     `;
 
-        document.getElementById('confirm-delete-btn').onclick = () => {
-            Data.delete(id);
-            this.closeAllModals();
-            this.render();
-            this.showToast('success', 'Silindi', 'Çek başarıyla silindi.');
+        document.getElementById('confirm-delete-btn').onclick = async function () {
+            const btn = document.getElementById('confirm-delete-btn');
+            const originalText = btn.textContent;
+            btn.disabled = true;
+            btn.textContent = 'Siliniyor...';
+
+            try {
+                await Data.delete(id);
+                self.closeAllModals();
+                self.render();
+                self.showToast('success', 'Silindi', 'Çek GitHub\'dan silindi.');
+            } catch (error) {
+                self.showToast('danger', 'Hata', error.message || 'Silme hatası oluştu.');
+            } finally {
+                btn.disabled = false;
+                btn.textContent = originalText;
+            }
         };
 
         this.elements.deleteModal.classList.add('active');
@@ -498,7 +512,7 @@ const UI = {
     /**
      * Handle form submit
      */
-    handleFormSubmit() {
+    async handleFormSubmit() {
         const id = document.getElementById('check-id').value;
 
         const checkData = {
@@ -529,18 +543,36 @@ const UI = {
             return;
         }
 
-        if (id) {
-            // Update
-            Data.update(parseInt(id), checkData);
-            this.showToast('success', 'Güncellendi', 'Çek bilgileri güncellendi.');
-        } else {
-            // Add new
-            Data.add(checkData);
-            this.showToast('success', 'Eklendi', 'Yeni çek başarıyla eklendi.');
+        // Show saving indicator
+        const saveBtn = document.querySelector('#check-form button[type="submit"], button[form="check-form"]');
+        const originalText = saveBtn ? saveBtn.textContent : 'Kaydet';
+        if (saveBtn) {
+            saveBtn.disabled = true;
+            saveBtn.textContent = 'Kaydediliyor...';
         }
 
-        this.closeAllModals();
-        this.render();
+        try {
+            if (id) {
+                // Update
+                await Data.update(parseInt(id), checkData);
+                this.showToast('success', 'Güncellendi', 'Çek bilgileri GitHub\'a kaydedildi.');
+            } else {
+                // Add new
+                await Data.add(checkData);
+                this.showToast('success', 'Eklendi', 'Yeni çek GitHub\'a kaydedildi.');
+            }
+
+            this.closeAllModals();
+            this.render();
+
+        } catch (error) {
+            this.showToast('danger', 'Hata', error.message || 'Kaydetme hatası oluştu.');
+        } finally {
+            if (saveBtn) {
+                saveBtn.disabled = false;
+                saveBtn.textContent = originalText;
+            }
+        }
     },
 
     /**
@@ -561,13 +593,20 @@ const UI = {
         // Load current settings
         const settings = Utils.storage.get(CONFIG.SETTINGS_KEY, {
             emailjs: CONFIG.EMAILJS,
-            notifications: CONFIG.NOTIFICATION_DAYS
+            notifications: CONFIG.NOTIFICATION_DAYS,
+            github_token: ''
         });
 
         document.getElementById('emailjs-service').value = settings.emailjs?.SERVICE_ID || '';
         document.getElementById('emailjs-template').value = settings.emailjs?.TEMPLATE_ID || '';
         document.getElementById('emailjs-key').value = settings.emailjs?.PUBLIC_KEY || '';
         document.getElementById('emailjs-to').value = settings.emailjs?.TO_EMAIL || '';
+
+        // GitHub token
+        var githubTokenInput = document.getElementById('github-token');
+        if (githubTokenInput) {
+            githubTokenInput.value = settings.github_token || '';
+        }
 
         this.elements.settingsModal.classList.add('active');
     },
@@ -583,7 +622,8 @@ const UI = {
                 PUBLIC_KEY: document.getElementById('emailjs-key').value.trim(),
                 TO_EMAIL: document.getElementById('emailjs-to').value.trim()
             },
-            notifications: CONFIG.NOTIFICATION_DAYS
+            notifications: CONFIG.NOTIFICATION_DAYS,
+            github_token: document.getElementById('github-token')?.value.trim() || ''
         };
 
         Utils.storage.set(CONFIG.SETTINGS_KEY, settings);
@@ -592,7 +632,12 @@ const UI = {
         CONFIG.EMAILJS = settings.emailjs;
 
         this.closeAllModals();
-        this.showToast('success', 'Kaydedildi', 'Ayarlar başarıyla kaydedildi.');
+        this.showToast('success', 'Kaydedildi', 'Ayarlar başarıyla kaydedildi. Sayfa yenileniyor...');
+
+        // Reload page to apply GitHub token
+        setTimeout(function () {
+            window.location.reload();
+        }, 1500);
     },
 
     /**
