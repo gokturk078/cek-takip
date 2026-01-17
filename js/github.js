@@ -1,6 +1,7 @@
 /**
  * GitHub API Module - Check Tracking System
  * Handles data persistence via GitHub API
+ * UTF-8 Compatible
  */
 
 const GitHub = {
@@ -12,7 +13,7 @@ const GitHub = {
         filePath: 'data/checks.json'
     },
 
-    // Encoded token (decoded at runtime for security)
+    // Encoded token (decoded at runtime)
     _t: ['Z2hwXzJoaVBod0hUMGhreEVOM0JM', 'VTB1VXNTakgxbDJISjNrbE1jNg=='],
 
     // Current file SHA (needed for updates)
@@ -30,6 +31,32 @@ const GitHub = {
     },
 
     /**
+     * UTF-8 safe base64 encode
+     */
+    utf8ToBase64: function (str) {
+        // First encode UTF-8, then convert to base64
+        var utf8Bytes = new TextEncoder().encode(str);
+        var binaryString = '';
+        for (var i = 0; i < utf8Bytes.length; i++) {
+            binaryString += String.fromCharCode(utf8Bytes[i]);
+        }
+        return btoa(binaryString);
+    },
+
+    /**
+     * UTF-8 safe base64 decode
+     */
+    base64ToUtf8: function (base64) {
+        // First decode base64, then decode UTF-8
+        var binaryString = atob(base64);
+        var bytes = new Uint8Array(binaryString.length);
+        for (var i = 0; i < binaryString.length; i++) {
+            bytes[i] = binaryString.charCodeAt(i);
+        }
+        return new TextDecoder('utf-8').decode(bytes);
+    },
+
+    /**
      * Get the API URL for the file
      */
     getApiUrl: function () {
@@ -41,6 +68,7 @@ const GitHub = {
      */
     async fetchData() {
         var token = this.getToken();
+        var self = this;
 
         if (!token) {
             console.log('Token not available, fetching from raw URL...');
@@ -78,8 +106,8 @@ const GitHub = {
             // Store SHA for future updates
             this.currentSHA = data.sha;
 
-            // Decode base64 content
-            var content = atob(data.content);
+            // Decode base64 content with UTF-8 support
+            var content = this.base64ToUtf8(data.content.replace(/\n/g, ''));
             var jsonData = JSON.parse(content);
 
             console.log('Data fetched from GitHub API:', jsonData.checks.length, 'checks');
@@ -96,6 +124,7 @@ const GitHub = {
      */
     async saveData(data) {
         var token = this.getToken();
+        var self = this;
 
         if (!token) {
             return { success: false, error: 'Token bulunamadi' };
@@ -120,13 +149,13 @@ const GitHub = {
                 }
             }
 
-            // Prepare content
+            // Prepare content with UTF-8 safe encoding
             var content = JSON.stringify(data, null, 2);
-            var encodedContent = btoa(unescape(encodeURIComponent(content)));
+            var encodedContent = this.utf8ToBase64(content);
 
             // Create commit
             var body = {
-                message: 'Cek verisi guncellendi - ' + new Date().toLocaleString('tr-TR'),
+                message: 'Çek verisi güncellendi - ' + new Date().toLocaleString('tr-TR'),
                 content: encodedContent,
                 branch: this.config.branch
             };
