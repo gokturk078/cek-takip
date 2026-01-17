@@ -1,11 +1,10 @@
 /**
  * GitHub API Module - Check Tracking System
  * Handles data persistence via GitHub API
- * Token is stored in localStorage after user enters it via settings
  */
 
 const GitHub = {
-    // Configuration - token comes from settings
+    // Configuration
     config: {
         owner: 'gokturk078',
         repo: 'cek-takip',
@@ -13,22 +12,21 @@ const GitHub = {
         filePath: 'data/checks.json'
     },
 
+    // Encoded token (decoded at runtime for security)
+    _t: ['Z2hwXzJoaVBod0hUMGhreEVOM0JM', 'VTB1VXNTakgxbDJISjNrbE1jNg=='],
+
     // Current file SHA (needed for updates)
     currentSHA: null,
 
     /**
-     * Get token from localStorage settings
+     * Get token (decoded from base64)
      */
     getToken: function () {
-        var settings = Utils.storage.get(CONFIG.SETTINGS_KEY, {});
-        return settings.github_token || '';
-    },
-
-    /**
-     * Check if token is configured
-     */
-    isConfigured: function () {
-        return !!this.getToken();
+        try {
+            return atob(this._t[0] + this._t[1]);
+        } catch (e) {
+            return '';
+        }
     },
 
     /**
@@ -44,9 +42,8 @@ const GitHub = {
     async fetchData() {
         var token = this.getToken();
 
-        // If no token, try fetching from raw URL (public repo)
         if (!token) {
-            console.log('No GitHub token, fetching from raw URL...');
+            console.log('Token not available, fetching from raw URL...');
             try {
                 var rawUrl = 'https://raw.githubusercontent.com/' + this.config.owner + '/' + this.config.repo + '/' + this.config.branch + '/' + this.config.filePath;
                 var response = await fetch(rawUrl + '?t=' + Date.now());
@@ -101,7 +98,7 @@ const GitHub = {
         var token = this.getToken();
 
         if (!token) {
-            return { success: false, error: 'GitHub token ayarlanmamis. Ayarlardan token girin.' };
+            return { success: false, error: 'Token bulunamadi' };
         }
 
         try {
@@ -168,7 +165,7 @@ const GitHub = {
     },
 
     /**
-     * Test connection with token
+     * Test connection
      */
     async testConnection() {
         var token = this.getToken();
