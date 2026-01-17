@@ -2411,8 +2411,20 @@
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2026-05-25",
       "odeme_durumu": "BEKLEMEDE"
+    },
+    {
+      "id": 202,
+      "firma_adi": "göktürk",
+      "cek_no": "23423432",
+      "cek_tanzim_tarihi": "2026-01-31",
+      "vade_tarihi": "2026-01-31",
+      "dolar": 3243432,
+      "euro": null,
+      "tl": null,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-01-17T14:46:43.737Z"
     }
   ],
-  "lastUpdated": "2026-01-17T13:37:45.342Z",
-  "totalChecks": 201
+  "lastUpdated": "2026-01-17T14:46:43.737Z",
+  "totalChecks": 202
 }
