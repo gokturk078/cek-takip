@@ -2822,8 +2822,21 @@
       "tl": null,
       "odeme_durumu": "BEKLEMEDE",
       "createdAt": "2026-01-23T14:45:44.895Z"
+    },
+    {
+      "id": 230,
+      "firma_adi": "BLACKBOX XR TEKNOLOJİ",
+      "cek_no": "0545912",
+      "banka": "GARANTİ BANKASI",
+      "cek_tanzim_tarihi": "2026-01-22",
+      "vade_tarihi": "2026-02-25",
+      "dolar": null,
+      "euro": null,
+      "tl": 2375650,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-01-23T16:53:34.844Z"
     }
   ],
-  "lastUpdated": "2026-01-23T14:45:44.895Z",
-  "totalChecks": 229
+  "lastUpdated": "2026-01-23T16:53:34.844Z",
+  "totalChecks": 230
 }
