@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AS Çek Takip Sistemi - Profesyonel Çek Yönetimi">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Dashboard - AS Çek Takip Sistemi</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="site-logo-tr.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Sidebar Overlay (Mobile) -->
+    <div class="sidebar-overlay"></div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <img src="site-logo-tr.png" alt="AS Teknolojik">
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <div class="nav-section">
+                <div class="nav-section-title">Ana Menü</div>
+                <a class="nav-item active" data-page="dashboard">
+                    <svg class="nav-item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                    </svg>
+                    <span class="nav-item-text">Dashboard</span>
+                </a>
+                <a class="nav-item" data-page="checks">
+                    <svg class="nav-item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    <span class="nav-item-text">Tüm Çekler</span>
+                    <span class="nav-item-badge" id="total-badge">0</span>
+                </a>
+                <a class="nav-item" data-page="pending">
+                    <svg class="nav-item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span class="nav-item-text">Bekleyenler</span>
+                    <span class="nav-item-badge" id="pending-badge" style="background: var(--warning);">0</span>
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">İşlemler</div>
+                <a class="nav-item admin-only" id="add-check-btn">
+                    <svg class="nav-item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                    </svg>
+                    <span class="nav-item-text">Yeni Çek Ekle</span>
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">Ayarlar</div>
+                <a class="nav-item" id="settings-btn" data-page="settings">
+                    <svg class="nav-item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <span class="nav-item-text">Email Ayarları</span>
+                </a>
+            </div>
+
+            <!-- Admin Section -->
+            <div class="nav-section" style="margin-top: auto;">
+                <a class="nav-item admin-btn" id="admin-btn">
+                    <svg class="nav-item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    </svg>
+                    <span class="nav-item-text">Yönetici Paneli</span>
+                    <span class="admin-badge">Admin</span>
+                </a>
+            </div>
+        </nav>
+
+        <div class="sidebar-footer">
+            <button class="btn btn-ghost" id="logout-btn" style="width: 100%; justify-content: flex-start;">
+                <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                </svg>
+                Çıkış Yap
+            </button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Developer Badge -->
+        <div class="developer-badge">
+            <span class="badge-icon">✨</span>
+            <span class="badge-text" style="font-style: italic;">Tonyukuk tarafından geliştirilmiştir</span>
+        </div>
+
+        <!-- Mobile Header -->
+        <header class="mobile-header">
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <img src="site-logo-tr.png" alt="Logo" class="mobile-logo">
+            <button class="btn btn-ghost btn-icon-only btn-sm" id="logout-btn-mobile">
+                <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                </svg>
+            </button>
+        </header>
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <div>
+                <h1 class="page-title">Çek Takip Paneli</h1>
+                <p class="page-subtitle">Hoş geldiniz! Tüm çek işlemlerinizi buradan yönetebilirsiniz.</p>
+            </div>
+            <button class="btn btn-primary admin-only" id="add-check-btn-header">
+                <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                </svg>
+                Yeni Çek
+            </button>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-card" style="--stat-color: var(--primary);">
+                <div class="stat-card-header">
+                    <div class="stat-card-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="stat-card-label">Toplam Çek</div>
+                <div class="stat-card-value" id="stat-total">0</div>
+            </div>
+
+            <div class="stat-card" style="--stat-color: var(--danger);">
+                <div class="stat-card-header">
+                    <div class="stat-card-icon" style="background: rgba(239, 68, 68, 0.1); color: var(--danger);">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="stat-card-label">Bugün Vadeli</div>
+                <div class="stat-card-value" id="stat-today">0</div>
+            </div>
+
+            <div class="stat-card" style="--stat-color: var(--warning);">
+                <div class="stat-card-header">
+                    <div class="stat-card-icon" style="background: rgba(245, 158, 11, 0.1); color: var(--warning);">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="stat-card-label">Bu Hafta</div>
+                <div class="stat-card-value" id="stat-week">0</div>
+            </div>
+
+            <div class="stat-card" style="--stat-color: var(--info);">
+                <div class="stat-card-header">
+                    <div class="stat-card-icon" style="background: rgba(59, 130, 246, 0.1); color: var(--info);">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="stat-card-label">Bekleyen</div>
+                <div class="stat-card-value" id="stat-pending">0</div>
+            </div>
+
+            <div class="stat-card" style="--stat-color: var(--success);">
+                <div class="stat-card-header">
+                    <div class="stat-card-icon" style="background: rgba(16, 185, 129, 0.1); color: var(--success);">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="stat-card-label">Ödendi</div>
+                <div class="stat-card-value" id="stat-paid">0</div>
+            </div>
+        </div>
+
+        <!-- Dashboard Grid -->
+        <div class="dashboard-grid">
+            <!-- Charts -->
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3 class="chart-title">Para Birimi Dağılımı</h3>
+                </div>
+                <div class="chart-container">
+                    <canvas id="currency-chart"></canvas>
+                </div>
+            </div>
+
+            <!-- Upcoming Checks -->
+            <div class="upcoming-card">
+                <div class="upcoming-header">
+                    <div class="upcoming-title">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        Yaklaşan Vadeler
+                    </div>
+                    <span class="upcoming-count" id="upcoming-count">0</span>
+                </div>
+                <div class="upcoming-list" id="upcoming-list">
+                    <!-- Rendered by JS -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary Row -->
+        <div class="summary-row">
+            <div class="summary-card">
+                <div class="summary-card-title">Bekleyen USD</div>
+                <div class="summary-card-value usd" id="summary-usd">$0.00</div>
+            </div>
+            <div class="summary-card">
+                <div class="summary-card-title">Bekleyen EUR</div>
+                <div class="summary-card-value eur" id="summary-eur">€0.00</div>
+            </div>
+            <div class="summary-card">
+                <div class="summary-card-title">Bekleyen TL</div>
+                <div class="summary-card-value try" id="summary-tl">₺0.00</div>
+            </div>
+        </div>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <div class="toolbar-left">
+                <div class="search-box">
+                    <svg class="search-icon" width="20" height="20" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    <input type="text" id="search-input" placeholder="Çek ara (Firma, Çek No, Banka)...">
+                </div>
+                <div class="quick-filters">
+                    <button class="quick-filter active" data-filter="all">Tümü</button>
+                    <button class="quick-filter" data-filter="BEKLEMEDE">Bekleyenler</button>
+                    <button class="quick-filter" data-filter="ÖDENDİ">Ödenenler</button>
+                    <button class="quick-filter" data-filter="İPTAL EDİLDİ">İptal</button>
+                </div>
+            </div>
+            <div class="toolbar-actions">
+                <button id="export-excel-btn" class="btn btn-secondary" title="Excel Olarak İndir">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    Excel İndir
+                </button>
+                <button id="import-btn" class="btn btn-secondary" title="JSON İçe Aktar">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                    </svg>
+                    JSON İçe Aktar
+                </button>
+                <input type="file" id="import-file" accept=".json" style="display: none;">
+            </div>
+        </div>
+
+        <!-- Advanced Filters -->
+        <div class="advanced-filters"
+            style="margin-top: var(--space-4); display: flex; gap: 12px; flex-wrap: wrap; align-items: center; padding: 16px; background: var(--bg-secondary); border-radius: var(--radius-lg); border: 1px solid var(--border-primary);">
+            <div class="filter-group" style="display: flex; align-items: center; gap: 8px;">
+                <label style="font-size: 13px; color: var(--text-secondary); white-space: nowrap;">Banka:</label>
+                <select id="filter-bank" class="form-select"
+                    style="min-width: 160px; padding: 8px 12px; font-size: 13px;">
+                    <option value="">Tümü</option>
+                </select>
+            </div>
+            <div class="filter-group" style="display: flex; align-items: center; gap: 8px;">
+                <label style="font-size: 13px; color: var(--text-secondary); white-space: nowrap;">Para Birimi:</label>
+                <select id="filter-currency" class="form-select"
+                    style="min-width: 100px; padding: 8px 12px; font-size: 13px;">
+                    <option value="">Tümü</option>
+                    <option value="USD">$ Dolar</option>
+                    <option value="EUR">€ Euro</option>
+                    <option value="TL">₺ TL</option>
+                </select>
+            </div>
+            <div class="filter-group" style="display: flex; align-items: center; gap: 8px;">
+                <label style="font-size: 13px; color: var(--text-secondary); white-space: nowrap;">Tutar:</label>
+                <input type="number" id="filter-min-amount" class="form-input" placeholder="Min"
+                    style="width: 100px; padding: 8px 12px; font-size: 13px;">
+                <span style="color: var(--text-muted);">-</span>
+                <input type="number" id="filter-max-amount" class="form-input" placeholder="Max"
+                    style="width: 100px; padding: 8px 12px; font-size: 13px;">
+            </div>
+            <button id="clear-filters-btn" class="btn btn-ghost" style="padding: 8px 16px; font-size: 13px;">
+                <svg style="width: 14px; height: 14px; margin-right: 4px;" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+                Temizle
+            </button>
+        </div>
+
+        <!-- Table -->
+        <div class="table-wrapper">
+            <table class="table check-table">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Firma</th>
+                        <th class="hide-mobile">Çek No</th>
+                        <th>Tutar</th>
+                        <th class="hide-mobile">Banka</th>
+                        <th>Vade</th>
+                        <th>Durum</th>
+                        <th>İşlem</th>
+                    </tr>
+                </thead>
+                <tbody id="checks-table-body">
+                    <!-- Rendered by JS -->
+                </tbody>
+            </table>
+
+            <div class="pagination">
+                <div class="pagination-info" id="pagination-info">0 kayıt</div>
+                <div class="pagination-controls" id="pagination">
+                    <!-- Rendered by JS -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Check Modal -->
+    <div class="modal-backdrop" id="check-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-title">Yeni Çek Ekle</h3>
+                <button class="modal-close" data-dismiss="modal">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="check-form">
+                    <input type="hidden" id="check-id">
+
+                    <div style="display: grid; grid-template-columns: 1fr; gap: 12px; margin-bottom: 12px;">
+                        <div class="form-group">
+                            <label class="form-label required" style="margin-bottom: 4px;">Firma Adı</label>
+                            <input type="text" class="form-input" id="check-firma" required style="padding: 8px 12px;">
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
+                        <div class="form-group">
+                            <label class="form-label" style="margin-bottom: 4px;">Çek No</label>
+                            <input type="text" class="form-input" id="check-no" style="padding: 8px 12px;">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" style="margin-bottom: 4px;">Banka</label>
+                            <select class="form-select" id="check-banka" onchange="UI.handleBankChange(this)"
+                                style="padding: 8px 12px;">
+                                <option value="">Seçin</option>
+                                <option value="GARANTİ BANKASI">GARANTİ BANKASI</option>
+                                <option value="NEARESTBANK">NEARESTBANK</option>
+                                <option value="NEAR EAST BANK">NEAR EAST BANK</option>
+                                <option value="__custom__">➕ Diğer (Yeni Ekle)</option>
+                            </select>
+                            <input type="text" class="form-input" id="check-banka-custom"
+                                placeholder="Banka adı girin..."
+                                style="display: none; margin-top: 6px; padding: 8px 12px;" autocomplete="off">
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
+                        <div class="form-group">
+                            <label class="form-label" style="margin-bottom: 4px;">Tanzim Tarihi</label>
+                            <input type="date" class="form-input" id="check-tanzim" style="padding: 8px 12px;">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label required" style="margin-bottom: 4px;">Vade Tarihi</label>
+                            <input type="date" class="form-input" id="check-vade" required style="padding: 8px 12px;">
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-bottom: 12px;">
+                        <div class="form-group">
+                            <label class="form-label" style="margin-bottom: 4px;">USD ($)</label>
+                            <input type="number" step="0.01" class="form-input" id="check-dolar" placeholder="0.00"
+                                style="padding: 8px 12px;">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" style="margin-bottom: 4px;">EUR (€)</label>
+                            <input type="number" step="0.01" class="form-input" id="check-euro" placeholder="0.00"
+                                style="padding: 8px 12px;">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" style="margin-bottom: 4px;">TL (₺)</label>
+                            <input type="number" step="0.01" class="form-input" id="check-tl" placeholder="0.00"
+                                style="padding: 8px 12px;">
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <label class="form-label" style="margin-bottom: 4px;">Ödeme Durumu</label>
+                        <select class="form-select" id="check-durum" style="padding: 8px 12px;">
+                            <option value="BEKLEMEDE">Beklemede</option>
+                            <option value="ÖDENDİ">Ödendi</option>
+                            <option value="İPTAL EDİLDİ">İptal Edildi</option>
+                        </select>
+                    </div>
+
+                    <div class="modal-footer" style="padding-top: 0; margin-top: 0;">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">İptal</button>
+                        <button type="submit" class="btn btn-primary">Kaydet</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer" style="display: none;"></div>
+        </div>
+    </div>
+
+    <!-- Delete Confirmation Modal -->
+    <div class="modal-backdrop" id="delete-modal">
+        <div class="modal" style="max-width: 400px;">
+            <div class="modal-header">
+                <h3 class="modal-title">Çeki Sil</h3>
+                <button class="modal-close" data-dismiss="modal">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p style="margin-bottom: 16px; color: var(--text-secondary);">Bu çeki silmek istediğinizden emin
+                    misiniz?</p>
+                <div id="delete-check-info"
+                    style="padding: 12px; background: var(--bg-input); border-radius: 8px; font-size: 14px;"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">İptal</button>
+                <button type="button" class="btn btn-danger" id="confirm-delete-btn">Sil</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div class="modal-backdrop" id="settings-modal">
+        <div class="modal" style="max-width: 520px;">
+            <div class="modal-header">
+                <h3 class="modal-title">Ayarlar</h3>
+                <button class="modal-close" data-dismiss="modal">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Saved Banks Section -->
+                <h4 style="font-size: 14px; font-weight: 600; color: var(--text-primary); margin-bottom: 12px;">Kayıtlı
+                    Bankalar</h4>
+                <div id="saved-banks-list"
+                    style="margin-bottom: 24px; max-height: 150px; overflow-y: auto; border: 1px solid var(--border-primary); border-radius: 6px; background: var(--bg-secondary);">
+                    <!-- Rendered by JS -->
+                    <div style="padding: 12px; text-align: center; color: var(--text-muted); font-size: 13px;">Kayıtlı
+                        özel banka yok</div>
+                </div>
+
+                <hr style="border: none; border-top: 1px solid var(--border-primary); margin: 24px 0;">
+
+                <h4 style="font-size: 14px; font-weight: 600; color: var(--text-primary); margin-bottom: 12px;">Email
+                    Bildirimleri</h4>
+
+                <div class="alert-banner alert-banner-warning" style="margin-bottom: 20px;">
+                    <svg class="alert-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span class="alert-text">EmailJS hesabınız yoksa <a href="https://www.emailjs.com" target="_blank"
+                            rel="noopener" style="color: inherit; font-weight: 600;">emailjs.com</a> adresinden ücretsiz
+                        kayıt olabilirsiniz.</span>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Service ID</label>
+                    <input type="text" class="form-input" id="emailjs-service" placeholder="service_xxxxxxx">
+                    <p class="form-hint">EmailJS'de oluşturduğunuz email servisinin ID'si</p>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Template ID</label>
+                    <input type="text" class="form-input" id="emailjs-template" placeholder="template_xxxxxxx">
+                    <p class="form-hint">Bildirim email şablonunuzun ID'si</p>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Public Key</label>
+                    <input type="text" class="form-input" id="emailjs-key" placeholder="xxxxxxxxxxxxxxxx">
+                    <p class="form-hint">Account > General bölümünden alabilirsiniz</p>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Bildirim Email Adresi</label>
+                    <input type="email" class="form-input" id="emailjs-to" placeholder="ornek@sirket.com">
+                    <p class="form-hint">Bildirimlerin gönderileceği email adresi</p>
+                </div>
+
+                <hr style="border: none; border-top: 1px solid var(--border-primary); margin: 24px 0;">
+
+                <div class="alert-banner alert-banner-info" style="margin-bottom: 20px;">
+                    <svg class="alert-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span class="alert-text">Verilerin kalıcı olması için GitHub Personal Access Token
+                        gereklidir.</span>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">GitHub Token</label>
+                    <input type="password" class="form-input" id="github-token" placeholder="ghp_xxxxxxxxxxxxxx">
+                    <p class="form-hint">GitHub Settings > Developer settings > Personal access tokens > Tokens
+                        (classic)</p>
+                </div>
+
+                <div class="notification-options">
+                    <div class="notification-option">
+                        <span class="notification-option-label">Vade uyarısı (1 gün kala)</span>
+                        <span class="notification-option-value">✓ Aktif</span>
+                    </div>
+                    <div class="notification-option">
+                        <span class="notification-option-label">Vade uyarısı (3 gün kala)</span>
+                        <span class="notification-option-value">✓ Aktif</span>
+                    </div>
+                    <div class="notification-option">
+                        <span class="notification-option-label">Vade uyarısı (7 gün kala)</span>
+                        <span class="notification-option-value">✓ Aktif</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="test-email-btn">Test Email Gönder</button>
+                <button type="button" class="btn btn-primary" id="save-settings-btn">Kaydet</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Login Modal -->
+    <div class="modal-backdrop" id="admin-login-modal">
+        <div class="modal" style="max-width: 400px;">
+            <div class="modal-header">
+                <h3 class="modal-title">Yönetici Girişi</h3>
+                <button class="modal-close" data-dismiss="modal">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="admin-login-form">
+                    <div class="form-group">
+                        <label class="form-label">Yönetici Şifresi</label>
+                        <input type="password" class="form-input" id="admin-password-input"
+                            placeholder="Şifrenizi girin" required>
+                    </div>
+                    <div class="modal-footer" style="padding-top: 20px;">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">İptal</button>
+                        <button type="submit" class="btn btn-primary">Giriş Yap</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer" style="display: none;"></div>
+        </div>
+    </div>
+
+    <!-- Admin Password Change Modal -->
+    <div class="modal-backdrop" id="admin-password-modal">
+        <div class="modal" style="max-width: 400px;">
+            <div class="modal-header">
+                <h3 class="modal-title">Yönetici Şifresini Değiştir</h3>
+                <button class="modal-close" data-dismiss="modal">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="admin-change-password-form">
+                    <div class="form-group">
+                        <label class="form-label">Mevcut Şifre</label>
+                        <input type="password" class="form-input" id="current-admin-password" required>
+                    </div>
+                    <div class="form-group" style="margin-top: 12px;">
+                        <label class="form-label">Yeni Şifre</label>
+                        <input type="password" class="form-input" id="new-admin-password" required>
+                    </div>
+                    <div class="modal-footer" style="padding-top: 20px; display: flex; justify-content: space-between;">
+                        <button type="button" class="btn btn-danger" id="admin-logout-btn">Yönetici Modundan
+                            Çık</button>
+                        <div style="display: flex; gap: 10px;">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">İptal</button>
+                            <button type="submit" class="btn btn-primary">Değiştir</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer" style="display: none;"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.sheetjs.com/xlsx-0.19.3/package/dist/xlsx.full.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/github.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/email.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Update sidebar badges when data loads
+        document.addEventListener('DOMContentLoaded', () => {
+            // Bind extra add button
+            document.getElementById('add-check-btn-header')?.addEventListener('click', () => {
+                UI.openAddModal();
+            });
+
+            // Mobile logout
+            document.getElementById('logout-btn-mobile')?.addEventListener('click', () => {
+                Auth.logout();
+            });
+
+            // Update badges after data loads
+            const updateBadges = () => {
+                if (Data.isLoaded) {
+                    const stats = Data.getStats();
+                    document.getElementById('total-badge').textContent = stats.total;
+                    document.getElementById('pending-badge').textContent = stats.pending;
+                }
+            };
+
+            // Check periodically until data is loaded
+            const interval = setInterval(() => {
+                if (Data.isLoaded) {
+                    updateBadges();
+                    clearInterval(interval);
+                }
+            }, 100);
+        });
+    </script>
+</body>
+
+</html>
