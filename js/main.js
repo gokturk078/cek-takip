@@ -35,6 +35,12 @@ const App = {
             await Data.init();
             console.log('Data loaded:', Data.checks.length, 'checks');
 
+            // Auto-update overdue checks
+            var autoUpdatedCount = await Data.checkAutoStatusUpdates();
+            if (autoUpdatedCount > 0) {
+                console.log('Auto-updated', autoUpdatedCount, 'overdue checks');
+            }
+
             // Initialize UI
             UI.init();
             console.log('UI initialized');
@@ -45,6 +51,12 @@ const App = {
 
             // Hide loading IMMEDIATELY after UI renders
             hideLoadingGuarantee();
+
+            // Show notification if checks were auto-updated
+            if (autoUpdatedCount > 0) {
+                UI.showToast('info', 'Otomatik Güncelleme',
+                    autoUpdatedCount + ' adet çek vadesi geçtiği için otomatik olarak ödendi işaretlendi.');
+            }
 
             // Initialize charts (completely non-blocking)
             try {

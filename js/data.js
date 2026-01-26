@@ -596,6 +596,49 @@ const Data = {
     },
 
     /**
+     * Auto-update status for overdue checks
+     * Marks checks as "ÖDENDİ" if due date has passed
+     * @returns {Promise<number>} Number of updated checks
+     */
+    async checkAutoStatusUpdates() {
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+
+        let updatedCount = 0;
+
+        for (let i = 0; i < this.checks.length; i++) {
+            const check = this.checks[i];
+
+            // Skip if already paid or cancelled
+            if (check.odeme_durumu === 'ÖDENDİ' || check.odeme_durumu === 'İPTAL EDİLDİ') {
+                continue;
+            }
+
+            // Skip if no due date
+            if (!check.vade_tarihi) continue;
+
+            const dueDate = new Date(check.vade_tarihi);
+            dueDate.setHours(0, 0, 0, 0);
+
+            // If due date is before today, mark as paid
+            if (dueDate < today) {
+                this.checks[i].odeme_durumu = 'ÖDENDİ';
+                this.checks[i].autoUpdatedAt = new Date().toISOString();
+                updatedCount++;
+            }
+        }
+
+        // Save if any changes were made
+        if (updatedCount > 0) {
+            this.hasChanges = true;
+            await this.saveToGitHub();
+            console.log('Auto-updated', updatedCount, 'overdue checks to ÖDENDİ');
+        }
+
+        return updatedCount;
+    },
+
+    /**
      * Get checks that need notification
      */
     getChecksForNotification: function () {
