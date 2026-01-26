@@ -2829,19 +2829,6 @@
       "createdAt": "2026-01-23T14:02:31.500Z"
     },
     {
-      "id": 228,
-      "firma_adi": "MERİT KIBRIS TURİZM LTD.",
-      "cek_no": "K1-0063237",
-      "banka": "DENİZBANK",
-      "cek_tanzim_tarihi": "2026-01-23",
-      "vade_tarihi": "2026-07-25",
-      "dolar": null,
-      "euro": 982093.6,
-      "tl": null,
-      "odeme_durumu": "BEKLEMEDE",
-      "createdAt": "2026-01-23T14:03:52.680Z"
-    },
-    {
       "id": 229,
       "firma_adi": "MERİT KIBRIS TURİZM LTD.",
       "cek_no": "K1-0063240",
@@ -2868,6 +2855,6 @@
       "createdAt": "2026-01-23T16:53:34.844Z"
     }
   ],
-  "lastUpdated": "2026-01-26T09:01:25.459Z",
-  "totalChecks": 230
+  "lastUpdated": "2026-01-26T12:16:25.115Z",
+  "totalChecks": 229
 }
