@@ -1210,7 +1210,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-04",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:12:40.816Z"
     },
     {
       "id": 102,
@@ -1222,7 +1223,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-05",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:12:56.606Z"
     },
     {
       "id": 103,
@@ -1234,7 +1236,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-06",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:13:05.716Z"
     },
     {
       "id": 104,
@@ -1244,9 +1247,10 @@
       "dolar": null,
       "euro": null,
       "tl": 250000,
-      "banka": "NEARESTBANK",
+      "banka": "",
       "vade_tarihi": "2025-12-10",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:13:13.755Z"
     },
     {
       "id": 105,
@@ -1258,7 +1262,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-10",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:13:18.764Z"
     },
     {
       "id": 106,
@@ -1270,7 +1275,8 @@
       "tl": 500000,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-12",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:13:26.639Z"
     },
     {
       "id": 107,
@@ -1282,7 +1288,8 @@
       "tl": 432332.07,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-15",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:13:33.368Z"
     },
     {
       "id": 108,
@@ -1294,7 +1301,8 @@
       "tl": 1549940.75,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-15",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:13:39.895Z"
     },
     {
       "id": 109,
@@ -1306,7 +1314,8 @@
       "tl": 161650.11,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-15",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:13:47.275Z"
     },
     {
       "id": 110,
@@ -1318,7 +1327,8 @@
       "tl": null,
       "banka": "NEAR EAST BANK",
       "vade_tarihi": "2025-12-15",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:13:52.663Z"
     },
     {
       "id": 111,
@@ -1330,7 +1340,8 @@
       "tl": 480000,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-16",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:13:59.091Z"
     },
     {
       "id": 112,
@@ -1342,7 +1353,8 @@
       "tl": 300000,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-16",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:14:03.776Z"
     },
     {
       "id": 113,
@@ -1354,7 +1366,8 @@
       "tl": null,
       "banka": "NEAR EAST BANK",
       "vade_tarihi": "2025-12-17",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:14:08.416Z"
     },
     {
       "id": 114,
@@ -1366,7 +1379,8 @@
       "tl": null,
       "banka": "NEAR EAST BANK",
       "vade_tarihi": "2025-12-18",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:14:14.916Z"
     },
     {
       "id": 115,
@@ -1378,7 +1392,8 @@
       "tl": 1000000,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-22",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:14:19.795Z"
     },
     {
       "id": 116,
@@ -1426,7 +1441,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:14:25.068Z"
     },
     {
       "id": 120,
@@ -1450,7 +1466,8 @@
       "tl": 117000,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:14:32.154Z"
     },
     {
       "id": 122,
@@ -1486,7 +1503,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:14:39.215Z"
     },
     {
       "id": 125,
@@ -1498,7 +1516,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:14:44.992Z"
     },
     {
       "id": 126,
@@ -1510,7 +1529,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:14:49.327Z"
     },
     {
       "id": 127,
@@ -1534,7 +1554,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:14:53.749Z"
     },
     {
       "id": 129,
@@ -1546,7 +1567,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:14:58.658Z"
     },
     {
       "id": 130,
@@ -1558,7 +1580,8 @@
       "tl": 1500000,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:15:09.114Z"
     },
     {
       "id": 131,
@@ -1570,7 +1593,8 @@
       "tl": 200000,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:15:14.992Z"
     },
     {
       "id": 132,
@@ -1582,7 +1606,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:15:20.685Z"
     },
     {
       "id": 133,
@@ -1594,7 +1619,8 @@
       "tl": 690000,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:15:25.071Z"
     },
     {
       "id": 134,
@@ -1606,7 +1632,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:15:31.783Z"
     },
     {
       "id": 135,
@@ -1618,7 +1645,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:15:37.143Z"
     },
     {
       "id": 136,
@@ -1642,7 +1670,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:15:42.911Z"
     },
     {
       "id": 138,
@@ -1654,7 +1683,8 @@
       "tl": 98000,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:15:47.879Z"
     },
     {
       "id": 139,
@@ -1666,7 +1696,8 @@
       "tl": 1000000,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:16:03.958Z"
     },
     {
       "id": 140,
@@ -1690,7 +1721,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:16:09.630Z"
     },
     {
       "id": 142,
@@ -1702,7 +1734,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:16:15.074Z"
     },
     {
       "id": 143,
@@ -1714,7 +1747,8 @@
       "tl": 500000,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:16:19.838Z"
     },
     {
       "id": 144,
@@ -1726,7 +1760,8 @@
       "tl": 150000,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2025-12-26",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:16:25.982Z"
     },
     {
       "id": 145,
@@ -1738,7 +1773,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2026-01-07",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:16:33.115Z"
     },
     {
       "id": 146,
@@ -1750,7 +1786,8 @@
       "tl": 120000,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2026-01-08",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:16:38.607Z"
     },
     {
       "id": 147,
@@ -1762,7 +1799,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2026-01-12",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "updatedAt": "2026-01-22T07:16:45.895Z"
     },
     {
       "id": 148,
@@ -1774,7 +1812,8 @@
       "tl": null,
       "banka": "NEAR EAST BANK",
       "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
     },
     {
       "id": 149,
@@ -1786,7 +1825,8 @@
       "tl": null,
       "banka": "NEAR EAST BANK",
       "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
     },
     {
       "id": 150,
@@ -1798,7 +1838,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
     },
     {
       "id": 151,
@@ -1810,7 +1851,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
     },
     {
       "id": 152,
@@ -1822,7 +1864,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
     },
     {
       "id": 153,
@@ -1834,7 +1877,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
     },
     {
       "id": 154,
@@ -1846,7 +1890,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
     },
     {
       "id": 155,
@@ -1858,7 +1903,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
     },
     {
       "id": 156,
@@ -1870,7 +1916,8 @@
       "tl": 100000,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
     },
     {
       "id": 157,
@@ -1882,7 +1929,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
     },
     {
       "id": 158,
@@ -1906,7 +1954,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
     },
     {
       "id": 160,
@@ -1918,7 +1967,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
     },
     {
       "id": 161,
@@ -1930,7 +1980,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
     },
     {
       "id": 162,
@@ -1942,7 +1993,8 @@
       "tl": null,
       "banka": "NEAR EAST BANK",
       "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
     },
     {
       "id": 163,
@@ -1954,7 +2006,8 @@
       "tl": 500000,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
     },
     {
       "id": 164,
@@ -1966,7 +2019,8 @@
       "tl": 345000,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
     },
     {
       "id": 165,
@@ -1978,7 +2032,8 @@
       "tl": 500000,
       "banka": "NEAR EAST BANK",
       "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
     },
     {
       "id": 166,
@@ -1990,7 +2045,8 @@
       "tl": 116650,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
     },
     {
       "id": 167,
@@ -2002,7 +2058,8 @@
       "tl": 350000,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
     },
     {
       "id": 168,
@@ -2014,7 +2071,8 @@
       "tl": 1000000,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
     },
     {
       "id": 169,
@@ -2026,7 +2084,8 @@
       "tl": null,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
     },
     {
       "id": 170,
@@ -2038,7 +2097,8 @@
       "tl": 900000,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
     },
     {
       "id": 171,
@@ -2050,7 +2110,8 @@
       "tl": 500000,
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
     },
     {
       "id": 172,
@@ -2062,7 +2123,8 @@
       "tl": 1950000,
       "banka": "NEAR EAST BANK",
       "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "odeme_durumu": "ÖDENDİ",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
     },
     {
       "id": 173,
@@ -2289,8 +2351,9 @@
       "euro": null,
       "tl": 929340,
       "banka": "NEAR EAST BANK",
-      "vade_tarihi": "2026-03-25",
-      "odeme_durumu": "BEKLEMEDE"
+      "vade_tarihi": "2026-02-25",
+      "odeme_durumu": "BEKLEMEDE",
+      "updatedAt": "2026-01-21T14:20:36.408Z"
     },
     {
       "id": 192,
@@ -2411,8 +2474,400 @@
       "banka": "GARANTİ BANKASI",
       "vade_tarihi": "2026-05-25",
       "odeme_durumu": "BEKLEMEDE"
+    },
+    {
+      "id": 202,
+      "firma_adi": "MESUT DEMİRALP",
+      "cek_no": "0545909",
+      "banka": "GARANTİ BANKASI",
+      "cek_tanzim_tarihi": "2026-01-19",
+      "vade_tarihi": "2026-01-25",
+      "dolar": null,
+      "euro": null,
+      "tl": 3190000,
+      "odeme_durumu": "ÖDENDİ",
+      "createdAt": "2026-01-19T07:41:27.032Z",
+      "updatedAt": "2026-01-19T07:42:42.547Z",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
+    },
+    {
+      "id": 203,
+      "firma_adi": "NEŞAT KAHRAAMAN",
+      "cek_no": "8391889",
+      "banka": "NEAR EAST BANK",
+      "cek_tanzim_tarihi": null,
+      "vade_tarihi": "2026-01-25",
+      "dolar": null,
+      "euro": null,
+      "tl": 1000000,
+      "odeme_durumu": "ÖDENDİ",
+      "createdAt": "2026-01-19T07:43:32.316Z",
+      "updatedAt": "2026-01-19T07:45:04.753Z",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
+    },
+    {
+      "id": 204,
+      "firma_adi": "HÜDAVERDİ ÇÖYGÜN",
+      "cek_no": "8391888",
+      "banka": "NEAR EAST BANK",
+      "cek_tanzim_tarihi": "2026-01-19",
+      "vade_tarihi": "2026-01-20",
+      "dolar": null,
+      "euro": null,
+      "tl": 1500000,
+      "odeme_durumu": "ÖDENDİ",
+      "createdAt": "2026-01-19T07:44:42.485Z",
+      "updatedAt": "2026-01-22T07:17:21.891Z"
+    },
+    {
+      "id": 205,
+      "firma_adi": "METİN ALÇICI",
+      "cek_no": "8633466",
+      "banka": "GARANTİ BANKASI",
+      "cek_tanzim_tarihi": "2026-01-19",
+      "vade_tarihi": "2026-01-25",
+      "dolar": null,
+      "euro": 80000,
+      "tl": null,
+      "odeme_durumu": "ÖDENDİ",
+      "createdAt": "2026-01-19T07:45:55.146Z",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
+    },
+    {
+      "id": 206,
+      "firma_adi": "METİN ALÇICI",
+      "cek_no": "8633467",
+      "banka": "GARANTİ BANKASI",
+      "cek_tanzim_tarihi": "2026-01-19",
+      "vade_tarihi": "2026-02-25",
+      "dolar": null,
+      "euro": 50000,
+      "tl": null,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-01-19T07:46:46.480Z"
+    },
+    {
+      "id": 207,
+      "firma_adi": "İNTERTİM KERESTE",
+      "cek_no": "8633468",
+      "banka": "GARANTİ BANKASI",
+      "cek_tanzim_tarihi": "2026-01-19",
+      "vade_tarihi": "2026-02-25",
+      "dolar": null,
+      "euro": 3800,
+      "tl": null,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-01-19T07:52:41.333Z"
+    },
+    {
+      "id": 208,
+      "firma_adi": "CHIP BİLGİSAYAR",
+      "cek_no": "8633469",
+      "banka": "GARANTİ BANKASI",
+      "cek_tanzim_tarihi": "2026-01-19",
+      "vade_tarihi": "2026-01-25",
+      "dolar": null,
+      "euro": 3000,
+      "tl": null,
+      "odeme_durumu": "ÖDENDİ",
+      "createdAt": "2026-01-19T08:08:08.227Z",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
+    },
+    {
+      "id": 209,
+      "firma_adi": "NEOTECH LTD",
+      "cek_no": "8633581",
+      "banka": "GARANTİ BANKASI",
+      "cek_tanzim_tarihi": "2026-01-21",
+      "vade_tarihi": "2026-01-25",
+      "dolar": null,
+      "euro": 5000,
+      "tl": null,
+      "odeme_durumu": "ÖDENDİ",
+      "createdAt": "2026-01-21T14:18:36.289Z",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
+    },
+    {
+      "id": 210,
+      "firma_adi": "NURETTİN EROĞLU",
+      "cek_no": "8633470",
+      "banka": "GARANTİ BANKASI",
+      "cek_tanzim_tarihi": "2026-01-21",
+      "vade_tarihi": "2026-02-25",
+      "dolar": null,
+      "euro": 20000,
+      "tl": null,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-01-21T14:19:40.667Z"
+    },
+    {
+      "id": 211,
+      "firma_adi": "KAMTEK LTD.",
+      "cek_no": "8633465",
+      "banka": "GARANTİ BANKASI",
+      "cek_tanzim_tarihi": "2026-01-14",
+      "vade_tarihi": "2026-02-25",
+      "dolar": null,
+      "euro": 15000,
+      "tl": null,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-01-22T06:34:38.619Z"
+    },
+    {
+      "id": 212,
+      "firma_adi": "YUSUF DEMİR",
+      "cek_no": "8391885",
+      "banka": "NEAR EAST BANK",
+      "cek_tanzim_tarihi": "2026-01-14",
+      "vade_tarihi": "2026-01-25",
+      "dolar": null,
+      "euro": null,
+      "tl": 200000,
+      "odeme_durumu": "ÖDENDİ",
+      "createdAt": "2026-01-22T06:35:56.123Z",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
+    },
+    {
+      "id": 213,
+      "firma_adi": "YUSUF DEMİR",
+      "cek_no": "8391886",
+      "banka": "NEAR EAST BANK",
+      "cek_tanzim_tarihi": "2026-01-14",
+      "vade_tarihi": "2026-02-25",
+      "dolar": null,
+      "euro": null,
+      "tl": 200000,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-01-22T06:37:31.297Z"
+    },
+    {
+      "id": 214,
+      "firma_adi": "HASAN SERTOĞLU",
+      "cek_no": "8633464",
+      "banka": "GARANTİ BANKASI",
+      "cek_tanzim_tarihi": "2026-01-14",
+      "vade_tarihi": "2026-01-25",
+      "dolar": null,
+      "euro": 5000,
+      "tl": null,
+      "odeme_durumu": "ÖDENDİ",
+      "createdAt": "2026-01-22T06:38:19.175Z",
+      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
+    },
+    {
+      "id": 215,
+      "firma_adi": "ARBOS LTD",
+      "cek_no": "8391881",
+      "banka": "NEAR EAST BANK",
+      "cek_tanzim_tarihi": "2026-01-14",
+      "vade_tarihi": "2026-01-16",
+      "dolar": null,
+      "euro": null,
+      "tl": 84558.34,
+      "odeme_durumu": "ÖDENDİ",
+      "createdAt": "2026-01-22T06:39:20.195Z",
+      "updatedAt": "2026-01-22T07:17:15.502Z"
+    },
+    {
+      "id": 216,
+      "firma_adi": "ÇETİN KÜRŞAD DEVELOPMENT LTD",
+      "cek_no": "8391882",
+      "banka": "NEAR EAST BANK",
+      "cek_tanzim_tarihi": "2026-01-10",
+      "vade_tarihi": "2026-02-25",
+      "dolar": null,
+      "euro": null,
+      "tl": 85000,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-01-22T06:48:12.174Z"
+    },
+    {
+      "id": 217,
+      "firma_adi": "ÇETİN KÜRŞAD DEVELOPMENT LTD",
+      "cek_no": "8391883",
+      "banka": "NEAR EAST BANK",
+      "cek_tanzim_tarihi": "2026-01-10",
+      "vade_tarihi": "2026-02-25",
+      "dolar": null,
+      "euro": null,
+      "tl": 85920,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-01-22T06:49:13.121Z"
+    },
+    {
+      "id": 218,
+      "firma_adi": "ÇETİN KÜRŞAD DEVELOPMENT",
+      "cek_no": "8391884",
+      "banka": "NEAR EAST BANK",
+      "cek_tanzim_tarihi": "2026-01-10",
+      "vade_tarihi": "2026-02-25",
+      "dolar": null,
+      "euro": null,
+      "tl": 14340,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-01-22T06:50:06.754Z"
+    },
+    {
+      "id": 219,
+      "firma_adi": "SOSYAL SİGORTALAR DAİRESİ",
+      "cek_no": "8391878",
+      "banka": "NEAR EAST BANK",
+      "cek_tanzim_tarihi": "2026-01-10",
+      "vade_tarihi": "2026-01-15",
+      "dolar": null,
+      "euro": null,
+      "tl": 1858624.26,
+      "odeme_durumu": "ÖDENDİ",
+      "createdAt": "2026-01-22T06:52:02.750Z",
+      "updatedAt": "2026-01-22T07:16:55.847Z"
+    },
+    {
+      "id": 220,
+      "firma_adi": "GELİR VE VERGİ DAİRESİ",
+      "cek_no": "8391879",
+      "banka": "NEAR EAST BANK",
+      "cek_tanzim_tarihi": "2026-01-10",
+      "vade_tarihi": "2026-01-15",
+      "dolar": null,
+      "euro": null,
+      "tl": 163079.81,
+      "odeme_durumu": "ÖDENDİ",
+      "createdAt": "2026-01-22T06:53:16.587Z",
+      "updatedAt": "2026-01-22T07:17:03.083Z"
+    },
+    {
+      "id": 221,
+      "firma_adi": "İHTİYAT SANDIĞI DAİRESİ",
+      "cek_no": "8391880",
+      "banka": "NEAR EAST BANK",
+      "cek_tanzim_tarihi": "2026-01-10",
+      "vade_tarihi": "2026-01-15",
+      "dolar": null,
+      "euro": null,
+      "tl": 505621.1,
+      "odeme_durumu": "ÖDENDİ",
+      "createdAt": "2026-01-22T06:54:30.329Z",
+      "updatedAt": "2026-01-22T07:17:09.171Z"
+    },
+    {
+      "id": 222,
+      "firma_adi": "AŞAN NAKLİYAT",
+      "cek_no": "K1-0063236",
+      "banka": "DENİZBANK",
+      "cek_tanzim_tarihi": "2026-01-22",
+      "vade_tarihi": "2026-01-22",
+      "dolar": null,
+      "euro": 90000,
+      "tl": null,
+      "odeme_durumu": "ÖDENDİ",
+      "createdAt": "2026-01-23T11:41:20.782Z",
+      "updatedAt": "2026-01-23T11:42:04.676Z"
+    },
+    {
+      "id": 223,
+      "firma_adi": "İHTİYAT SANDIĞI DAİRESİ",
+      "cek_no": "8391890",
+      "banka": "NEAR EAST BANK",
+      "cek_tanzim_tarihi": "2026-01-23",
+      "vade_tarihi": "2026-01-26",
+      "dolar": null,
+      "euro": null,
+      "tl": 52360.95,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-01-23T13:58:05.656Z"
+    },
+    {
+      "id": 224,
+      "firma_adi": "AŞAN NAKLİYAT",
+      "cek_no": "K1-0063187",
+      "banka": "DENİZBANK",
+      "cek_tanzim_tarihi": "2026-01-23",
+      "vade_tarihi": "2026-03-17",
+      "dolar": null,
+      "euro": null,
+      "tl": 1597507.6,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-01-23T13:59:26.115Z"
+    },
+    {
+      "id": 225,
+      "firma_adi": "AŞAN NAKLİYAT",
+      "cek_no": "K1-0063186",
+      "banka": "DENİZBANK",
+      "cek_tanzim_tarihi": "2026-01-23",
+      "vade_tarihi": "2026-02-16",
+      "dolar": null,
+      "euro": null,
+      "tl": 1597507.6,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-01-23T14:00:35.132Z"
+    },
+    {
+      "id": 226,
+      "firma_adi": "AŞAN NAKLİYAT",
+      "cek_no": "K1-0063239",
+      "banka": "DENİZBANK",
+      "cek_tanzim_tarihi": "2026-01-23",
+      "vade_tarihi": "2026-03-23",
+      "dolar": null,
+      "euro": 50450,
+      "tl": null,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-01-23T14:01:32.529Z"
+    },
+    {
+      "id": 227,
+      "firma_adi": "AŞAN NAKLİYAT",
+      "cek_no": "K1-0063238",
+      "banka": "DENİZBANK",
+      "cek_tanzim_tarihi": "2026-01-23",
+      "vade_tarihi": "2026-02-23",
+      "dolar": null,
+      "euro": 50450,
+      "tl": null,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-01-23T14:02:31.500Z"
+    },
+    {
+      "id": 228,
+      "firma_adi": "MERİT KIBRIS TURİZM LTD.",
+      "cek_no": "K1-0063237",
+      "banka": "DENİZBANK",
+      "cek_tanzim_tarihi": "2026-01-23",
+      "vade_tarihi": "2026-07-25",
+      "dolar": null,
+      "euro": 982093.6,
+      "tl": null,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-01-23T14:03:52.680Z"
+    },
+    {
+      "id": 229,
+      "firma_adi": "MERİT KIBRIS TURİZM LTD.",
+      "cek_no": "K1-0063240",
+      "banka": "DENİZBANK",
+      "cek_tanzim_tarihi": "2026-01-23",
+      "vade_tarihi": "42026-04-30",
+      "dolar": null,
+      "euro": 242772,
+      "tl": null,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-01-23T14:45:44.895Z"
+    },
+    {
+      "id": 230,
+      "firma_adi": "BLACKBOX XR TEKNOLOJİ",
+      "cek_no": "0545912",
+      "banka": "GARANTİ BANKASI",
+      "cek_tanzim_tarihi": "2026-01-22",
+      "vade_tarihi": "2026-02-25",
+      "dolar": null,
+      "euro": null,
+      "tl": 2375650,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-01-23T16:53:34.844Z"
     }
   ],
-  "lastUpdated": "2026-01-17T14:47:13.812Z",
-  "totalChecks": 201
+  "lastUpdated": "2026-01-26T09:01:25.459Z",
+  "totalChecks": 230
 }
