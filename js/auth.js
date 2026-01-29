@@ -4,6 +4,8 @@
  */
 
 const Auth = {
+    isAdmin: false,
+
     /**
      * Initialize auth module
      */
@@ -53,6 +55,71 @@ const Auth = {
             token: Utils.generateId()
         };
         Utils.storage.set(CONFIG.SESSION_KEY, session);
+    },
+
+    /**
+     * Attempt admin login with password
+     */
+    async attemptAdminLogin(password) {
+        // Default admin password: admin123
+        const defaultHash = '240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9';
+        const storedHash = Utils.storage.get('admin_password_hash') || defaultHash;
+
+        const inputHash = await Utils.hashPassword(password);
+
+        if (inputHash === storedHash) {
+            this.loginAdmin();
+            return { success: true };
+        }
+
+        return { success: false, error: 'Hatalı yönetici şifresi' };
+    },
+
+    /**
+     * Enable admin mode
+     */
+    loginAdmin() {
+        this.isAdmin = true;
+        document.body.classList.add('admin-mode');
+        console.log('Admin mode enabled');
+
+        // Refresh UI if available
+        if (window.UI) UI.render();
+    },
+
+    /**
+     * Disable admin mode
+     */
+    logoutAdmin() {
+        this.isAdmin = false;
+        document.body.classList.remove('admin-mode');
+        console.log('Admin mode disabled');
+
+        // Refresh UI if available
+        if (window.UI) UI.render();
+    },
+
+    /**
+     * Change admin password
+     */
+    async changeAdminPassword(currentPassword, newPassword) {
+        // Verify current password first
+        const defaultHash = '240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9';
+        const storedHash = Utils.storage.get('admin_password_hash') || defaultHash;
+        const currentHash = await Utils.hashPassword(currentPassword);
+
+        if (currentHash !== storedHash) {
+            return { success: false, error: 'Mevcut şifre hatalı' };
+        }
+
+        if (!newPassword || newPassword.length < 4) {
+            return { success: false, error: 'Yeni şifre en az 4 karakter olmalıdır' };
+        }
+
+        const newHash = await Utils.hashPassword(newPassword);
+        Utils.storage.set('admin_password_hash', newHash);
+
+        return { success: true };
     },
 
     /**
