@@ -61,15 +61,25 @@ const Auth = {
      * Attempt admin login with password
      */
     async attemptAdminLogin(password) {
-        // Default admin password: admin123
-        const defaultHash = '240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9';
-        const storedHash = Utils.storage.get('admin_password_hash') || defaultHash;
+        // Default admin password
+        const DEFAULT_ADMIN_PASSWORD = 'admin123';
 
-        const inputHash = await Utils.hashPassword(password);
+        // Check if custom password is set
+        const storedHash = Utils.storage.get('admin_password_hash');
 
-        if (inputHash === storedHash) {
-            this.loginAdmin();
-            return { success: true };
+        if (storedHash) {
+            // Custom password set - use hash comparison
+            const inputHash = await Utils.hashPassword(password);
+            if (inputHash === storedHash) {
+                this.loginAdmin();
+                return { success: true };
+            }
+        } else {
+            // Default password - direct comparison
+            if (password === DEFAULT_ADMIN_PASSWORD) {
+                this.loginAdmin();
+                return { success: true };
+            }
         }
 
         return { success: false, error: 'Hatalı yönetici şifresi' };
@@ -103,12 +113,24 @@ const Auth = {
      * Change admin password
      */
     async changeAdminPassword(currentPassword, newPassword) {
-        // Verify current password first
-        const defaultHash = '240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9';
-        const storedHash = Utils.storage.get('admin_password_hash') || defaultHash;
-        const currentHash = await Utils.hashPassword(currentPassword);
+        // Default admin password
+        const DEFAULT_ADMIN_PASSWORD = 'admin123';
 
-        if (currentHash !== storedHash) {
+        // Check if custom password is set
+        const storedHash = Utils.storage.get('admin_password_hash');
+
+        let isCurrentValid = false;
+
+        if (storedHash) {
+            // Custom password set - use hash comparison
+            const currentHash = await Utils.hashPassword(currentPassword);
+            isCurrentValid = (currentHash === storedHash);
+        } else {
+            // Default password - direct comparison
+            isCurrentValid = (currentPassword === DEFAULT_ADMIN_PASSWORD);
+        }
+
+        if (!isCurrentValid) {
             return { success: false, error: 'Mevcut şifre hatalı' };
         }
 
