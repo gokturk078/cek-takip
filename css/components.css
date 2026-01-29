@@ -129,6 +129,37 @@
     text-transform: uppercase;
 }
 
+/* Admin Mode Styles - Hide editing elements by default */
+.admin-only {
+    display: none !important;
+}
+
+body.admin-mode .admin-only {
+    display: inline-flex !important;
+}
+
+/* Hide action buttons (edit/delete) unless admin mode */
+.action-btn.edit,
+.action-btn.delete {
+    display: none;
+}
+
+body.admin-mode .action-btn.edit,
+body.admin-mode .action-btn.delete {
+    display: inline-flex;
+}
+
+/* Admin button active state */
+body.admin-mode .admin-btn {
+    background: var(--success) !important;
+    border-color: var(--success) !important;
+}
+
+body.admin-mode .admin-btn .admin-badge {
+    background: var(--white);
+    color: var(--success);
+}
+
 .sidebar-footer {
     padding: var(--space-4);
     border-top: 1px solid var(--border-primary);

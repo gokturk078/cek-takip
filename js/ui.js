@@ -138,6 +138,26 @@ const UI = {
         this.renderTable();
         this.renderUpcoming();
         this.renderSummary();
+        this.updateAdminButton();
+    },
+
+    /**
+     * Update admin button appearance based on admin mode
+     */
+    updateAdminButton() {
+        const adminBtn = document.getElementById('admin-btn');
+        if (!adminBtn) return;
+
+        const textSpan = adminBtn.querySelector('.nav-item-text');
+        const badgeSpan = adminBtn.querySelector('.admin-badge');
+
+        if (Auth.isAdmin) {
+            if (textSpan) textSpan.textContent = 'Yönetici Aktif';
+            if (badgeSpan) badgeSpan.textContent = 'Çıkış';
+        } else {
+            if (textSpan) textSpan.textContent = 'Yönetici Paneli';
+            if (badgeSpan) badgeSpan.textContent = 'Giriş';
+        }
     },
 
     /**
