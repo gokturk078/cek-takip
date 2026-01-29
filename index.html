@@ -87,6 +87,18 @@
                     <span class="nav-item-text">Email Ayarları</span>
                 </a>
             </div>
+
+            <!-- Admin Section -->
+            <div class="nav-section" style="margin-top: auto;">
+                <a class="nav-item admin-btn" id="admin-btn">
+                    <svg class="nav-item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    </svg>
+                    <span class="nav-item-text">Yönetici Paneli</span>
+                    <span class="admin-badge">Admin</span>
+                </a>
+            </div>
         </nav>
 
         <div class="sidebar-footer">
@@ -569,6 +581,71 @@
                 <button type="button" class="btn btn-secondary" id="test-email-btn">Test Email Gönder</button>
                 <button type="button" class="btn btn-primary" id="save-settings-btn">Kaydet</button>
             </div>
+        </div>
+    </div>
+
+    <!-- Admin Login Modal -->
+    <div class="modal-backdrop" id="admin-login-modal">
+        <div class="modal" style="max-width: 400px;">
+            <div class="modal-header">
+                <h3 class="modal-title">Yönetici Girişi</h3>
+                <button class="modal-close" data-dismiss="modal">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="admin-login-form">
+                    <div class="form-group">
+                        <label class="form-label">Yönetici Şifresi</label>
+                        <input type="password" class="form-input" id="admin-password-input"
+                            placeholder="Şifrenizi girin" required>
+                    </div>
+                    <div class="modal-footer" style="padding-top: 20px;">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">İptal</button>
+                        <button type="submit" class="btn btn-primary">Giriş Yap</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer" style="display: none;"></div>
+        </div>
+    </div>
+
+    <!-- Admin Password Change Modal -->
+    <div class="modal-backdrop" id="admin-password-modal">
+        <div class="modal" style="max-width: 400px;">
+            <div class="modal-header">
+                <h3 class="modal-title">Yönetici Şifresini Değiştir</h3>
+                <button class="modal-close" data-dismiss="modal">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="admin-change-password-form">
+                    <div class="form-group">
+                        <label class="form-label">Mevcut Şifre</label>
+                        <input type="password" class="form-input" id="current-admin-password" required>
+                    </div>
+                    <div class="form-group" style="margin-top: 12px;">
+                        <label class="form-label">Yeni Şifre</label>
+                        <input type="password" class="form-input" id="new-admin-password" required>
+                    </div>
+                    <div class="modal-footer" style="padding-top: 20px; display: flex; justify-content: space-between;">
+                        <button type="button" class="btn btn-danger" id="admin-logout-btn">Yönetici Modundan
+                            Çık</button>
+                        <div style="display: flex; gap: 10px;">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">İptal</button>
+                            <button type="submit" class="btn btn-primary">Değiştir</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer" style="display: none;"></div>
         </div>
     </div>
 

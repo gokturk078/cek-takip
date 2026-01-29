@@ -125,6 +125,20 @@ const App = {
             });
         }
 
+        // Admin button
+        var adminBtn = document.getElementById('admin-btn');
+        if (adminBtn) {
+            adminBtn.addEventListener('click', function () {
+                if (Auth.isAdmin) {
+                    // Already admin, show password change modal
+                    UI.openModal('admin-password-modal');
+                } else {
+                    // Show admin login modal
+                    UI.openModal('admin-login-modal');
+                }
+            });
+        }
+
         // Save settings button
         var saveSettingsBtn = document.getElementById('save-settings-btn');
         if (saveSettingsBtn) {
@@ -216,6 +230,54 @@ const App = {
             sidebarOverlay.addEventListener('click', function () {
                 document.querySelector('.sidebar').classList.remove('active');
                 document.querySelector('.sidebar-overlay').classList.remove('active');
+            });
+        }
+
+        // Admin login form
+        var adminLoginForm = document.getElementById('admin-login-form');
+        if (adminLoginForm) {
+            adminLoginForm.addEventListener('submit', async function (e) {
+                e.preventDefault();
+                var password = document.getElementById('admin-password-input').value;
+                var result = await Auth.attemptAdminLogin(password);
+
+                if (result.success) {
+                    UI.closeAllModals();
+                    UI.showToast('success', 'Giriş Başarılı', 'Yönetici modu aktif edildi.');
+                    document.getElementById('admin-password-input').value = '';
+                } else {
+                    UI.showToast('danger', 'Hata', result.error || 'Hatalı şifre');
+                }
+            });
+        }
+
+        // Admin password change form
+        var adminChangeForm = document.getElementById('admin-change-password-form');
+        if (adminChangeForm) {
+            adminChangeForm.addEventListener('submit', async function (e) {
+                e.preventDefault();
+                var currentPassword = document.getElementById('current-admin-password').value;
+                var newPassword = document.getElementById('new-admin-password').value;
+                var result = await Auth.changeAdminPassword(currentPassword, newPassword);
+
+                if (result.success) {
+                    UI.closeAllModals();
+                    UI.showToast('success', 'Başarılı', 'Yönetici şifresi değiştirildi.');
+                    document.getElementById('current-admin-password').value = '';
+                    document.getElementById('new-admin-password').value = '';
+                } else {
+                    UI.showToast('danger', 'Hata', result.error || 'Şifre değiştirilemedi');
+                }
+            });
+        }
+
+        // Admin logout button
+        var adminLogoutBtn = document.getElementById('admin-logout-btn');
+        if (adminLogoutBtn) {
+            adminLogoutBtn.addEventListener('click', function () {
+                Auth.logoutAdmin();
+                UI.closeAllModals();
+                UI.showToast('info', 'Çıkış Yapıldı', 'Yönetici modundan çıkıldı.');
             });
         }
 

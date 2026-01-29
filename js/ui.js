@@ -787,6 +787,16 @@ const UI = {
     },
 
     /**
+     * Open a specific modal by ID
+     */
+    openModal(modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+            modal.classList.add('active');
+        }
+    },
+
+    /**
      * Open settings modal
      */
     openSettingsModal() {
