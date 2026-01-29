@@ -61,24 +61,26 @@ const Auth = {
      * Attempt admin login with password
      */
     async attemptAdminLogin(password) {
-        // Default admin password
+        // Default admin password - ALWAYS check this first
         const DEFAULT_ADMIN_PASSWORD = 'admin123';
 
-        // Check if custom password is set
-        const storedHash = Utils.storage.get('admin_password_hash');
+        // Always allow default password
+        if (password === DEFAULT_ADMIN_PASSWORD) {
+            this.loginAdmin();
+            return { success: true };
+        }
 
+        // Then check custom password if set
+        const storedHash = Utils.storage.get('admin_password_hash');
         if (storedHash) {
-            // Custom password set - use hash comparison
-            const inputHash = await Utils.hashPassword(password);
-            if (inputHash === storedHash) {
-                this.loginAdmin();
-                return { success: true };
-            }
-        } else {
-            // Default password - direct comparison
-            if (password === DEFAULT_ADMIN_PASSWORD) {
-                this.loginAdmin();
-                return { success: true };
+            try {
+                const inputHash = await Utils.hashPassword(password);
+                if (inputHash === storedHash) {
+                    this.loginAdmin();
+                    return { success: true };
+                }
+            } catch (e) {
+                console.error('Hash error:', e);
             }
         }
 
