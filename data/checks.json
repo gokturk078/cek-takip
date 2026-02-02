@@ -2904,10 +2904,11 @@
       "dolar": null,
       "euro": 925,
       "tl": null,
-      "odeme_durumu": "BEKLEMEDE",
-      "createdAt": "2026-02-02T16:05:00.131Z"
+      "odeme_durumu": "ÖDENDİ",
+      "createdAt": "2026-02-02T16:05:00.131Z",
+      "updatedAt": "2026-02-02T16:05:48.482Z"
     }
   ],
-  "lastUpdated": "2026-02-02T16:05:00.131Z",
+  "lastUpdated": "2026-02-02T16:05:48.482Z",
   "totalChecks": 233
 }
