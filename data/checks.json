@@ -2867,8 +2867,21 @@
       "tl": 250000,
       "odeme_durumu": "BEKLEMEDE",
       "createdAt": "2026-02-02T16:01:19.386Z"
+    },
+    {
+      "id": 233,
+      "firma_adi": "INTERTIM ORMAN ÜRÜNLERİ İTHALAT İMALAT İHRC.SAN.VE TİC.LTD.ŞTİ.",
+      "cek_no": "8633585",
+      "banka": "GARANTİ BANKASI",
+      "cek_tanzim_tarihi": "2026-01-29",
+      "vade_tarihi": "2026-04-25",
+      "dolar": null,
+      "euro": 4000,
+      "tl": null,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-02-02T16:03:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-02T16:01:19.386Z",
-  "totalChecks": 230
+  "lastUpdated": "2026-02-02T16:03:33.913Z",
+  "totalChecks": 231
 }
