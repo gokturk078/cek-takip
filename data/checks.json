@@ -2866,8 +2866,9 @@
       "dolar": null,
       "euro": null,
       "tl": 250000,
-      "odeme_durumu": "BEKLEMEDE",
-      "createdAt": "2026-02-02T16:01:19.386Z"
+      "odeme_durumu": "ÖDENDİ",
+      "createdAt": "2026-02-02T16:01:19.386Z",
+      "autoUpdatedAt": "2026-02-04T16:42:29.438Z"
     },
     {
       "id": 233,
@@ -2910,6 +2911,6 @@
       "updatedAt": "2026-02-02T16:05:48.482Z"
     }
   ],
-  "lastUpdated": "2026-02-02T16:11:48.454Z",
+  "lastUpdated": "2026-02-04T16:42:29.438Z",
   "totalChecks": 233
 }
