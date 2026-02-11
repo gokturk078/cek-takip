@@ -3130,8 +3130,21 @@
       "tl": 250000,
       "odeme_durumu": "BEKLEMEDE",
       "createdAt": "2026-02-11T10:40:26.817Z"
+    },
+    {
+      "id": 253,
+      "firma_adi": "SOSYAL SİGORTALAR DAİRESİ",
+      "cek_no": "8391894",
+      "banka": "NEAR EAST BANK",
+      "cek_tanzim_tarihi": "2026-02-11",
+      "vade_tarihi": "2026-02-11",
+      "dolar": null,
+      "euro": null,
+      "tl": 2174554.25,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-02-11T16:59:03.665Z"
     }
   ],
-  "lastUpdated": "2026-02-11T10:40:26.817Z",
-  "totalChecks": 250
+  "lastUpdated": "2026-02-11T16:59:03.665Z",
+  "totalChecks": 251
 }
