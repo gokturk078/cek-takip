@@ -2974,8 +2974,21 @@
       "tl": null,
       "odeme_durumu": "BEKLEMEDE",
       "createdAt": "2026-02-11T10:30:29.872Z"
+    },
+    {
+      "id": 241,
+      "firma_adi": "EROĞLU MOBİLYA LTD",
+      "cek_no": "8633590",
+      "banka": "GARANTİ BANKASI",
+      "cek_tanzim_tarihi": "2026-02-10",
+      "vade_tarihi": "2026-04-25",
+      "dolar": null,
+      "euro": 25000,
+      "tl": null,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-02-11T10:31:25.655Z"
     }
   ],
-  "lastUpdated": "2026-02-11T10:30:29.872Z",
-  "totalChecks": 238
+  "lastUpdated": "2026-02-11T10:31:25.655Z",
+  "totalChecks": 239
 }
