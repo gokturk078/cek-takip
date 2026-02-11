@@ -2935,8 +2935,21 @@
       "tl": null,
       "odeme_durumu": "BEKLEMEDE",
       "createdAt": "2026-02-11T10:27:50.324Z"
+    },
+    {
+      "id": 238,
+      "firma_adi": "LEVENT SEZGİN",
+      "cek_no": "0544203",
+      "banka": "GARANTİ BANKASI",
+      "cek_tanzim_tarihi": "2026-02-10",
+      "vade_tarihi": "2026-02-25",
+      "dolar": null,
+      "euro": null,
+      "tl": 750000,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-02-11T10:28:42.592Z"
     }
   ],
-  "lastUpdated": "2026-02-11T10:27:50.324Z",
-  "totalChecks": 235
+  "lastUpdated": "2026-02-11T10:28:42.592Z",
+  "totalChecks": 236
 }
