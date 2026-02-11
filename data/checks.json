@@ -3000,8 +3000,21 @@
       "tl": 302880,
       "odeme_durumu": "BEKLEMEDE",
       "createdAt": "2026-02-11T10:32:20.830Z"
+    },
+    {
+      "id": 243,
+      "firma_adi": "ERMATAŞ LTD",
+      "cek_no": "0545915",
+      "banka": "GARANTİ BANKASI",
+      "cek_tanzim_tarihi": "2026-02-10",
+      "vade_tarihi": "2026-04-25",
+      "dolar": null,
+      "euro": null,
+      "tl": 220000,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-02-11T10:33:32.432Z"
     }
   ],
-  "lastUpdated": "2026-02-11T10:32:20.830Z",
-  "totalChecks": 240
+  "lastUpdated": "2026-02-11T10:33:32.432Z",
+  "totalChecks": 241
 }
