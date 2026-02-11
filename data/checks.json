@@ -3104,8 +3104,21 @@
       "tl": 700000,
       "odeme_durumu": "BEKLEMEDE",
       "createdAt": "2026-02-11T10:39:02.291Z"
+    },
+    {
+      "id": 251,
+      "firma_adi": "TAYF LTD.",
+      "cek_no": "0545923",
+      "banka": "GARANTİ BANKASI",
+      "cek_tanzim_tarihi": "2026-02-10",
+      "vade_tarihi": "2026-04-25",
+      "dolar": null,
+      "euro": null,
+      "tl": 1000000,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-02-11T10:39:45.299Z"
     }
   ],
-  "lastUpdated": "2026-02-11T10:39:02.291Z",
-  "totalChecks": 248
+  "lastUpdated": "2026-02-11T10:39:45.299Z",
+  "totalChecks": 249
 }
