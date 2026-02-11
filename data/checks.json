@@ -3013,8 +3013,21 @@
       "tl": 220000,
       "odeme_durumu": "BEKLEMEDE",
       "createdAt": "2026-02-11T10:33:32.432Z"
+    },
+    {
+      "id": 244,
+      "firma_adi": "GEPAZ LTD.",
+      "cek_no": "0545916",
+      "banka": "GARANTİ BANKASI",
+      "cek_tanzim_tarihi": "2026-02-10",
+      "vade_tarihi": "2026-02-25",
+      "dolar": null,
+      "euro": null,
+      "tl": 650000,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-02-11T10:34:17.059Z"
     }
   ],
-  "lastUpdated": "2026-02-11T10:33:32.432Z",
-  "totalChecks": 241
+  "lastUpdated": "2026-02-11T10:34:17.060Z",
+  "totalChecks": 242
 }
