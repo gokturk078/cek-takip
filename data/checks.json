@@ -3143,8 +3143,21 @@
       "tl": 2174554.25,
       "odeme_durumu": "BEKLEMEDE",
       "createdAt": "2026-02-11T16:59:03.665Z"
+    },
+    {
+      "id": 254,
+      "firma_adi": "GELİR VE VERGİ DAİRESİ",
+      "cek_no": "0545913",
+      "banka": "GARANTİ BANKASI",
+      "cek_tanzim_tarihi": "2026-02-11",
+      "vade_tarihi": "2026-02-11",
+      "dolar": null,
+      "euro": null,
+      "tl": 180924.42,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-02-11T17:00:06.146Z"
     }
   ],
-  "lastUpdated": "2026-02-11T16:59:03.665Z",
-  "totalChecks": 251
+  "lastUpdated": "2026-02-11T17:00:06.146Z",
+  "totalChecks": 252
 }
