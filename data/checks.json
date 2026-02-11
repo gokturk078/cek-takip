@@ -3117,8 +3117,21 @@
       "tl": 1000000,
       "odeme_durumu": "BEKLEMEDE",
       "createdAt": "2026-02-11T10:39:45.299Z"
+    },
+    {
+      "id": 252,
+      "firma_adi": "YUSUF DEMİR",
+      "cek_no": "0545924",
+      "banka": "GARANTİ BANKASI",
+      "cek_tanzim_tarihi": "2026-02-10",
+      "vade_tarihi": "2026-04-25",
+      "dolar": null,
+      "euro": null,
+      "tl": 250000,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-02-11T10:40:26.817Z"
     }
   ],
-  "lastUpdated": "2026-02-11T10:39:45.299Z",
-  "totalChecks": 249
+  "lastUpdated": "2026-02-11T10:40:26.817Z",
+  "totalChecks": 250
 }
