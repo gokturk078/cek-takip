@@ -3039,8 +3039,21 @@
       "tl": 750000,
       "odeme_durumu": "BEKLEMEDE",
       "createdAt": "2026-02-11T10:35:04.455Z"
+    },
+    {
+      "id": 246,
+      "firma_adi": "HASAN ONALT LTD",
+      "cek_no": "0545918",
+      "banka": "GARANTİ BANKASI",
+      "cek_tanzim_tarihi": "2026-02-10",
+      "vade_tarihi": "2026-04-25",
+      "dolar": null,
+      "euro": null,
+      "tl": 302000,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-02-11T10:35:50.251Z"
     }
   ],
-  "lastUpdated": "2026-02-11T10:35:04.455Z",
-  "totalChecks": 243
+  "lastUpdated": "2026-02-11T10:35:50.251Z",
+  "totalChecks": 244
 }
