@@ -3078,8 +3078,21 @@
       "tl": 400000,
       "odeme_durumu": "BEKLEMEDE",
       "createdAt": "2026-02-11T10:37:30.571Z"
+    },
+    {
+      "id": 249,
+      "firma_adi": "ÖMER DİLMAÇ",
+      "cek_no": "0545921",
+      "banka": "GARANTİ BANKASI",
+      "cek_tanzim_tarihi": "2026-02-10",
+      "vade_tarihi": "2026-02-25",
+      "dolar": null,
+      "euro": null,
+      "tl": 1000000,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-02-11T10:38:06.307Z"
     }
   ],
-  "lastUpdated": "2026-02-11T10:37:30.571Z",
-  "totalChecks": 246
+  "lastUpdated": "2026-02-11T10:38:06.307Z",
+  "totalChecks": 247
 }
