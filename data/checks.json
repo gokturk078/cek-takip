@@ -3158,8 +3158,21 @@
       "odeme_durumu": "ÖDENDİ",
       "createdAt": "2026-02-11T17:00:06.146Z",
       "autoUpdatedAt": "2026-02-13T08:27:45.212Z"
+    },
+    {
+      "id": 255,
+      "firma_adi": "ENVER DÜZKAR",
+      "cek_no": "",
+      "banka": "GARANTİ BANKASI",
+      "cek_tanzim_tarihi": "2026-02-13",
+      "vade_tarihi": "2026-02-13",
+      "dolar": null,
+      "euro": null,
+      "tl": 500000,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-02-13T08:28:28.442Z"
     }
   ],
-  "lastUpdated": "2026-02-13T08:27:45.212Z",
-  "totalChecks": 252
+  "lastUpdated": "2026-02-13T08:28:28.442Z",
+  "totalChecks": 253
 }
