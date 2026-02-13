@@ -3198,8 +3198,21 @@
       "tl": 29096.64,
       "odeme_durumu": "BEKLEMEDE",
       "createdAt": "2026-02-13T15:27:37.461Z"
+    },
+    {
+      "id": 258,
+      "firma_adi": "İHTİYAT SANDIĞI DAİRESİ",
+      "cek_no": "8391892",
+      "banka": "NEAR EAST BANK",
+      "cek_tanzim_tarihi": "2026-02-13",
+      "vade_tarihi": "2026-02-13",
+      "dolar": null,
+      "euro": null,
+      "tl": 559685.72,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-02-13T15:28:21.721Z"
     }
   ],
-  "lastUpdated": "2026-02-13T15:27:37.462Z",
-  "totalChecks": 255
+  "lastUpdated": "2026-02-13T15:28:21.721Z",
+  "totalChecks": 256
 }
