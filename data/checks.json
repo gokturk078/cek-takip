@@ -3162,7 +3162,7 @@
     {
       "id": 255,
       "firma_adi": "ENVER DÜZKAR",
-      "cek_no": "",
+      "cek_no": "0545925",
       "banka": "GARANTİ BANKASI",
       "cek_tanzim_tarihi": "2026-02-13",
       "vade_tarihi": "2026-02-13",
@@ -3170,7 +3170,8 @@
       "euro": null,
       "tl": 500000,
       "odeme_durumu": "BEKLEMEDE",
-      "createdAt": "2026-02-13T08:28:28.442Z"
+      "createdAt": "2026-02-13T08:28:28.442Z",
+      "updatedAt": "2026-02-13T08:31:27.567Z"
     },
     {
       "id": 256,
@@ -3186,6 +3187,6 @@
       "createdAt": "2026-02-13T08:30:58.938Z"
     }
   ],
-  "lastUpdated": "2026-02-13T08:30:58.938Z",
+  "lastUpdated": "2026-02-13T08:31:27.567Z",
   "totalChecks": 254
 }
