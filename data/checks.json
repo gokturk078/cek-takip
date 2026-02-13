@@ -3141,8 +3141,9 @@
       "dolar": null,
       "euro": null,
       "tl": 2174554.25,
-      "odeme_durumu": "BEKLEMEDE",
-      "createdAt": "2026-02-11T16:59:03.665Z"
+      "odeme_durumu": "ÖDENDİ",
+      "createdAt": "2026-02-11T16:59:03.665Z",
+      "autoUpdatedAt": "2026-02-13T08:27:45.204Z"
     },
     {
       "id": 254,
@@ -3154,10 +3155,11 @@
       "dolar": null,
       "euro": null,
       "tl": 180924.42,
-      "odeme_durumu": "BEKLEMEDE",
-      "createdAt": "2026-02-11T17:00:06.146Z"
+      "odeme_durumu": "ÖDENDİ",
+      "createdAt": "2026-02-11T17:00:06.146Z",
+      "autoUpdatedAt": "2026-02-13T08:27:45.212Z"
     }
   ],
-  "lastUpdated": "2026-02-11T17:00:06.146Z",
+  "lastUpdated": "2026-02-13T08:27:45.212Z",
   "totalChecks": 252
 }
