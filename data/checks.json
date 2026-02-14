@@ -3227,8 +3227,21 @@
       "tl": null,
       "odeme_durumu": "BEKLEMEDE",
       "createdAt": "2026-02-14T13:13:36.932Z"
+    },
+    {
+      "id": 260,
+      "firma_adi": "KUBİLAY KUTLUAY",
+      "cek_no": "9318085",
+      "banka": "NEAR EAST BANK",
+      "cek_tanzim_tarihi": "2026-02-14",
+      "vade_tarihi": "2026-02-17",
+      "dolar": null,
+      "euro": 207400,
+      "tl": null,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-02-14T13:14:36.801Z"
     }
   ],
-  "lastUpdated": "2026-02-14T13:13:36.932Z",
-  "totalChecks": 257
+  "lastUpdated": "2026-02-14T13:14:36.801Z",
+  "totalChecks": 258
 }
