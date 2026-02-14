@@ -3214,8 +3214,21 @@
       "odeme_durumu": "ÖDENDİ",
       "createdAt": "2026-02-13T15:28:21.721Z",
       "autoUpdatedAt": "2026-02-14T11:02:24.615Z"
+    },
+    {
+      "id": 259,
+      "firma_adi": "INTERTİM ORMAN ÜRĞNLERİ İTH.İHRC.LTD.",
+      "cek_no": "9318094",
+      "banka": "NEAR EAST BANK",
+      "cek_tanzim_tarihi": "2026-02-14",
+      "vade_tarihi": "2026-06-25",
+      "dolar": null,
+      "euro": 16830,
+      "tl": null,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-02-14T13:13:36.932Z"
     }
   ],
-  "lastUpdated": "2026-02-14T11:02:24.615Z",
-  "totalChecks": 256
+  "lastUpdated": "2026-02-14T13:13:36.932Z",
+  "totalChecks": 257
 }
