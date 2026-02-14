@@ -3169,9 +3169,10 @@
       "dolar": null,
       "euro": null,
       "tl": 500000,
-      "odeme_durumu": "BEKLEMEDE",
+      "odeme_durumu": "ÖDENDİ",
       "createdAt": "2026-02-13T08:28:28.442Z",
-      "updatedAt": "2026-02-13T08:31:27.567Z"
+      "updatedAt": "2026-02-13T08:31:27.567Z",
+      "autoUpdatedAt": "2026-02-14T11:02:24.614Z"
     },
     {
       "id": 256,
@@ -3196,8 +3197,9 @@
       "dolar": null,
       "euro": null,
       "tl": 29096.64,
-      "odeme_durumu": "BEKLEMEDE",
-      "createdAt": "2026-02-13T15:27:37.461Z"
+      "odeme_durumu": "ÖDENDİ",
+      "createdAt": "2026-02-13T15:27:37.461Z",
+      "autoUpdatedAt": "2026-02-14T11:02:24.615Z"
     },
     {
       "id": 258,
@@ -3209,10 +3211,11 @@
       "dolar": null,
       "euro": null,
       "tl": 559685.72,
-      "odeme_durumu": "BEKLEMEDE",
-      "createdAt": "2026-02-13T15:28:21.721Z"
+      "odeme_durumu": "ÖDENDİ",
+      "createdAt": "2026-02-13T15:28:21.721Z",
+      "autoUpdatedAt": "2026-02-14T11:02:24.615Z"
     }
   ],
-  "lastUpdated": "2026-02-13T15:28:21.721Z",
+  "lastUpdated": "2026-02-14T11:02:24.615Z",
   "totalChecks": 256
 }
