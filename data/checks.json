@@ -3221,12 +3221,13 @@
       "cek_no": "9318094",
       "banka": "NEAR EAST BANK",
       "cek_tanzim_tarihi": "2026-02-14",
-      "vade_tarihi": "2026-06-25",
+      "vade_tarihi": "2026-04-25",
       "dolar": null,
       "euro": 16830,
       "tl": null,
       "odeme_durumu": "BEKLEMEDE",
-      "createdAt": "2026-02-14T13:13:36.932Z"
+      "createdAt": "2026-02-14T13:13:36.932Z",
+      "updatedAt": "2026-02-16T11:15:09.221Z"
     },
     {
       "id": 260,
@@ -3294,6 +3295,6 @@
       "createdAt": "2026-02-14T13:19:12.774Z"
     }
   ],
-  "lastUpdated": "2026-02-14T13:19:12.774Z",
+  "lastUpdated": "2026-02-16T11:15:09.221Z",
   "totalChecks": 262
 }
