@@ -3055,19 +3055,6 @@
       "createdAt": "2026-02-11T10:35:50.251Z"
     },
     {
-      "id": 247,
-      "firma_adi": "MEPAŞ LTD.",
-      "cek_no": "0545919",
-      "banka": "GARANTİ BANKASI",
-      "cek_tanzim_tarihi": "2026-02-10",
-      "vade_tarihi": "2026-05-25",
-      "dolar": null,
-      "euro": null,
-      "tl": 420000,
-      "odeme_durumu": "BEKLEMEDE",
-      "createdAt": "2026-02-11T10:36:31.875Z"
-    },
-    {
       "id": 248,
       "firma_adi": "MEPAŞ LTD.",
       "cek_no": "0545920",
@@ -3348,6 +3335,6 @@
       "createdAt": "2026-02-17T12:14:03.911Z"
     }
   ],
-  "lastUpdated": "2026-02-17T12:14:03.912Z",
-  "totalChecks": 266
+  "lastUpdated": "2026-02-17T12:27:13.976Z",
+  "totalChecks": 265
 }
