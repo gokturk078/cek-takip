@@ -3359,8 +3359,21 @@
       "tl": null,
       "odeme_durumu": "BEKLEMEDE",
       "createdAt": "2026-02-17T12:30:01.216Z"
+    },
+    {
+      "id": 272,
+      "firma_adi": "MEPAŞ LTD.",
+      "cek_no": "K1-0063247",
+      "banka": "DENİZBANK",
+      "cek_tanzim_tarihi": "2026-01-29",
+      "vade_tarihi": "2026-04-14",
+      "dolar": null,
+      "euro": 84000,
+      "tl": null,
+      "odeme_durumu": "BEKLEMEDE",
+      "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-17T12:30:01.216Z",
-  "totalChecks": 267
+  "lastUpdated": "2026-02-17T12:30:33.913Z",
+  "totalChecks": 268
 }
