@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 25,
-      "firma_adi": "ERDAL BİRİCİK",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "9314279",
-      "dolar": null,
-      "euro": 1150,
-      "tl": null,
-      "banka": "NEARESTBANK",
-      "vade_tarihi": "2025-10-08",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 26,
       "firma_adi": "RÖDER",
       "cek_tanzim_tarihi": null,
@@ -3317,6 +3305,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:27:32.352Z",
-  "totalChecks": 263
+  "lastUpdated": "2026-02-20T16:27:34.681Z",
+  "totalChecks": 262
 }
