@@ -229,19 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 144,
-      "firma_adi": "JASMİN COURT",
-      "cek_tanzim_tarihi": "2025-12-26",
-      "cek_no": "545907",
-      "dolar": null,
-      "euro": null,
-      "tl": 150000,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-12-26",
-      "odeme_durumu": "ÖDENDİ",
-      "updatedAt": "2026-01-22T07:16:25.982Z"
-    },
-    {
       "id": 145,
       "firma_adi": "HÜDAVERDİ ÇÖYGÜN",
       "cek_tanzim_tarihi": null,
@@ -1855,6 +1842,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:32:36.456Z",
-  "totalChecks": 144
+  "lastUpdated": "2026-02-20T16:32:38.841Z",
+  "totalChecks": 143
 }
