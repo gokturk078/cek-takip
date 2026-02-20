@@ -227,21 +227,8 @@
       "banka": "NEARESTBANK",
       "vade_tarihi": "2025-10-07",
       "odeme_durumu": "ÖDENDİ"
-    },
-    {
-      "id": 264,
-      "firma_adi": "KUBİLAY KUTLUAY",
-      "cek_no": "9318089",
-      "banka": "NEAR EAST BANK",
-      "cek_tanzim_tarihi": "2026-02-14",
-      "vade_tarihi": "2026-06-21",
-      "dolar": null,
-      "euro": 100000,
-      "tl": null,
-      "odeme_durumu": "BEKLEMEDE",
-      "createdAt": "2026-02-14T13:19:12.774Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:39:14.912Z",
-  "totalChecks": 20
+  "lastUpdated": "2026-02-20T16:39:17.173Z",
+  "totalChecks": 19
 }
