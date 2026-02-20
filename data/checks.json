@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 41,
-      "firma_adi": "BEMBOĞAZ END VE MAD LTD",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8631763",
-      "dolar": 3600,
-      "euro": null,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-10-21",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 42,
       "firma_adi": "COŞKUN TEMUR",
       "cek_tanzim_tarihi": null,
@@ -3125,6 +3113,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:28:13.376Z",
-  "totalChecks": 247
+  "lastUpdated": "2026-02-20T16:28:15.945Z",
+  "totalChecks": 246
 }
