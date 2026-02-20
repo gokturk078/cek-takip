@@ -630,20 +630,6 @@
       "createdAt": "2026-01-22T06:34:38.619Z"
     },
     {
-      "id": 212,
-      "firma_adi": "YUSUF DEMİR",
-      "cek_no": "8391885",
-      "banka": "NEAR EAST BANK",
-      "cek_tanzim_tarihi": "2026-01-14",
-      "vade_tarihi": "2026-01-25",
-      "dolar": null,
-      "euro": null,
-      "tl": 200000,
-      "odeme_durumu": "ÖDENDİ",
-      "createdAt": "2026-01-22T06:35:56.123Z",
-      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
-    },
-    {
       "id": 213,
       "firma_adi": "YUSUF DEMİR",
       "cek_no": "8391886",
@@ -1323,6 +1309,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:35:14.189Z",
-  "totalChecks": 104
+  "lastUpdated": "2026-02-20T16:35:16.745Z",
+  "totalChecks": 103
 }
