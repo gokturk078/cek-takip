@@ -604,20 +604,6 @@
       "createdAt": "2026-01-19T07:52:41.333Z"
     },
     {
-      "id": 208,
-      "firma_adi": "CHIP BİLGİSAYAR",
-      "cek_no": "8633469",
-      "banka": "GARANTİ BANKASI",
-      "cek_tanzim_tarihi": "2026-01-19",
-      "vade_tarihi": "2026-01-25",
-      "dolar": null,
-      "euro": 3000,
-      "tl": null,
-      "odeme_durumu": "ÖDENDİ",
-      "createdAt": "2026-01-19T08:08:08.227Z",
-      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
-    },
-    {
       "id": 209,
       "firma_adi": "NEOTECH LTD",
       "cek_no": "8633581",
@@ -1351,6 +1337,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:35:08.925Z",
-  "totalChecks": 106
+  "lastUpdated": "2026-02-20T16:35:11.340Z",
+  "totalChecks": 105
 }
