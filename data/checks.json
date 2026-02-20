@@ -373,19 +373,6 @@
       "odeme_durumu": "BEKLEMEDE"
     },
     {
-      "id": 218,
-      "firma_adi": "ÇETİN KÜRŞAD DEVELOPMENT",
-      "cek_no": "8391884",
-      "banka": "NEAR EAST BANK",
-      "cek_tanzim_tarihi": "2026-01-10",
-      "vade_tarihi": "2026-02-25",
-      "dolar": null,
-      "euro": null,
-      "tl": 14340,
-      "odeme_durumu": "BEKLEMEDE",
-      "createdAt": "2026-01-22T06:50:06.754Z"
-    },
-    {
       "id": 224,
       "firma_adi": "AŞAN NAKLİYAT",
       "cek_no": "K1-0063187",
@@ -817,6 +804,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:37:08.356Z",
-  "totalChecks": 65
+  "lastUpdated": "2026-02-20T16:37:10.365Z",
+  "totalChecks": 64
 }
