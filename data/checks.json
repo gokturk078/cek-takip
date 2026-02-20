@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 177,
-      "firma_adi": "KUTLAY MÜHENDİSLİK",
-      "cek_tanzim_tarihi": "2025-12-09",
-      "cek_no": "8632617",
-      "dolar": null,
-      "euro": 20000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2026-02-25",
-      "odeme_durumu": "BEKLEMEDE"
-    },
-    {
       "id": 178,
       "firma_adi": "MTH YAPI İMALAT SAN.TİC.",
       "cek_tanzim_tarihi": "2025-12-17",
@@ -1065,6 +1053,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:36:09.251Z",
-  "totalChecks": 85
+  "lastUpdated": "2026-02-20T16:36:11.792Z",
+  "totalChecks": 84
 }
