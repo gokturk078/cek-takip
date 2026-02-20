@@ -1106,20 +1106,6 @@
       "createdAt": "2026-01-22T06:50:06.754Z"
     },
     {
-      "id": 222,
-      "firma_adi": "AŞAN NAKLİYAT",
-      "cek_no": "K1-0063236",
-      "banka": "DENİZBANK",
-      "cek_tanzim_tarihi": "2026-01-22",
-      "vade_tarihi": "2026-01-22",
-      "dolar": null,
-      "euro": 90000,
-      "tl": null,
-      "odeme_durumu": "ÖDENDİ",
-      "createdAt": "2026-01-23T11:41:20.782Z",
-      "updatedAt": "2026-01-23T11:42:04.676Z"
-    },
-    {
       "id": 223,
       "firma_adi": "İHTİYAT SANDIĞI DAİRESİ",
       "cek_no": "8391890",
@@ -1733,6 +1719,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:33:01.929Z",
-  "totalChecks": 135
+  "lastUpdated": "2026-02-20T16:33:04.637Z",
+  "totalChecks": 134
 }
