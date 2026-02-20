@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 200,
-      "firma_adi": "ASEL ENGIEERİNG LTD.",
-      "cek_tanzim_tarihi": "2026-01-09",
-      "cek_no": "8633334",
-      "dolar": null,
-      "euro": 7700,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2026-04-25",
-      "odeme_durumu": "BEKLEMEDE"
-    },
-    {
       "id": 201,
       "firma_adi": "ASEL ENGIEERİNG LTD.",
       "cek_tanzim_tarihi": "2025-12-17",
@@ -410,6 +398,6 @@
       "createdAt": "2026-02-14T13:19:12.774Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:38:37.541Z",
-  "totalChecks": 33
+  "lastUpdated": "2026-02-20T16:38:40.509Z",
+  "totalChecks": 32
 }
