@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 65,
-      "firma_adi": "SERKAN BENZİNCİ",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8632082",
-      "dolar": null,
-      "euro": 10000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-11-07",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 66,
       "firma_adi": "NECİPOĞLU LTD",
       "cek_tanzim_tarihi": null,
@@ -2837,6 +2825,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:29:16.322Z",
-  "totalChecks": 223
+  "lastUpdated": "2026-02-20T16:29:18.673Z",
+  "totalChecks": 222
 }
