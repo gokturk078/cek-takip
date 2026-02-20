@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 158,
-      "firma_adi": "EDNA FORKLİFT VİNÇ",
-      "cek_tanzim_tarihi": "2025-12-09",
-      "cek_no": "8632620",
-      "dolar": null,
-      "euro": 15000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "İPTAL EDİLDİ"
-    },
-    {
       "id": 159,
       "firma_adi": "METİN AKKAYA",
       "cek_tanzim_tarihi": "2025-12-17",
@@ -1589,6 +1577,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:33:29.096Z",
-  "totalChecks": 124
+  "lastUpdated": "2026-02-20T16:33:32.153Z",
+  "totalChecks": 123
 }
