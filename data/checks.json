@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 52,
-      "firma_adi": "GRAND OTEL",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8391855",
-      "dolar": null,
-      "euro": null,
-      "tl": 90000,
-      "banka": "NEARESTBANK",
-      "vade_tarihi": "2025-10-25",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 53,
       "firma_adi": "KYRESİS JASMİNE",
       "cek_tanzim_tarihi": null,
@@ -2993,6 +2981,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:28:45.336Z",
-  "totalChecks": 236
+  "lastUpdated": "2026-02-20T16:28:47.472Z",
+  "totalChecks": 235
 }
