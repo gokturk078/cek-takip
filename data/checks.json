@@ -1,18 +1,6 @@
 {
   "checks": [
     {
-      "id": 19,
-      "firma_adi": "NURETTİN EROĞLU",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "9314277",
-      "dolar": null,
-      "euro": 7000,
-      "tl": null,
-      "banka": "NEARESTBANK",
-      "vade_tarihi": "2025-09-30",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 20,
       "firma_adi": "SERKAN BENZİNCİ",
       "cek_tanzim_tarihi": null,
@@ -37,6 +25,6 @@
       "odeme_durumu": "ÖDENDİ"
     }
   ],
-  "lastUpdated": "2026-02-20T16:40:05.264Z",
-  "totalChecks": 3
+  "lastUpdated": "2026-02-20T16:40:07.653Z",
+  "totalChecks": 2
 }
