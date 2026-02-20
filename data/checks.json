@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 64,
-      "firma_adi": "HASAN DİNÇER",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "",
-      "dolar": null,
-      "euro": null,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-11-05",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 65,
       "firma_adi": "SERKAN BENZİNCİ",
       "cek_tanzim_tarihi": null,
@@ -2849,6 +2837,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:29:13.505Z",
-  "totalChecks": 224
+  "lastUpdated": "2026-02-20T16:29:16.322Z",
+  "totalChecks": 223
 }
