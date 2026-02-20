@@ -229,19 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 162,
-      "firma_adi": "COŞKUN TEMUR",
-      "cek_tanzim_tarihi": "2025-12-17",
-      "cek_no": "9314290",
-      "dolar": null,
-      "euro": 15000,
-      "tl": null,
-      "banka": "NEAR EAST BANK",
-      "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "ÖDENDİ",
-      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
-    },
-    {
       "id": 163,
       "firma_adi": "EMRE DEMİR",
       "cek_tanzim_tarihi": "2025-12-17",
@@ -1538,6 +1525,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:33:40.173Z",
-  "totalChecks": 120
+  "lastUpdated": "2026-02-20T16:33:42.288Z",
+  "totalChecks": 119
 }
