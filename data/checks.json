@@ -1,18 +1,5 @@
 {
-  "checks": [
-    {
-      "id": 22,
-      "firma_adi": "RASİME BASAT",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "9314278",
-      "dolar": null,
-      "euro": 9450,
-      "tl": null,
-      "banka": "NEARESTBANK",
-      "vade_tarihi": "2025-10-07",
-      "odeme_durumu": "ÖDENDİ"
-    }
-  ],
-  "lastUpdated": "2026-02-20T16:40:11.277Z",
-  "totalChecks": 1
+  "checks": [],
+  "lastUpdated": "2026-02-20T16:40:14.113Z",
+  "totalChecks": 0
 }
