@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 94,
-      "firma_adi": "İNTERTİM KERESTECİLİK",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8631657",
-      "dolar": null,
-      "euro": 8728,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-11-27",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 95,
       "firma_adi": "JASMİN COURT",
       "cek_tanzim_tarihi": null,
@@ -2489,6 +2477,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:30:26.920Z",
-  "totalChecks": 194
+  "lastUpdated": "2026-02-20T16:30:29.456Z",
+  "totalChecks": 193
 }
