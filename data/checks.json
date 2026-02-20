@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 66,
-      "firma_adi": "NECİPOĞLU LTD",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "93114276",
-      "dolar": null,
-      "euro": 3500,
-      "tl": null,
-      "banka": "NEARESTBANK",
-      "vade_tarihi": "2025-11-07",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 67,
       "firma_adi": "İNTERTİM KERESTECİLİK",
       "cek_tanzim_tarihi": null,
@@ -2825,6 +2813,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:29:18.673Z",
-  "totalChecks": 222
+  "lastUpdated": "2026-02-20T16:29:20.777Z",
+  "totalChecks": 221
 }
