@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 27,
-      "firma_adi": "PEKUR LTD",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8631654",
-      "dolar": null,
-      "euro": 7000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-10-10",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 28,
       "firma_adi": "MESUT DEMİRALP",
       "cek_tanzim_tarihi": null,
@@ -3293,6 +3281,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:27:37.472Z",
-  "totalChecks": 261
+  "lastUpdated": "2026-02-20T16:27:40.257Z",
+  "totalChecks": 260
 }
