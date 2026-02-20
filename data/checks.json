@@ -1,18 +1,6 @@
 {
   "checks": [
     {
-      "id": 3,
-      "firma_adi": "SERKAN BENZİNCİ",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "9314270",
-      "dolar": null,
-      "euro": 5000,
-      "tl": null,
-      "banka": "NEARESTBANK",
-      "vade_tarihi": "2025-09-01",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 4,
       "firma_adi": "CHIP COMPUTER",
       "cek_tanzim_tarihi": null,
@@ -3353,6 +3341,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:26:58.752Z",
-  "totalChecks": 266
+  "lastUpdated": "2026-02-20T16:27:01.884Z",
+  "totalChecks": 265
 }
