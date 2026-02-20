@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 78,
-      "firma_adi": "LEVENT SEZGİN",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "544176",
-      "dolar": null,
-      "euro": null,
-      "tl": 250000,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-11-24",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 79,
       "firma_adi": "CEMAL KILIÇKIRAN",
       "cek_tanzim_tarihi": null,
@@ -2681,6 +2669,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:29:46.792Z",
-  "totalChecks": 210
+  "lastUpdated": "2026-02-20T16:29:49.273Z",
+  "totalChecks": 209
 }
