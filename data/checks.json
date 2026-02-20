@@ -229,19 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 147,
-      "firma_adi": "ELEKTROLU LTD.",
-      "cek_tanzim_tarihi": "2026-01-09",
-      "cek_no": "",
-      "dolar": null,
-      "euro": 4280,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2026-01-12",
-      "odeme_durumu": "ÖDENDİ",
-      "updatedAt": "2026-01-22T07:16:45.895Z"
-    },
-    {
       "id": 148,
       "firma_adi": "KAMTEK LTD",
       "cek_tanzim_tarihi": null,
@@ -1816,6 +1803,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:32:44.869Z",
-  "totalChecks": 141
+  "lastUpdated": "2026-02-20T16:32:47.456Z",
+  "totalChecks": 140
 }
