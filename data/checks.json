@@ -542,19 +542,6 @@
       "createdAt": "2026-02-11T10:40:26.817Z"
     },
     {
-      "id": 256,
-      "firma_adi": "ENVER DÜZKAR",
-      "cek_no": "9314294",
-      "banka": "NEAR EAST BANK",
-      "cek_tanzim_tarihi": "2026-02-12",
-      "vade_tarihi": "2026-02-25",
-      "dolar": null,
-      "euro": 10000,
-      "tl": null,
-      "odeme_durumu": "BEKLEMEDE",
-      "createdAt": "2026-02-13T08:30:58.938Z"
-    },
-    {
       "id": 259,
       "firma_adi": "INTERTİM ORMAN ÜRĞNLERİ İTH.İHRC.LTD.",
       "cek_no": "9318094",
@@ -699,6 +686,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:37:34.173Z",
-  "totalChecks": 56
+  "lastUpdated": "2026-02-20T16:37:36.944Z",
+  "totalChecks": 55
 }
