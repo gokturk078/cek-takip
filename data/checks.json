@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 93,
-      "firma_adi": "HÜDAVERDİ ÇÖYGÜN",
-      "cek_tanzim_tarihi": "2025-11-26",
-      "cek_no": "544202",
-      "dolar": null,
-      "euro": null,
-      "tl": 500000,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-11-26",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 94,
       "firma_adi": "İNTERTİM KERESTECİLİK",
       "cek_tanzim_tarihi": null,
@@ -2501,6 +2489,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:30:24.898Z",
-  "totalChecks": 195
+  "lastUpdated": "2026-02-20T16:30:26.920Z",
+  "totalChecks": 194
 }
