@@ -373,19 +373,6 @@
       "odeme_durumu": "BEKLEMEDE"
     },
     {
-      "id": 210,
-      "firma_adi": "NURETTİN EROĞLU",
-      "cek_no": "8633470",
-      "banka": "GARANTİ BANKASI",
-      "cek_tanzim_tarihi": "2026-01-21",
-      "vade_tarihi": "2026-02-25",
-      "dolar": null,
-      "euro": 20000,
-      "tl": null,
-      "odeme_durumu": "BEKLEMEDE",
-      "createdAt": "2026-01-21T14:19:40.667Z"
-    },
-    {
       "id": 211,
       "firma_adi": "KAMTEK LTD.",
       "cek_no": "8633465",
@@ -882,6 +869,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:36:54.677Z",
-  "totalChecks": 70
+  "lastUpdated": "2026-02-20T16:36:57.064Z",
+  "totalChecks": 69
 }
