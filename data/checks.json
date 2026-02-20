@@ -229,19 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 160,
-      "firma_adi": "NEOTECH",
-      "cek_tanzim_tarihi": "2025-12-17",
-      "cek_no": "8632624",
-      "dolar": null,
-      "euro": 7500,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "ÖDENDİ",
-      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
-    },
-    {
       "id": 161,
       "firma_adi": "ARILI MEKANİK",
       "cek_tanzim_tarihi": "2025-12-17",
@@ -1564,6 +1551,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:33:34.934Z",
-  "totalChecks": 122
+  "lastUpdated": "2026-02-20T16:33:37.188Z",
+  "totalChecks": 121
 }
