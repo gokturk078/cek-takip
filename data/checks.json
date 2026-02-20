@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 56,
-      "firma_adi": "METİN AKKAYA",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "9314283",
-      "dolar": null,
-      "euro": 5000,
-      "tl": null,
-      "banka": "NEAR EAST BANK",
-      "vade_tarihi": "2025-10-27",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 57,
       "firma_adi": "HASAN SERTOĞLU",
       "cek_tanzim_tarihi": null,
@@ -2945,6 +2933,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:28:54.833Z",
-  "totalChecks": 232
+  "lastUpdated": "2026-02-20T16:28:57.108Z",
+  "totalChecks": 231
 }
