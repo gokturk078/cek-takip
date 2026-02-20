@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 100,
-      "firma_adi": "KASCON LTD.",
-      "cek_tanzim_tarihi": "2025-12-04",
-      "cek_no": "8632096",
-      "dolar": null,
-      "euro": 11500,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-12-04",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 101,
       "firma_adi": "HÜDAVERDİ ÇÖYGÜN",
       "cek_tanzim_tarihi": "2025-12-04",
@@ -2417,6 +2405,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:30:42.216Z",
-  "totalChecks": 188
+  "lastUpdated": "2026-02-20T16:30:44.560Z",
+  "totalChecks": 187
 }
