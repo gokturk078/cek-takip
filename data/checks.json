@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 31,
-      "firma_adi": "FATİH AKALIN",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8631652",
-      "dolar": null,
-      "euro": 20000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-10-10",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 32,
       "firma_adi": "NEŞET KAHRAMAN",
       "cek_tanzim_tarihi": null,
@@ -3245,6 +3233,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:27:49.177Z",
-  "totalChecks": 257
+  "lastUpdated": "2026-02-20T16:27:51.480Z",
+  "totalChecks": 256
 }
