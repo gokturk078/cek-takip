@@ -1,18 +1,6 @@
 {
   "checks": [
     {
-      "id": 8,
-      "firma_adi": "NECİPOĞLU LTD",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8631062",
-      "dolar": null,
-      "euro": 3000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-09-11",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 9,
       "firma_adi": "TEM PETROL",
       "cek_tanzim_tarihi": null,
@@ -169,6 +157,6 @@
       "odeme_durumu": "ÖDENDİ"
     }
   ],
-  "lastUpdated": "2026-02-20T16:39:32.196Z",
-  "totalChecks": 14
+  "lastUpdated": "2026-02-20T16:39:34.852Z",
+  "totalChecks": 13
 }
