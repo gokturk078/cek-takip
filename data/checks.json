@@ -373,19 +373,6 @@
       "odeme_durumu": "BEKLEMEDE"
     },
     {
-      "id": 216,
-      "firma_adi": "ÇETİN KÜRŞAD DEVELOPMENT LTD",
-      "cek_no": "8391882",
-      "banka": "NEAR EAST BANK",
-      "cek_tanzim_tarihi": "2026-01-10",
-      "vade_tarihi": "2026-02-25",
-      "dolar": null,
-      "euro": null,
-      "tl": 85000,
-      "odeme_durumu": "BEKLEMEDE",
-      "createdAt": "2026-01-22T06:48:12.174Z"
-    },
-    {
       "id": 217,
       "firma_adi": "ÇETİN KÜRŞAD DEVELOPMENT LTD",
       "cek_no": "8391883",
@@ -843,6 +830,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:37:02.556Z",
-  "totalChecks": 67
+  "lastUpdated": "2026-02-20T16:37:05.137Z",
+  "totalChecks": 66
 }
