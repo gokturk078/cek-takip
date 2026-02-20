@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 84,
-      "firma_adi": "MEPAS LTD",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8631651",
-      "dolar": null,
-      "euro": 8000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-11-25",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 85,
       "firma_adi": "KAMTEK LTD",
       "cek_tanzim_tarihi": null,
@@ -2609,6 +2597,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:30:01.841Z",
-  "totalChecks": 204
+  "lastUpdated": "2026-02-20T16:30:03.908Z",
+  "totalChecks": 203
 }
