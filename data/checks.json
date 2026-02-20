@@ -229,19 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 149,
-      "firma_adi": "SERKAN BENZİNCİ",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "9314284",
-      "dolar": null,
-      "euro": 10000,
-      "tl": null,
-      "banka": "NEAR EAST BANK",
-      "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "ÖDENDİ",
-      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
-    },
-    {
       "id": 150,
       "firma_adi": "MEPAS LTD",
       "cek_tanzim_tarihi": null,
@@ -1706,6 +1693,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:33:06.885Z",
-  "totalChecks": 133
+  "lastUpdated": "2026-02-20T16:33:09.212Z",
+  "totalChecks": 132
 }
