@@ -229,19 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 152,
-      "firma_adi": "GEPAZ",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8631762",
-      "dolar": 8726,
-      "euro": null,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "ÖDENDİ",
-      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
-    },
-    {
       "id": 153,
       "firma_adi": "ÖZTİNOKS MUTFAK",
       "cek_tanzim_tarihi": "2025-12-17",
@@ -1667,6 +1654,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:33:14.136Z",
-  "totalChecks": 130
+  "lastUpdated": "2026-02-20T16:33:16.316Z",
+  "totalChecks": 129
 }
