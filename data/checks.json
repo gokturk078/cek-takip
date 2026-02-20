@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 88,
-      "firma_adi": "DAP METAL",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8632103",
-      "dolar": null,
-      "euro": 1460,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-11-25",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 89,
       "firma_adi": "HÜDAVERDİ ÇÖYGÜN",
       "cek_tanzim_tarihi": null,
@@ -2561,6 +2549,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:30:11.026Z",
-  "totalChecks": 200
+  "lastUpdated": "2026-02-20T16:30:13.840Z",
+  "totalChecks": 199
 }
