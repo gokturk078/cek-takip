@@ -229,19 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 143,
-      "firma_adi": "DEMİRCİOĞULLARI LTD.(HNİ İRFAN)",
-      "cek_tanzim_tarihi": "2025-12-25",
-      "cek_no": "544225",
-      "dolar": null,
-      "euro": null,
-      "tl": 500000,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-12-25",
-      "odeme_durumu": "ÖDENDİ",
-      "updatedAt": "2026-01-22T07:16:19.838Z"
-    },
-    {
       "id": 144,
       "firma_adi": "JASMİN COURT",
       "cek_tanzim_tarihi": "2025-12-26",
@@ -1868,6 +1855,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:32:33.896Z",
-  "totalChecks": 145
+  "lastUpdated": "2026-02-20T16:32:36.456Z",
+  "totalChecks": 144
 }
