@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 73,
-      "firma_adi": "EDİZ METAL ( KAİZ TRADİNG )",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8931658",
-      "dolar": null,
-      "euro": 7000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-11-17",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 74,
       "firma_adi": "NİHAT BOZKURT",
       "cek_tanzim_tarihi": null,
@@ -2741,6 +2729,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:29:35.240Z",
-  "totalChecks": 215
+  "lastUpdated": "2026-02-20T16:29:37.288Z",
+  "totalChecks": 214
 }
