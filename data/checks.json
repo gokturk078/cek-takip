@@ -229,19 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 104,
-      "firma_adi": "JASMİN COURT",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8391868",
-      "dolar": null,
-      "euro": null,
-      "tl": 250000,
-      "banka": "",
-      "vade_tarihi": "2025-12-10",
-      "odeme_durumu": "ÖDENDİ",
-      "updatedAt": "2026-01-22T07:13:13.755Z"
-    },
-    {
       "id": 105,
       "firma_adi": "QİZ LTD.",
       "cek_tanzim_tarihi": "2025-12-09",
@@ -2366,6 +2353,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:30:51.929Z",
-  "totalChecks": 184
+  "lastUpdated": "2026-02-20T16:30:54.185Z",
+  "totalChecks": 183
 }
