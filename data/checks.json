@@ -229,19 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 165,
-      "firma_adi": "MTH YAPI İMALAT SAN.TİC.",
-      "cek_tanzim_tarihi": "2025-12-17",
-      "cek_no": "8391869",
-      "dolar": null,
-      "euro": null,
-      "tl": 500000,
-      "banka": "NEAR EAST BANK",
-      "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "ÖDENDİ",
-      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
-    },
-    {
       "id": 166,
       "firma_adi": "DEDEZADE PARTCO LTD",
       "cek_tanzim_tarihi": "2025-12-17",
@@ -1499,6 +1486,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:33:47.132Z",
-  "totalChecks": 117
+  "lastUpdated": "2026-02-20T16:33:49.465Z",
+  "totalChecks": 116
 }
