@@ -451,19 +451,6 @@
       "createdAt": "2026-02-11T10:29:41.535Z"
     },
     {
-      "id": 240,
-      "firma_adi": "CUMALIGİL İNŞ.LTD.",
-      "cek_no": "8633589",
-      "banka": "GARANTİ BANKASI",
-      "cek_tanzim_tarihi": "2026-02-10",
-      "vade_tarihi": "2026-02-25",
-      "dolar": null,
-      "euro": 11200,
-      "tl": null,
-      "odeme_durumu": "BEKLEMEDE",
-      "createdAt": "2026-02-11T10:30:29.872Z"
-    },
-    {
       "id": 241,
       "firma_adi": "EROĞLU MOBİLYA LTD",
       "cek_no": "8633590",
@@ -751,6 +738,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:37:21.592Z",
-  "totalChecks": 60
+  "lastUpdated": "2026-02-20T16:37:24.380Z",
+  "totalChecks": 59
 }
