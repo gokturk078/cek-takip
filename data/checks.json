@@ -1,18 +1,6 @@
 {
   "checks": [
     {
-      "id": 16,
-      "firma_adi": "EHS GÜMRÜKLEME",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "540520",
-      "dolar": null,
-      "euro": null,
-      "tl": 500000,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-09-25",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 17,
       "firma_adi": "KAMTEK LTD",
       "cek_tanzim_tarihi": null,
@@ -73,6 +61,6 @@
       "odeme_durumu": "ÖDENDİ"
     }
   ],
-  "lastUpdated": "2026-02-20T16:39:56.780Z",
-  "totalChecks": 6
+  "lastUpdated": "2026-02-20T16:40:00.160Z",
+  "totalChecks": 5
 }
