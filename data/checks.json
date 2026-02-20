@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 70,
-      "firma_adi": "METİN ALÇICI",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8632101",
-      "dolar": null,
-      "euro": 20000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-11-13",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 71,
       "firma_adi": "ERGÜN DOLMACI",
       "cek_tanzim_tarihi": null,
@@ -2777,6 +2765,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:29:27.664Z",
-  "totalChecks": 218
+  "lastUpdated": "2026-02-20T16:29:30.480Z",
+  "totalChecks": 217
 }
