@@ -241,19 +241,6 @@
       "odeme_durumu": "BEKLEMEDE"
     },
     {
-      "id": 237,
-      "firma_adi": "METİN ALÇICI",
-      "cek_no": "8633587",
-      "banka": "GARANTİ BANKASI",
-      "cek_tanzim_tarihi": "2026-02-10",
-      "vade_tarihi": "2026-04-25",
-      "dolar": null,
-      "euro": 60000,
-      "tl": null,
-      "odeme_durumu": "BEKLEMEDE",
-      "createdAt": "2026-02-11T10:27:50.324Z"
-    },
-    {
       "id": 239,
       "firma_adi": "A&S ATUN LTD",
       "cek_no": "8633588",
@@ -385,6 +372,6 @@
       "createdAt": "2026-02-14T13:19:12.774Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:38:43.760Z",
-  "totalChecks": 31
+  "lastUpdated": "2026-02-20T16:38:47.284Z",
+  "totalChecks": 30
 }
