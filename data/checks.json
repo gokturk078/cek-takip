@@ -1,18 +1,6 @@
 {
   "checks": [
     {
-      "id": 7,
-      "firma_adi": "NEOTECH",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8631061",
-      "dolar": null,
-      "euro": 5000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-09-11",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 8,
       "firma_adi": "NECİPOĞLU LTD",
       "cek_tanzim_tarihi": null,
@@ -181,6 +169,6 @@
       "odeme_durumu": "ÖDENDİ"
     }
   ],
-  "lastUpdated": "2026-02-20T16:39:29.944Z",
-  "totalChecks": 15
+  "lastUpdated": "2026-02-20T16:39:32.196Z",
+  "totalChecks": 14
 }
