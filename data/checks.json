@@ -1,18 +1,6 @@
 {
   "checks": [
     {
-      "id": 5,
-      "firma_adi": "BATUHAN HELİ…....AVUKAT",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "",
-      "dolar": null,
-      "euro": 5000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-09-10",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 6,
       "firma_adi": "İLYAS AKSÜT",
       "cek_tanzim_tarihi": null,
@@ -205,6 +193,6 @@
       "odeme_durumu": "ÖDENDİ"
     }
   ],
-  "lastUpdated": "2026-02-20T16:39:25.229Z",
-  "totalChecks": 17
+  "lastUpdated": "2026-02-20T16:39:27.928Z",
+  "totalChecks": 16
 }
