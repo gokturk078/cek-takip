@@ -229,19 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 105,
-      "firma_adi": "QİZ LTD.",
-      "cek_tanzim_tarihi": "2025-12-09",
-      "cek_no": "8632616",
-      "dolar": null,
-      "euro": 1600,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-12-10",
-      "odeme_durumu": "ÖDENDİ",
-      "updatedAt": "2026-01-22T07:13:18.764Z"
-    },
-    {
       "id": 106,
       "firma_adi": "HÜDAVERDİ ÇÖYGÜN",
       "cek_tanzim_tarihi": "2025-12-09",
@@ -2353,6 +2340,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:30:54.185Z",
-  "totalChecks": 183
+  "lastUpdated": "2026-02-20T16:30:57.168Z",
+  "totalChecks": 182
 }
