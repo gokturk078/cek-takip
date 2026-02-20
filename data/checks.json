@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 77,
-      "firma_adi": "SOSYAL SİGORTALAR DAİRESİ",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8015440",
-      "dolar": null,
-      "euro": null,
-      "tl": 236575,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-11-21",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 78,
       "firma_adi": "LEVENT SEZGİN",
       "cek_tanzim_tarihi": null,
@@ -2693,6 +2681,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:29:44.705Z",
-  "totalChecks": 211
+  "lastUpdated": "2026-02-20T16:29:46.792Z",
+  "totalChecks": 210
 }
