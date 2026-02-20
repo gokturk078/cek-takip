@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 81,
-      "firma_adi": "JASMIN COURT LTD.",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "544201",
-      "dolar": null,
-      "euro": null,
-      "tl": 150000,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-11-25",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 82,
       "firma_adi": "MEPAS LTD",
       "cek_tanzim_tarihi": null,
@@ -2645,6 +2633,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:29:54.745Z",
-  "totalChecks": 207
+  "lastUpdated": "2026-02-20T16:29:57.352Z",
+  "totalChecks": 206
 }
