@@ -229,19 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 107,
-      "firma_adi": "İHTİYAT SANDIĞI",
-      "cek_tanzim_tarihi": "2025-12-15",
-      "cek_no": "544207",
-      "dolar": null,
-      "euro": null,
-      "tl": 432332.07,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-12-15",
-      "odeme_durumu": "ÖDENDİ",
-      "updatedAt": "2026-01-22T07:13:33.368Z"
-    },
-    {
       "id": 108,
       "firma_adi": "SOSYAL SİGORTALAR DAİRESİ",
       "cek_tanzim_tarihi": "2025-12-15",
@@ -2327,6 +2314,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:30:59.545Z",
-  "totalChecks": 181
+  "lastUpdated": "2026-02-20T16:31:02.372Z",
+  "totalChecks": 180
 }
