@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 45,
-      "firma_adi": "FATİH AKALIN",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8631653",
-      "dolar": null,
-      "euro": 20000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-10-25",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 46,
       "firma_adi": "JASMİNE OTEL",
       "cek_tanzim_tarihi": null,
@@ -3077,6 +3065,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:28:25.236Z",
-  "totalChecks": 243
+  "lastUpdated": "2026-02-20T16:28:28.569Z",
+  "totalChecks": 242
 }
