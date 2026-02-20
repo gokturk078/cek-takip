@@ -762,20 +762,6 @@
       "updatedAt": "2026-02-02T16:11:48.454Z"
     },
     {
-      "id": 232,
-      "firma_adi": "JASMIN COURT LTD",
-      "cek_no": "8391891",
-      "banka": "NEAR EAST BANK",
-      "cek_tanzim_tarihi": "2026-02-02",
-      "vade_tarihi": "2026-02-02",
-      "dolar": null,
-      "euro": null,
-      "tl": 250000,
-      "odeme_durumu": "ÖDENDİ",
-      "createdAt": "2026-02-02T16:01:19.386Z",
-      "autoUpdatedAt": "2026-02-04T16:42:29.438Z"
-    },
-    {
       "id": 233,
       "firma_adi": "INTERTIM ORMAN ÜRÜNLERİ İTHALAT İMALAT İHRC.SAN.VE TİC.LTD.ŞTİ.",
       "cek_no": "8633585",
@@ -1253,6 +1239,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:35:29.278Z",
-  "totalChecks": 99
+  "lastUpdated": "2026-02-20T16:35:31.529Z",
+  "totalChecks": 98
 }
