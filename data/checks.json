@@ -229,19 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 103,
-      "firma_adi": "METİN ALÇICI",
-      "cek_tanzim_tarihi": "2025-12-05",
-      "cek_no": "8632100",
-      "dolar": null,
-      "euro": 30000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-12-06",
-      "odeme_durumu": "ÖDENDİ",
-      "updatedAt": "2026-01-22T07:13:05.716Z"
-    },
-    {
       "id": 104,
       "firma_adi": "JASMİN COURT",
       "cek_tanzim_tarihi": null,
@@ -2379,6 +2366,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:30:49.705Z",
-  "totalChecks": 185
+  "lastUpdated": "2026-02-20T16:30:51.929Z",
+  "totalChecks": 184
 }
