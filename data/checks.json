@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 183,
-      "firma_adi": "GEPAZ LTD",
-      "cek_tanzim_tarihi": "2026-01-09",
-      "cek_no": "8391874",
-      "dolar": null,
-      "euro": null,
-      "tl": 1000000,
-      "banka": "NEAR EAST BANK",
-      "vade_tarihi": "2026-02-25",
-      "odeme_durumu": "BEKLEMEDE"
-    },
-    {
       "id": 184,
       "firma_adi": "ARZEN LTD.",
       "cek_tanzim_tarihi": "2026-01-09",
@@ -993,6 +981,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:36:28.970Z",
-  "totalChecks": 79
+  "lastUpdated": "2026-02-20T16:36:31.712Z",
+  "totalChecks": 78
 }
