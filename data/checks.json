@@ -229,19 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 137,
-      "firma_adi": "LEVENT SEZGİN",
-      "cek_tanzim_tarihi": "2025-12-22",
-      "cek_no": "8632632",
-      "dolar": null,
-      "euro": 7000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-12-25",
-      "odeme_durumu": "ÖDENDİ",
-      "updatedAt": "2026-01-22T07:15:42.911Z"
-    },
-    {
       "id": 138,
       "firma_adi": "CHINA BAZAR",
       "cek_tanzim_tarihi": "2025-12-22",
@@ -1945,6 +1932,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:32:18.856Z",
-  "totalChecks": 151
+  "lastUpdated": "2026-02-20T16:32:21.704Z",
+  "totalChecks": 150
 }
