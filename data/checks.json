@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 28,
-      "firma_adi": "MESUT DEMİRALP",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "(0540525",
-      "dolar": null,
-      "euro": null,
-      "tl": 4792000,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-10-10",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 29,
       "firma_adi": "MESUT KAHRAMAN",
       "cek_tanzim_tarihi": null,
@@ -3281,6 +3269,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:27:40.257Z",
-  "totalChecks": 260
+  "lastUpdated": "2026-02-20T16:27:43.104Z",
+  "totalChecks": 259
 }
