@@ -578,21 +578,6 @@
       "odeme_durumu": "BEKLEMEDE"
     },
     {
-      "id": 203,
-      "firma_adi": "NEŞAT KAHRAAMAN",
-      "cek_no": "8391889",
-      "banka": "NEAR EAST BANK",
-      "cek_tanzim_tarihi": null,
-      "vade_tarihi": "2026-01-25",
-      "dolar": null,
-      "euro": null,
-      "tl": 1000000,
-      "odeme_durumu": "ÖDENDİ",
-      "createdAt": "2026-01-19T07:43:32.316Z",
-      "updatedAt": "2026-01-19T07:45:04.753Z",
-      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
-    },
-    {
       "id": 205,
       "firma_adi": "METİN ALÇICI",
       "cek_no": "8633466",
@@ -1380,6 +1365,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:35:03.196Z",
-  "totalChecks": 108
+  "lastUpdated": "2026-02-20T16:35:06.192Z",
+  "totalChecks": 107
 }
