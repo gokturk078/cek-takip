@@ -695,20 +695,6 @@
       "createdAt": "2026-01-23T13:59:26.115Z"
     },
     {
-      "id": 225,
-      "firma_adi": "AŞAN NAKLİYAT",
-      "cek_no": "K1-0063186",
-      "banka": "DENİZBANK",
-      "cek_tanzim_tarihi": "2026-01-23",
-      "vade_tarihi": "2026-02-16",
-      "dolar": null,
-      "euro": null,
-      "tl": 1597507.6,
-      "odeme_durumu": "ÖDENDİ",
-      "createdAt": "2026-01-23T14:00:35.132Z",
-      "autoUpdatedAt": "2026-02-17T08:51:39.365Z"
-    },
-    {
       "id": 226,
       "firma_adi": "AŞAN NAKLİYAT",
       "cek_no": "K1-0063239",
@@ -1154,6 +1140,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:35:49.868Z",
-  "totalChecks": 92
+  "lastUpdated": "2026-02-20T16:35:52.484Z",
+  "totalChecks": 91
 }
