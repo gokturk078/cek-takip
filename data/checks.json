@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 72,
-      "firma_adi": "CAHİT NECİPOĞLU",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8632102",
-      "dolar": null,
-      "euro": 12000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-11-14",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 73,
       "firma_adi": "EDİZ METAL ( KAİZ TRADİNG )",
       "cek_tanzim_tarihi": null,
@@ -2753,6 +2741,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:29:32.721Z",
-  "totalChecks": 216
+  "lastUpdated": "2026-02-20T16:29:35.240Z",
+  "totalChecks": 215
 }
