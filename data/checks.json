@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 40,
-      "firma_adi": "EHS GÜMRÜKLEME",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8015433",
-      "dolar": null,
-      "euro": null,
-      "tl": 350000,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-10-21",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 41,
       "firma_adi": "BEMBOĞAZ END VE MAD LTD",
       "cek_tanzim_tarihi": null,
@@ -3137,6 +3125,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:28:11.164Z",
-  "totalChecks": 248
+  "lastUpdated": "2026-02-20T16:28:13.376Z",
+  "totalChecks": 247
 }
