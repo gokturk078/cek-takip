@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 75,
-      "firma_adi": "CHINA BAZAR",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8617800",
-      "dolar": 20000,
-      "euro": null,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-11-17",
-      "odeme_durumu": "İPTAL EDİLDİ"
-    },
-    {
       "id": 76,
       "firma_adi": "AYHAN DÖNER",
       "cek_tanzim_tarihi": null,
@@ -2717,6 +2705,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:29:40.424Z",
-  "totalChecks": 213
+  "lastUpdated": "2026-02-20T16:29:42.602Z",
+  "totalChecks": 212
 }
