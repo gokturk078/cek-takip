@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 85,
-      "firma_adi": "KAMTEK LTD",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8631067",
-      "dolar": null,
-      "euro": 50000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-11-25",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 86,
       "firma_adi": "METİN AKKAYA",
       "cek_tanzim_tarihi": null,
@@ -2597,6 +2585,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:30:03.908Z",
-  "totalChecks": 203
+  "lastUpdated": "2026-02-20T16:30:06.081Z",
+  "totalChecks": 202
 }
