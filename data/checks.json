@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 26,
-      "firma_adi": "RÖDER",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "",
-      "dolar": null,
-      "euro": null,
-      "tl": 4000000,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-10-09",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 27,
       "firma_adi": "PEKUR LTD",
       "cek_tanzim_tarihi": null,
@@ -3305,6 +3293,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:27:34.681Z",
-  "totalChecks": 262
+  "lastUpdated": "2026-02-20T16:27:37.472Z",
+  "totalChecks": 261
 }
