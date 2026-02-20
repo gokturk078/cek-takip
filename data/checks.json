@@ -578,21 +578,6 @@
       "odeme_durumu": "BEKLEMEDE"
     },
     {
-      "id": 202,
-      "firma_adi": "MESUT DEMİRALP",
-      "cek_no": "0545909",
-      "banka": "GARANTİ BANKASI",
-      "cek_tanzim_tarihi": "2026-01-19",
-      "vade_tarihi": "2026-01-25",
-      "dolar": null,
-      "euro": null,
-      "tl": 3190000,
-      "odeme_durumu": "ÖDENDİ",
-      "createdAt": "2026-01-19T07:41:27.032Z",
-      "updatedAt": "2026-01-19T07:42:42.547Z",
-      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
-    },
-    {
       "id": 203,
       "firma_adi": "NEŞAT KAHRAAMAN",
       "cek_no": "8391889",
@@ -1395,6 +1380,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:35:00.957Z",
-  "totalChecks": 109
+  "lastUpdated": "2026-02-20T16:35:03.196Z",
+  "totalChecks": 108
 }
