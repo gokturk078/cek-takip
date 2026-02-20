@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 60,
-      "firma_adi": "EMİNAĞA LTD",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "",
-      "dolar": null,
-      "euro": 3000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-11-03",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 61,
       "firma_adi": "CEMAL KILIÇKIRAN",
       "cek_tanzim_tarihi": null,
@@ -2897,6 +2885,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:29:04.508Z",
-  "totalChecks": 228
+  "lastUpdated": "2026-02-20T16:29:06.621Z",
+  "totalChecks": 227
 }
