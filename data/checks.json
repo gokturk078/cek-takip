@@ -229,19 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 124,
-      "firma_adi": "NECİPOĞLU LTD",
-      "cek_tanzim_tarihi": "2025-12-05",
-      "cek_no": "8632612",
-      "dolar": null,
-      "euro": 30000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-12-25",
-      "odeme_durumu": "ÖDENDİ",
-      "updatedAt": "2026-01-22T07:14:39.215Z"
-    },
-    {
       "id": 125,
       "firma_adi": "ENVER DÜZKAR",
       "cek_tanzim_tarihi": "2025-12-09",
@@ -2112,6 +2099,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:31:42.016Z",
-  "totalChecks": 164
+  "lastUpdated": "2026-02-20T16:31:44.109Z",
+  "totalChecks": 163
 }
