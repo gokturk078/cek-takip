@@ -267,19 +267,6 @@
       "createdAt": "2026-02-11T10:35:04.455Z"
     },
     {
-      "id": 251,
-      "firma_adi": "TAYF LTD.",
-      "cek_no": "0545923",
-      "banka": "GARANTİ BANKASI",
-      "cek_tanzim_tarihi": "2026-02-10",
-      "vade_tarihi": "2026-04-25",
-      "dolar": null,
-      "euro": null,
-      "tl": 1000000,
-      "odeme_durumu": "BEKLEMEDE",
-      "createdAt": "2026-02-11T10:39:45.299Z"
-    },
-    {
       "id": 252,
       "firma_adi": "YUSUF DEMİR",
       "cek_no": "0545924",
@@ -333,6 +320,6 @@
       "createdAt": "2026-02-14T13:19:12.774Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:38:55.644Z",
-  "totalChecks": 27
+  "lastUpdated": "2026-02-20T16:38:57.835Z",
+  "totalChecks": 26
 }
