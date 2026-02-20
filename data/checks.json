@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 195,
-      "firma_adi": "MÜLKİYET HARİTA LTD.",
-      "cek_tanzim_tarihi": "2026-01-09",
-      "cek_no": "8633461",
-      "dolar": null,
-      "euro": 10000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2026-03-25",
-      "odeme_durumu": "BEKLEMEDE"
-    },
-    {
       "id": 196,
       "firma_adi": "HÜDAVERDİ ÇÖYGÜN",
       "cek_tanzim_tarihi": "2026-01-09",
@@ -561,6 +549,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:38:03.253Z",
-  "totalChecks": 45
+  "lastUpdated": "2026-02-20T16:38:06.400Z",
+  "totalChecks": 44
 }
