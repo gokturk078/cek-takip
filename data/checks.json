@@ -1,18 +1,6 @@
 {
   "checks": [
     {
-      "id": 11,
-      "firma_adi": "NEŞET KAHRAMAN",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8391851",
-      "dolar": null,
-      "euro": null,
-      "tl": 1200000,
-      "banka": "NEAR EAST BANK",
-      "vade_tarihi": "2025-09-11",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 12,
       "firma_adi": "HASAN SERTOĞLU",
       "cek_tanzim_tarihi": null,
@@ -133,6 +121,6 @@
       "odeme_durumu": "ÖDENDİ"
     }
   ],
-  "lastUpdated": "2026-02-20T16:39:44.076Z",
-  "totalChecks": 11
+  "lastUpdated": "2026-02-20T16:39:46.960Z",
+  "totalChecks": 10
 }
