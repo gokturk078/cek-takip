@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 24,
-      "firma_adi": "CHINA BAZAR",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "",
-      "dolar": 20000,
-      "euro": null,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-10-07",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 25,
       "firma_adi": "ERDAL BİRİCİK",
       "cek_tanzim_tarihi": null,
@@ -3329,6 +3317,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:27:28.817Z",
-  "totalChecks": 264
+  "lastUpdated": "2026-02-20T16:27:32.352Z",
+  "totalChecks": 263
 }
