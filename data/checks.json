@@ -229,19 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 106,
-      "firma_adi": "HÜDAVERDİ ÇÖYGÜN",
-      "cek_tanzim_tarihi": "2025-12-09",
-      "cek_no": "544204",
-      "dolar": null,
-      "euro": null,
-      "tl": 500000,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-12-12",
-      "odeme_durumu": "ÖDENDİ",
-      "updatedAt": "2026-01-22T07:13:26.639Z"
-    },
-    {
       "id": 107,
       "firma_adi": "İHTİYAT SANDIĞI",
       "cek_tanzim_tarihi": "2025-12-15",
@@ -2340,6 +2327,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:30:57.168Z",
-  "totalChecks": 182
+  "lastUpdated": "2026-02-20T16:30:59.545Z",
+  "totalChecks": 181
 }
