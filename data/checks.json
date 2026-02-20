@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 173,
-      "firma_adi": "MEPAS LTD",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8632090",
-      "dolar": null,
-      "euro": 10000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2026-02-25",
-      "odeme_durumu": "BEKLEMEDE"
-    },
-    {
       "id": 174,
       "firma_adi": "GEPAZ",
       "cek_tanzim_tarihi": null,
@@ -1113,6 +1101,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:35:57.384Z",
-  "totalChecks": 89
+  "lastUpdated": "2026-02-20T16:36:01.716Z",
+  "totalChecks": 88
 }
