@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 140,
-      "firma_adi": "MEPAS LTD",
-      "cek_tanzim_tarihi": "2025-12-22",
-      "cek_no": "8632636",
-      "dolar": null,
-      "euro": 7000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-12-25",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 141,
       "firma_adi": "ZELİŞ DEMİRKIRAN",
       "cek_tanzim_tarihi": "2025-12-23",
@@ -1906,6 +1894,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:32:26.552Z",
-  "totalChecks": 148
+  "lastUpdated": "2026-02-20T16:32:29.112Z",
+  "totalChecks": 147
 }
