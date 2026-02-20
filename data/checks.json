@@ -1,18 +1,6 @@
 {
   "checks": [
     {
-      "id": 4,
-      "firma_adi": "CHIP COMPUTER",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "",
-      "dolar": null,
-      "euro": 1500,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-09-03",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 5,
       "firma_adi": "BATUHAN HELİ…....AVUKAT",
       "cek_tanzim_tarihi": null,
@@ -217,6 +205,6 @@
       "odeme_durumu": "ÖDENDİ"
     }
   ],
-  "lastUpdated": "2026-02-20T16:39:19.462Z",
-  "totalChecks": 18
+  "lastUpdated": "2026-02-20T16:39:25.229Z",
+  "totalChecks": 17
 }
