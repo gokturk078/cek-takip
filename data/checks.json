@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 51,
-      "firma_adi": "KAMTEK LTD",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8631066",
-      "dolar": null,
-      "euro": 55000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-10-25",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 52,
       "firma_adi": "GRAND OTEL",
       "cek_tanzim_tarihi": null,
@@ -3005,6 +2993,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:28:41.817Z",
-  "totalChecks": 237
+  "lastUpdated": "2026-02-20T16:28:45.336Z",
+  "totalChecks": 236
 }
