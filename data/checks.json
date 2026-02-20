@@ -399,20 +399,6 @@
       "createdAt": "2026-01-23T14:01:32.529Z"
     },
     {
-      "id": 231,
-      "firma_adi": "NECİPOĞLU LTD",
-      "cek_no": "8633582",
-      "banka": "GARANTİ BANKASI",
-      "cek_tanzim_tarihi": "2026-01-27",
-      "vade_tarihi": "2026-02-25",
-      "dolar": null,
-      "euro": 25000,
-      "tl": null,
-      "odeme_durumu": "BEKLEMEDE",
-      "createdAt": "2026-01-27T11:58:32.846Z",
-      "updatedAt": "2026-02-02T16:11:48.454Z"
-    },
-    {
       "id": 233,
       "firma_adi": "INTERTIM ORMAN ÜRÜNLERİ İTHALAT İMALAT İHRC.SAN.VE TİC.LTD.ŞTİ.",
       "cek_no": "8633585",
@@ -791,6 +777,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:37:13.512Z",
-  "totalChecks": 63
+  "lastUpdated": "2026-02-20T16:37:15.931Z",
+  "totalChecks": 62
 }
