@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 176,
-      "firma_adi": "ENVER DÜZKAR",
-      "cek_tanzim_tarihi": "2025-12-09",
-      "cek_no": "8632619",
-      "dolar": null,
-      "euro": 10000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2026-02-25",
-      "odeme_durumu": "BEKLEMEDE"
-    },
-    {
       "id": 177,
       "firma_adi": "KUTLAY MÜHENDİSLİK",
       "cek_tanzim_tarihi": "2025-12-09",
@@ -1077,6 +1065,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:36:06.828Z",
-  "totalChecks": 86
+  "lastUpdated": "2026-02-20T16:36:09.251Z",
+  "totalChecks": 85
 }
