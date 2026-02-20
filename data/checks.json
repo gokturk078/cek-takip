@@ -253,19 +253,6 @@
       "odeme_durumu": "BEKLEMEDE"
     },
     {
-      "id": 191,
-      "firma_adi": "ARBOS LTD",
-      "cek_tanzim_tarihi": "2026-01-09",
-      "cek_no": "8391872",
-      "dolar": null,
-      "euro": null,
-      "tl": 929340,
-      "banka": "NEAR EAST BANK",
-      "vade_tarihi": "2026-02-25",
-      "odeme_durumu": "BEKLEMEDE",
-      "updatedAt": "2026-01-21T14:20:36.408Z"
-    },
-    {
       "id": 192,
       "firma_adi": "GEPAZ LTD",
       "cek_tanzim_tarihi": "2026-01-09",
@@ -921,6 +908,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:36:45.480Z",
-  "totalChecks": 73
+  "lastUpdated": "2026-02-20T16:36:49.396Z",
+  "totalChecks": 72
 }
