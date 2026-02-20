@@ -459,19 +459,6 @@
       "createdAt": "2026-02-14T13:19:12.774Z"
     },
     {
-      "id": 265,
-      "firma_adi": "NECİPOĞLU LTD.",
-      "cek_no": "8631767",
-      "banka": "GARANTİ BANKASI",
-      "cek_tanzim_tarihi": "2026-02-16",
-      "vade_tarihi": "2026-03-25",
-      "dolar": 16000,
-      "euro": null,
-      "tl": null,
-      "odeme_durumu": "BEKLEMEDE",
-      "createdAt": "2026-02-16T11:15:57.237Z"
-    },
-    {
       "id": 267,
       "firma_adi": "AŞAN NAKLİYAT",
       "cek_no": "K1-0063188",
@@ -511,6 +498,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:38:14.452Z",
-  "totalChecks": 41
+  "lastUpdated": "2026-02-20T16:38:16.652Z",
+  "totalChecks": 40
 }
