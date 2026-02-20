@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 89,
-      "firma_adi": "HÜDAVERDİ ÇÖYGÜN",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8632104",
-      "dolar": null,
-      "euro": 10000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-11-25",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 90,
       "firma_adi": "LEVENT SEZGİN",
       "cek_tanzim_tarihi": null,
@@ -2549,6 +2537,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:30:13.840Z",
-  "totalChecks": 199
+  "lastUpdated": "2026-02-20T16:30:16.740Z",
+  "totalChecks": 198
 }
