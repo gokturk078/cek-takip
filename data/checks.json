@@ -229,19 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 119,
-      "firma_adi": "NECİPOĞLU LTD",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8631764",
-      "dolar": 27000,
-      "euro": null,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-12-25",
-      "odeme_durumu": "ÖDENDİ",
-      "updatedAt": "2026-01-22T07:14:25.068Z"
-    },
-    {
       "id": 120,
       "firma_adi": "GEPAZ",
       "cek_tanzim_tarihi": "2025-10-31",
@@ -2174,6 +2161,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:31:27.864Z",
-  "totalChecks": 169
+  "lastUpdated": "2026-02-20T16:31:31.325Z",
+  "totalChecks": 168
 }
