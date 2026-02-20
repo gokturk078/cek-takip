@@ -604,20 +604,6 @@
       "createdAt": "2026-01-19T07:52:41.333Z"
     },
     {
-      "id": 209,
-      "firma_adi": "NEOTECH LTD",
-      "cek_no": "8633581",
-      "banka": "GARANTİ BANKASI",
-      "cek_tanzim_tarihi": "2026-01-21",
-      "vade_tarihi": "2026-01-25",
-      "dolar": null,
-      "euro": 5000,
-      "tl": null,
-      "odeme_durumu": "ÖDENDİ",
-      "createdAt": "2026-01-21T14:18:36.289Z",
-      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
-    },
-    {
       "id": 210,
       "firma_adi": "NURETTİN EROĞLU",
       "cek_no": "8633470",
@@ -1337,6 +1323,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:35:11.340Z",
-  "totalChecks": 105
+  "lastUpdated": "2026-02-20T16:35:14.189Z",
+  "totalChecks": 104
 }
