@@ -229,19 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 113,
-      "firma_adi": "CEMAL KILIÇKIRAN",
-      "cek_tanzim_tarihi": "2025-12-17",
-      "cek_no": "9314291",
-      "dolar": null,
-      "euro": 4200,
-      "tl": null,
-      "banka": "NEAR EAST BANK",
-      "vade_tarihi": "2025-12-17",
-      "odeme_durumu": "ÖDENDİ",
-      "updatedAt": "2026-01-22T07:14:08.416Z"
-    },
-    {
       "id": 114,
       "firma_adi": "NURETTİN EROĞLU",
       "cek_tanzim_tarihi": "2025-12-18",
@@ -2249,6 +2236,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:31:13.736Z",
-  "totalChecks": 175
+  "lastUpdated": "2026-02-20T16:31:16.841Z",
+  "totalChecks": 174
 }
