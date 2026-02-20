@@ -373,19 +373,6 @@
       "odeme_durumu": "BEKLEMEDE"
     },
     {
-      "id": 211,
-      "firma_adi": "KAMTEK LTD.",
-      "cek_no": "8633465",
-      "banka": "GARANTİ BANKASI",
-      "cek_tanzim_tarihi": "2026-01-14",
-      "vade_tarihi": "2026-02-25",
-      "dolar": null,
-      "euro": 15000,
-      "tl": null,
-      "odeme_durumu": "BEKLEMEDE",
-      "createdAt": "2026-01-22T06:34:38.619Z"
-    },
-    {
       "id": 213,
       "firma_adi": "YUSUF DEMİR",
       "cek_no": "8391886",
@@ -869,6 +856,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:36:57.064Z",
-  "totalChecks": 69
+  "lastUpdated": "2026-02-20T16:36:59.873Z",
+  "totalChecks": 68
 }
