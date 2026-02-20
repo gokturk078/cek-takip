@@ -1,18 +1,6 @@
 {
   "checks": [
     {
-      "id": 10,
-      "firma_adi": "MESUT DEMİRALP",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "540512",
-      "dolar": null,
-      "euro": null,
-      "tl": 2800000,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-09-11",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 11,
       "firma_adi": "NEŞET KAHRAMAN",
       "cek_tanzim_tarihi": null,
@@ -145,6 +133,6 @@
       "odeme_durumu": "ÖDENDİ"
     }
   ],
-  "lastUpdated": "2026-02-20T16:39:39.516Z",
-  "totalChecks": 12
+  "lastUpdated": "2026-02-20T16:39:44.076Z",
+  "totalChecks": 11
 }
