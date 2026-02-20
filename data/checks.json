@@ -1134,20 +1134,6 @@
       "createdAt": "2026-01-22T06:50:06.754Z"
     },
     {
-      "id": 221,
-      "firma_adi": "İHTİYAT SANDIĞI DAİRESİ",
-      "cek_no": "8391880",
-      "banka": "NEAR EAST BANK",
-      "cek_tanzim_tarihi": "2026-01-10",
-      "vade_tarihi": "2026-01-15",
-      "dolar": null,
-      "euro": null,
-      "tl": 505621.1,
-      "odeme_durumu": "ÖDENDİ",
-      "createdAt": "2026-01-22T06:54:30.329Z",
-      "updatedAt": "2026-01-22T07:17:09.171Z"
-    },
-    {
       "id": 222,
       "firma_adi": "AŞAN NAKLİYAT",
       "cek_no": "K1-0063236",
@@ -1775,6 +1761,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:32:53.816Z",
-  "totalChecks": 138
+  "lastUpdated": "2026-02-20T16:32:57.164Z",
+  "totalChecks": 137
 }
