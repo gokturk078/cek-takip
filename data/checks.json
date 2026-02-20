@@ -229,19 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 110,
-      "firma_adi": "İNTERTİM ORMAN ÜRÜNLERİ",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "9314285",
-      "dolar": null,
-      "euro": 1700,
-      "tl": null,
-      "banka": "NEAR EAST BANK",
-      "vade_tarihi": "2025-12-15",
-      "odeme_durumu": "ÖDENDİ",
-      "updatedAt": "2026-01-22T07:13:52.663Z"
-    },
-    {
       "id": 111,
       "firma_adi": "HÜDAVERDİ ÇÖYGÜN",
       "cek_tanzim_tarihi": "2025-12-17",
@@ -2288,6 +2275,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:31:06.552Z",
-  "totalChecks": 178
+  "lastUpdated": "2026-02-20T16:31:08.676Z",
+  "totalChecks": 177
 }
