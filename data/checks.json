@@ -1,18 +1,6 @@
 {
   "checks": [
     {
-      "id": 17,
-      "firma_adi": "KAMTEK LTD",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8631065",
-      "dolar": null,
-      "euro": 50000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-09-26",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 18,
       "firma_adi": "RÖDER",
       "cek_tanzim_tarihi": null,
@@ -61,6 +49,6 @@
       "odeme_durumu": "ÖDENDİ"
     }
   ],
-  "lastUpdated": "2026-02-20T16:40:00.160Z",
-  "totalChecks": 5
+  "lastUpdated": "2026-02-20T16:40:03.316Z",
+  "totalChecks": 4
 }
