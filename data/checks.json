@@ -229,19 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 172,
-      "firma_adi": "ÖMER DİLMAÇ",
-      "cek_tanzim_tarihi": "2026-01-09",
-      "cek_no": "8391871",
-      "dolar": null,
-      "euro": null,
-      "tl": 1950000,
-      "banka": "NEAR EAST BANK",
-      "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "ÖDENDİ",
-      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
-    },
-    {
       "id": 173,
       "firma_adi": "MEPAS LTD",
       "cek_tanzim_tarihi": null,
@@ -1408,6 +1395,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:34:58.436Z",
-  "totalChecks": 110
+  "lastUpdated": "2026-02-20T16:35:00.957Z",
+  "totalChecks": 109
 }
