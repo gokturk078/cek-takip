@@ -229,19 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 101,
-      "firma_adi": "HÜDAVERDİ ÇÖYGÜN",
-      "cek_tanzim_tarihi": "2025-12-04",
-      "cek_no": "8632098",
-      "dolar": null,
-      "euro": 25000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-12-04",
-      "odeme_durumu": "ÖDENDİ",
-      "updatedAt": "2026-01-22T07:12:40.816Z"
-    },
-    {
       "id": 102,
       "firma_adi": "DÜNYA OTO LTD",
       "cek_tanzim_tarihi": "2025-12-04",
@@ -2405,6 +2392,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:30:44.560Z",
-  "totalChecks": 187
+  "lastUpdated": "2026-02-20T16:30:47.312Z",
+  "totalChecks": 186
 }
