@@ -578,20 +578,6 @@
       "odeme_durumu": "BEKLEMEDE"
     },
     {
-      "id": 205,
-      "firma_adi": "METİN ALÇICI",
-      "cek_no": "8633466",
-      "banka": "GARANTİ BANKASI",
-      "cek_tanzim_tarihi": "2026-01-19",
-      "vade_tarihi": "2026-01-25",
-      "dolar": null,
-      "euro": 80000,
-      "tl": null,
-      "odeme_durumu": "ÖDENDİ",
-      "createdAt": "2026-01-19T07:45:55.146Z",
-      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
-    },
-    {
       "id": 206,
       "firma_adi": "METİN ALÇICI",
       "cek_no": "8633467",
@@ -1365,6 +1351,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:35:06.192Z",
-  "totalChecks": 107
+  "lastUpdated": "2026-02-20T16:35:08.925Z",
+  "totalChecks": 106
 }
