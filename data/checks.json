@@ -229,19 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 163,
-      "firma_adi": "EMRE DEMİR",
-      "cek_tanzim_tarihi": "2025-12-17",
-      "cek_no": "544215",
-      "dolar": null,
-      "euro": null,
-      "tl": 500000,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "ÖDENDİ",
-      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
-    },
-    {
       "id": 164,
       "firma_adi": "ATUN LTD",
       "cek_tanzim_tarihi": "2025-12-17",
@@ -1525,6 +1512,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:33:42.288Z",
-  "totalChecks": 119
+  "lastUpdated": "2026-02-20T16:33:44.624Z",
+  "totalChecks": 118
 }
