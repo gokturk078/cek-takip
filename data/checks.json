@@ -205,18 +205,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 21,
-      "firma_adi": "SBC…..",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "",
-      "dolar": null,
-      "euro": 6500,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-10-06",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 22,
       "firma_adi": "RASİME BASAT",
       "cek_tanzim_tarihi": null,
@@ -229,6 +217,6 @@
       "odeme_durumu": "ÖDENDİ"
     }
   ],
-  "lastUpdated": "2026-02-20T16:39:17.173Z",
-  "totalChecks": 19
+  "lastUpdated": "2026-02-20T16:39:19.462Z",
+  "totalChecks": 18
 }
