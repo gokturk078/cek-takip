@@ -1134,20 +1134,6 @@
       "createdAt": "2026-01-22T06:50:06.754Z"
     },
     {
-      "id": 220,
-      "firma_adi": "GELİR VE VERGİ DAİRESİ",
-      "cek_no": "8391879",
-      "banka": "NEAR EAST BANK",
-      "cek_tanzim_tarihi": "2026-01-10",
-      "vade_tarihi": "2026-01-15",
-      "dolar": null,
-      "euro": null,
-      "tl": 163079.81,
-      "odeme_durumu": "ÖDENDİ",
-      "createdAt": "2026-01-22T06:53:16.587Z",
-      "updatedAt": "2026-01-22T07:17:03.083Z"
-    },
-    {
       "id": 221,
       "firma_adi": "İHTİYAT SANDIĞI DAİRESİ",
       "cek_no": "8391880",
@@ -1789,6 +1775,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:32:50.761Z",
-  "totalChecks": 139
+  "lastUpdated": "2026-02-20T16:32:53.816Z",
+  "totalChecks": 138
 }
