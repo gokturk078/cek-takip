@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 185,
-      "firma_adi": "MEPAS LTD",
-      "cek_tanzim_tarihi": "2026-01-09",
-      "cek_no": "8633336",
-      "dolar": null,
-      "euro": 7000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2026-02-25",
-      "odeme_durumu": "BEKLEMEDE"
-    },
-    {
       "id": 186,
       "firma_adi": "CEE CYPRUS ENV.LTD.",
       "cek_tanzim_tarihi": "2026-01-09",
@@ -969,6 +957,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:36:34.591Z",
-  "totalChecks": 77
+  "lastUpdated": "2026-02-20T16:36:37.060Z",
+  "totalChecks": 76
 }
