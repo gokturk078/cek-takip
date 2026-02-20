@@ -932,20 +932,6 @@
       "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
     },
     {
-      "id": 204,
-      "firma_adi": "HÜDAVERDİ ÇÖYGÜN",
-      "cek_no": "8391888",
-      "banka": "NEAR EAST BANK",
-      "cek_tanzim_tarihi": "2026-01-19",
-      "vade_tarihi": "2026-01-20",
-      "dolar": null,
-      "euro": null,
-      "tl": 1500000,
-      "odeme_durumu": "ÖDENDİ",
-      "createdAt": "2026-01-19T07:44:42.485Z",
-      "updatedAt": "2026-01-22T07:17:21.891Z"
-    },
-    {
       "id": 205,
       "firma_adi": "METİN ALÇICI",
       "cek_no": "8633466",
@@ -1747,6 +1733,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:32:59.268Z",
-  "totalChecks": 136
+  "lastUpdated": "2026-02-20T16:33:01.929Z",
+  "totalChecks": 135
 }
