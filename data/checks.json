@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 34,
-      "firma_adi": "ARBOS LTD",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "",
-      "dolar": null,
-      "euro": null,
-      "tl": 174000,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-10-11",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 35,
       "firma_adi": "ARBOS LTD",
       "cek_tanzim_tarihi": null,
@@ -3209,6 +3197,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:27:56.208Z",
-  "totalChecks": 254
+  "lastUpdated": "2026-02-20T16:27:58.732Z",
+  "totalChecks": 253
 }
