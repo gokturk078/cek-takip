@@ -1,18 +1,6 @@
 {
   "checks": [
     {
-      "id": 14,
-      "firma_adi": "GEPAZ",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "",
-      "dolar": null,
-      "euro": null,
-      "tl": 500000,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-09-25",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 15,
       "firma_adi": "GEPAZ",
       "cek_tanzim_tarihi": null,
@@ -97,6 +85,6 @@
       "odeme_durumu": "ÖDENDİ"
     }
   ],
-  "lastUpdated": "2026-02-20T16:39:51.948Z",
-  "totalChecks": 8
+  "lastUpdated": "2026-02-20T16:39:54.476Z",
+  "totalChecks": 7
 }
