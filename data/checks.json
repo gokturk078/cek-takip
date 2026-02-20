@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 59,
-      "firma_adi": "SERKAN BENZİNCİ",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "",
-      "dolar": null,
-      "euro": 5000,
-      "tl": null,
-      "banka": "NEAR EAST BANK",
-      "vade_tarihi": "2025-11-03",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 60,
       "firma_adi": "EMİNAĞA LTD",
       "cek_tanzim_tarihi": null,
@@ -2909,6 +2897,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:29:01.857Z",
-  "totalChecks": 229
+  "lastUpdated": "2026-02-20T16:29:04.508Z",
+  "totalChecks": 228
 }
