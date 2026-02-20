@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 62,
-      "firma_adi": "VELİS TİCARET",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8391858",
-      "dolar": null,
-      "euro": null,
-      "tl": 102000,
-      "banka": "NEAR EAST BANK",
-      "vade_tarihi": "2025-11-04",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 63,
       "firma_adi": "JASMİNE OTEL",
       "cek_tanzim_tarihi": null,
@@ -2873,6 +2861,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:29:08.864Z",
-  "totalChecks": 226
+  "lastUpdated": "2026-02-20T16:29:11.076Z",
+  "totalChecks": 225
 }
