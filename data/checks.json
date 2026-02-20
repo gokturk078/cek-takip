@@ -373,19 +373,6 @@
       "odeme_durumu": "BEKLEMEDE"
     },
     {
-      "id": 206,
-      "firma_adi": "METİN ALÇICI",
-      "cek_no": "8633467",
-      "banka": "GARANTİ BANKASI",
-      "cek_tanzim_tarihi": "2026-01-19",
-      "vade_tarihi": "2026-02-25",
-      "dolar": null,
-      "euro": 50000,
-      "tl": null,
-      "odeme_durumu": "BEKLEMEDE",
-      "createdAt": "2026-01-19T07:46:46.480Z"
-    },
-    {
       "id": 207,
       "firma_adi": "İNTERTİM KERESTE",
       "cek_no": "8633468",
@@ -908,6 +895,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:36:49.396Z",
-  "totalChecks": 72
+  "lastUpdated": "2026-02-20T16:36:52.148Z",
+  "totalChecks": 71
 }
