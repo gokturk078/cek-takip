@@ -229,19 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 169,
-      "firma_adi": "MEPAS LTD",
-      "cek_tanzim_tarihi": "2025-11-26",
-      "cek_no": "8632094",
-      "dolar": null,
-      "euro": 10000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "ÖDENDİ",
-      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
-    },
-    {
       "id": 170,
       "firma_adi": "HASAN ONALT SAN.LTD",
       "cek_tanzim_tarihi": "2025-12-22",
@@ -1447,6 +1434,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:34:49.841Z",
-  "totalChecks": 113
+  "lastUpdated": "2026-02-20T16:34:53.176Z",
+  "totalChecks": 112
 }
