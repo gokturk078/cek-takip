@@ -1134,20 +1134,6 @@
       "createdAt": "2026-01-22T06:50:06.754Z"
     },
     {
-      "id": 219,
-      "firma_adi": "SOSYAL SİGORTALAR DAİRESİ",
-      "cek_no": "8391878",
-      "banka": "NEAR EAST BANK",
-      "cek_tanzim_tarihi": "2026-01-10",
-      "vade_tarihi": "2026-01-15",
-      "dolar": null,
-      "euro": null,
-      "tl": 1858624.26,
-      "odeme_durumu": "ÖDENDİ",
-      "createdAt": "2026-01-22T06:52:02.750Z",
-      "updatedAt": "2026-01-22T07:16:55.847Z"
-    },
-    {
       "id": 220,
       "firma_adi": "GELİR VE VERGİ DAİRESİ",
       "cek_no": "8391879",
@@ -1803,6 +1789,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:32:47.456Z",
-  "totalChecks": 140
+  "lastUpdated": "2026-02-20T16:32:50.761Z",
+  "totalChecks": 139
 }
