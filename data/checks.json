@@ -267,19 +267,6 @@
       "createdAt": "2026-02-11T10:35:04.455Z"
     },
     {
-      "id": 252,
-      "firma_adi": "YUSUF DEMİR",
-      "cek_no": "0545924",
-      "banka": "GARANTİ BANKASI",
-      "cek_tanzim_tarihi": "2026-02-10",
-      "vade_tarihi": "2026-04-25",
-      "dolar": null,
-      "euro": null,
-      "tl": 250000,
-      "odeme_durumu": "BEKLEMEDE",
-      "createdAt": "2026-02-11T10:40:26.817Z"
-    },
-    {
       "id": 259,
       "firma_adi": "INTERTİM ORMAN ÜRĞNLERİ İTH.İHRC.LTD.",
       "cek_no": "9318094",
@@ -320,6 +307,6 @@
       "createdAt": "2026-02-14T13:19:12.774Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:38:57.835Z",
-  "totalChecks": 26
+  "lastUpdated": "2026-02-20T16:39:00.708Z",
+  "totalChecks": 25
 }
