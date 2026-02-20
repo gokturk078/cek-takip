@@ -1,18 +1,6 @@
 {
   "checks": [
     {
-      "id": 2,
-      "firma_adi": "SERKAN BENZİNCİ",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8631009",
-      "dolar": null,
-      "euro": 10000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-09-01",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 3,
       "firma_adi": "SERKAN BENZİNCİ",
       "cek_tanzim_tarihi": null,
@@ -3365,6 +3353,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:26:43.237Z",
-  "totalChecks": 267
+  "lastUpdated": "2026-02-20T16:26:58.752Z",
+  "totalChecks": 266
 }
