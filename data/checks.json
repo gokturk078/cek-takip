@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 95,
-      "firma_adi": "JASMİN COURT",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8391866",
-      "dolar": null,
-      "euro": null,
-      "tl": 150000,
-      "banka": "NEARESTBANK",
-      "vade_tarihi": "2025-11-27",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 96,
       "firma_adi": "JASMİN COURT",
       "cek_tanzim_tarihi": null,
@@ -2477,6 +2465,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:30:29.456Z",
-  "totalChecks": 193
+  "lastUpdated": "2026-02-20T16:30:31.912Z",
+  "totalChecks": 192
 }
