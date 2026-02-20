@@ -254,19 +254,6 @@
       "createdAt": "2026-02-11T10:29:41.535Z"
     },
     {
-      "id": 241,
-      "firma_adi": "EROĞLU MOBİLYA LTD",
-      "cek_no": "8633590",
-      "banka": "GARANTİ BANKASI",
-      "cek_tanzim_tarihi": "2026-02-10",
-      "vade_tarihi": "2026-04-25",
-      "dolar": null,
-      "euro": 25000,
-      "tl": null,
-      "odeme_durumu": "BEKLEMEDE",
-      "createdAt": "2026-02-11T10:31:25.655Z"
-    },
-    {
       "id": 243,
       "firma_adi": "ERMATAŞ LTD",
       "cek_no": "0545915",
@@ -372,6 +359,6 @@
       "createdAt": "2026-02-14T13:19:12.774Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:38:47.284Z",
-  "totalChecks": 30
+  "lastUpdated": "2026-02-20T16:38:50.725Z",
+  "totalChecks": 29
 }
