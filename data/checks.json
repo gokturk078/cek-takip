@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 82,
-      "firma_adi": "MEPAS LTD",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "540521",
-      "dolar": null,
-      "euro": null,
-      "tl": 100000,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-11-25",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 83,
       "firma_adi": "ENGÜZEL CARGO LOG.LTD.",
       "cek_tanzim_tarihi": null,
@@ -2633,6 +2621,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:29:57.352Z",
-  "totalChecks": 206
+  "lastUpdated": "2026-02-20T16:29:59.636Z",
+  "totalChecks": 205
 }
