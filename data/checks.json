@@ -267,20 +267,6 @@
       "createdAt": "2026-02-11T10:35:04.455Z"
     },
     {
-      "id": 259,
-      "firma_adi": "INTERTİM ORMAN ÜRĞNLERİ İTH.İHRC.LTD.",
-      "cek_no": "9318094",
-      "banka": "NEAR EAST BANK",
-      "cek_tanzim_tarihi": "2026-02-14",
-      "vade_tarihi": "2026-04-25",
-      "dolar": null,
-      "euro": 16830,
-      "tl": null,
-      "odeme_durumu": "BEKLEMEDE",
-      "createdAt": "2026-02-14T13:13:36.932Z",
-      "updatedAt": "2026-02-16T11:15:09.221Z"
-    },
-    {
       "id": 263,
       "firma_adi": "KUBİLAY KUTLUAY",
       "cek_no": "9318088",
@@ -307,6 +293,6 @@
       "createdAt": "2026-02-14T13:19:12.774Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:39:00.708Z",
-  "totalChecks": 25
+  "lastUpdated": "2026-02-20T16:39:03.024Z",
+  "totalChecks": 24
 }
