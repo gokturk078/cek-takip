@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 194,
-      "firma_adi": "MEPAS LTD",
-      "cek_tanzim_tarihi": "2026-01-09",
-      "cek_no": "8633337",
-      "dolar": null,
-      "euro": 10000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2026-03-25",
-      "odeme_durumu": "BEKLEMEDE"
-    },
-    {
       "id": 195,
       "firma_adi": "MÜLKİYET HARİTA LTD.",
       "cek_tanzim_tarihi": "2026-01-09",
@@ -573,6 +561,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:38:00.164Z",
-  "totalChecks": 46
+  "lastUpdated": "2026-02-20T16:38:03.253Z",
+  "totalChecks": 45
 }
