@@ -229,19 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 157,
-      "firma_adi": "ASEL ENGIEERİNG LTD.",
-      "cek_tanzim_tarihi": "2025-12-09",
-      "cek_no": "8632614",
-      "dolar": null,
-      "euro": 6000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "ÖDENDİ",
-      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
-    },
-    {
       "id": 158,
       "firma_adi": "EDNA FORKLİFT VİNÇ",
       "cek_tanzim_tarihi": "2025-12-09",
@@ -1602,6 +1589,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:33:26.533Z",
-  "totalChecks": 125
+  "lastUpdated": "2026-02-20T16:33:29.096Z",
+  "totalChecks": 124
 }
