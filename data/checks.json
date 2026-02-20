@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 42,
-      "firma_adi": "COŞKUN TEMUR",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8631659",
-      "dolar": null,
-      "euro": 7000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-10-21",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 43,
       "firma_adi": "EHS GÜMRÜKLEME",
       "cek_tanzim_tarihi": null,
@@ -3113,6 +3101,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:28:15.945Z",
-  "totalChecks": 246
+  "lastUpdated": "2026-02-20T16:28:18.536Z",
+  "totalChecks": 245
 }
