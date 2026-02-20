@@ -1,18 +1,6 @@
 {
   "checks": [
     {
-      "id": 12,
-      "firma_adi": "HASAN SERTOĞLU",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "",
-      "dolar": null,
-      "euro": 5000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-09-15",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 13,
       "firma_adi": "ERGÜN DOLMACI",
       "cek_tanzim_tarihi": null,
@@ -121,6 +109,6 @@
       "odeme_durumu": "ÖDENDİ"
     }
   ],
-  "lastUpdated": "2026-02-20T16:39:46.960Z",
-  "totalChecks": 10
+  "lastUpdated": "2026-02-20T16:39:49.264Z",
+  "totalChecks": 9
 }
