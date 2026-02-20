@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 39,
-      "firma_adi": "ÖMER DİLMAÇ",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8631655",
-      "dolar": null,
-      "euro": 6800,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-10-16",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 40,
       "firma_adi": "EHS GÜMRÜKLEME",
       "cek_tanzim_tarihi": null,
@@ -3149,6 +3137,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:28:08.601Z",
-  "totalChecks": 249
+  "lastUpdated": "2026-02-20T16:28:11.164Z",
+  "totalChecks": 248
 }
