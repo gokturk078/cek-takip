@@ -412,19 +412,6 @@
       "createdAt": "2026-02-02T16:03:33.913Z"
     },
     {
-      "id": 234,
-      "firma_adi": "INTERTIM ORMAN ÜRÜNLERİ İTHALAT İMALAT İHRC.SAN.VE TİC.LTD.ŞTİ.",
-      "cek_no": "8633584",
-      "banka": "GARANTİ BANKASI",
-      "cek_tanzim_tarihi": "2026-01-29",
-      "vade_tarihi": "2026-02-25",
-      "dolar": null,
-      "euro": 4000,
-      "tl": null,
-      "odeme_durumu": "BEKLEMEDE",
-      "createdAt": "2026-02-02T16:04:16.417Z"
-    },
-    {
       "id": 236,
       "firma_adi": "METİN ALÇICI",
       "cek_no": "8633586",
@@ -777,6 +764,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:37:15.931Z",
-  "totalChecks": 62
+  "lastUpdated": "2026-02-20T16:37:18.025Z",
+  "totalChecks": 61
 }
