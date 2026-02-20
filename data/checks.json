@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 92,
-      "firma_adi": "NURETTİN EROĞLU",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8632611",
-      "dolar": null,
-      "euro": 10000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-11-26",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 93,
       "firma_adi": "HÜDAVERDİ ÇÖYGÜN",
       "cek_tanzim_tarihi": "2025-11-26",
@@ -2513,6 +2501,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:30:22.352Z",
-  "totalChecks": 196
+  "lastUpdated": "2026-02-20T16:30:24.898Z",
+  "totalChecks": 195
 }
