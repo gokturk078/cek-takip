@@ -1,18 +1,6 @@
 {
   "checks": [
     {
-      "id": 13,
-      "firma_adi": "ERGÜN DOLMACI",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "540516",
-      "dolar": null,
-      "euro": null,
-      "tl": 1250000,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-09-18",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 14,
       "firma_adi": "GEPAZ",
       "cek_tanzim_tarihi": null,
@@ -109,6 +97,6 @@
       "odeme_durumu": "ÖDENDİ"
     }
   ],
-  "lastUpdated": "2026-02-20T16:39:49.264Z",
-  "totalChecks": 9
+  "lastUpdated": "2026-02-20T16:39:51.948Z",
+  "totalChecks": 8
 }
