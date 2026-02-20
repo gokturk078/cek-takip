@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 198,
-      "firma_adi": "TAYF LTD.",
-      "cek_tanzim_tarihi": "2026-01-09",
-      "cek_no": "8391873",
-      "dolar": null,
-      "euro": null,
-      "tl": 640000,
-      "banka": "NEAR EAST BANK",
-      "vade_tarihi": "2026-04-25",
-      "odeme_durumu": "BEKLEMEDE"
-    },
-    {
       "id": 199,
       "firma_adi": "GEPAZ LTD",
       "cek_tanzim_tarihi": "2026-01-09",
@@ -434,6 +422,6 @@
       "createdAt": "2026-02-14T13:19:12.774Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:38:30.725Z",
-  "totalChecks": 35
+  "lastUpdated": "2026-02-20T16:38:34.676Z",
+  "totalChecks": 34
 }
