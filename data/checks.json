@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 190,
-      "firma_adi": "ASEL ENGIEERİNG LTD.",
-      "cek_tanzim_tarihi": "2025-12-17",
-      "cek_no": "8632626",
-      "dolar": null,
-      "euro": 10000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2026-03-25",
-      "odeme_durumu": "BEKLEMEDE"
-    },
-    {
       "id": 192,
       "firma_adi": "GEPAZ LTD",
       "cek_tanzim_tarihi": "2026-01-09",
@@ -609,6 +597,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:37:52.905Z",
-  "totalChecks": 49
+  "lastUpdated": "2026-02-20T16:37:55.252Z",
+  "totalChecks": 48
 }
