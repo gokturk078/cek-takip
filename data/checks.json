@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 201,
-      "firma_adi": "ASEL ENGIEERİNG LTD.",
-      "cek_tanzim_tarihi": "2025-12-17",
-      "cek_no": "8632628",
-      "dolar": null,
-      "euro": 30000,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2026-05-25",
-      "odeme_durumu": "BEKLEMEDE"
-    },
-    {
       "id": 239,
       "firma_adi": "A&S ATUN LTD",
       "cek_no": "8633588",
@@ -293,6 +281,6 @@
       "createdAt": "2026-02-14T13:19:12.774Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:39:03.024Z",
-  "totalChecks": 24
+  "lastUpdated": "2026-02-20T16:39:05.100Z",
+  "totalChecks": 23
 }
