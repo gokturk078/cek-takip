@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 76,
-      "firma_adi": "AYHAN DÖNER",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "9314288",
-      "dolar": null,
-      "euro": 10000,
-      "tl": null,
-      "banka": "NEAR EAST BANK",
-      "vade_tarihi": "2025-11-19",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 77,
       "firma_adi": "SOSYAL SİGORTALAR DAİRESİ",
       "cek_tanzim_tarihi": null,
@@ -2705,6 +2693,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:29:42.602Z",
-  "totalChecks": 212
+  "lastUpdated": "2026-02-20T16:29:44.705Z",
+  "totalChecks": 211
 }
