@@ -229,19 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 170,
-      "firma_adi": "HASAN ONALT SAN.LTD",
-      "cek_tanzim_tarihi": "2025-12-22",
-      "cek_no": "545903",
-      "dolar": null,
-      "euro": null,
-      "tl": 900000,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2026-01-25",
-      "odeme_durumu": "ÖDENDİ",
-      "autoUpdatedAt": "2026-01-26T09:01:25.459Z"
-    },
-    {
       "id": 171,
       "firma_adi": "TAYF LTD.",
       "cek_tanzim_tarihi": "2025-12-22",
@@ -1434,6 +1421,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:34:53.176Z",
-  "totalChecks": 112
+  "lastUpdated": "2026-02-20T16:34:55.828Z",
+  "totalChecks": 111
 }
