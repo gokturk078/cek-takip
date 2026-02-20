@@ -229,18 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 175,
-      "firma_adi": "GEPAZ",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "8631765",
-      "dolar": 10000,
-      "euro": null,
-      "tl": null,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2026-02-25",
-      "odeme_durumu": "BEKLEMEDE"
-    },
-    {
       "id": 176,
       "firma_adi": "ENVER DÜZKAR",
       "cek_tanzim_tarihi": "2025-12-09",
@@ -1089,6 +1077,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:36:04.544Z",
-  "totalChecks": 87
+  "lastUpdated": "2026-02-20T16:36:06.828Z",
+  "totalChecks": 86
 }
