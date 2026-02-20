@@ -1,18 +1,6 @@
 {
   "checks": [
     {
-      "id": 20,
-      "firma_adi": "SERKAN BENZİNCİ",
-      "cek_tanzim_tarihi": null,
-      "cek_no": "9314271",
-      "dolar": null,
-      "euro": 5000,
-      "tl": null,
-      "banka": "NEARESTBANK",
-      "vade_tarihi": "2025-10-03",
-      "odeme_durumu": "ÖDENDİ"
-    },
-    {
       "id": 22,
       "firma_adi": "RASİME BASAT",
       "cek_tanzim_tarihi": null,
@@ -25,6 +13,6 @@
       "odeme_durumu": "ÖDENDİ"
     }
   ],
-  "lastUpdated": "2026-02-20T16:40:07.653Z",
-  "totalChecks": 2
+  "lastUpdated": "2026-02-20T16:40:11.277Z",
+  "totalChecks": 1
 }
