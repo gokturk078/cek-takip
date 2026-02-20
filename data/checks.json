@@ -229,19 +229,6 @@
       "odeme_durumu": "ÖDENDİ"
     },
     {
-      "id": 139,
-      "firma_adi": "EHS GÜMRÜKLEME",
-      "cek_tanzim_tarihi": "2025-12-22",
-      "cek_no": "545901",
-      "dolar": null,
-      "euro": null,
-      "tl": 1000000,
-      "banka": "GARANTİ BANKASI",
-      "vade_tarihi": "2025-12-25",
-      "odeme_durumu": "ÖDENDİ",
-      "updatedAt": "2026-01-22T07:16:03.958Z"
-    },
-    {
       "id": 140,
       "firma_adi": "MEPAS LTD",
       "cek_tanzim_tarihi": "2025-12-22",
@@ -1919,6 +1906,6 @@
       "createdAt": "2026-02-17T12:30:33.913Z"
     }
   ],
-  "lastUpdated": "2026-02-20T16:32:24.184Z",
-  "totalChecks": 149
+  "lastUpdated": "2026-02-20T16:32:26.552Z",
+  "totalChecks": 148
 }
